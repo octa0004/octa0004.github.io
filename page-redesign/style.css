@@ -1,0 +1,71 @@
+nav#nav.nav {
+    width: 1200px;
+    margin: 0px auto;
+    padding: 30px;
+  
+    border: 3px solid #e6bc9c;
+    background-color: #e6bc9c;
+    text-align: center;
+  }
+
+a.nav-link
+
+a.nav-link,
+a.nav-link a:link,
+a.nav-link a:visited {
+    display: block;
+    padding: 1em 0;
+    text-decoration: none;
+    color: #403b38;
+  }
+
+a.nav-link a:hover,
+a.nav.nav-link a:focus,
+a.nav.nav-link a.current {
+    background-color: #e6bc9c;
+  }
+
+
+section#home.home {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: normal;
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 100px;
+  background-color:#fadbc2;
+}
+
+h1.page-title {
+  font-family: serif;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+section#about.about {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: normal;
+  font-size: 1.5rem;
+  text-align: left;
+  padding: 100px;
+  background-color:#403b38;
+}
+
+h2.section-title {
+  font-family: serif;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+section#contact.contact {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: normal;
+  font-size: 1.5rem;
+  text-align: left;
+  padding: 100px;
+  background-color:#a67e5e;
+}
+
+form.contact-form {
+  background-color:#a67e5e;
+  border: #fadbc2;
+}
