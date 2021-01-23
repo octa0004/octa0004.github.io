@@ -1,40 +1,103 @@
-nav#nav.nav {
-    width: 1200px;
-    margin: 0px auto;
-    padding: 30px;
+/* ---------------------------------
+          Custom Styles
+------------------------------------ */
+
+html {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 14px;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
   
-    border: 3px solid #e6bc9c;
-    background-color: #e6bc9c;
-    text-align: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+  line-height: 1.5;
+}
+
+nav#nav.nav {
+  width: 1200px;
+  margin: 0px auto;
+  border: 3px solid #e6bc9c;
+  background-color: #e6bc9c;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+section#home.home {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: normal;
+  font-size: 1.5rem;
+  padding: 100px;
+  background-color:#fadbc2;
+  color: #403b38;
+}
+
+/* ---------------------------------
+          Mobile Styles
+------------------------------------ */
+@media only screen and (max-width: 760px){
+a.nav-link ,
+.nav-link a:link,
+.nav-link a:visited {
+  display: block;
+  padding: 1em 0;
+  text-decoration: none;
+  color: #403b38;
+}
+  
+.nav-link a:hover,
+.nav-link a:focus,
+.nav-link a.current {
+  background-color: #e6bc9c;
+}
+
+section#home.home {
+  text-align: left;
+}
+    
+h1.page-title {
+ font-family: serif;
+ font-size: 2.5rem;
+ text-align: left;
+}
+  
+
+
+
+} 
+
+
+/* ---------------------------------
+          Desktop Styles
+------------------------------------ */
+@media screen and (min-width: 761px){
+  html{
+      font-size: 16px;
   }
 
-a.nav-link a
+  /* navigation */
 
-a.nav-link,
-a.nav-link a:link,
-a.nav-link a:visited {
+a.nav-link a,
+.nav-link a:link,
+.nav-link a:visited {
     display: block;
     padding: 1em 0;
     text-decoration: none;
     color: #403b38;
   }
 
-a.nav-link a:hover,
-a.nav-link a:focus,
-a.nav-link a.current {
+.nav-link a:hover,
+.nav-link a:focus,
+.nav-link a.current {
     background-color: #e6bc9c;
   }
 
 
 section#home.home {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-weight: normal;
-  font-size: 1.5rem;
   text-align: center;
-  padding: 100px;
-  background-color:#fadbc2;
-  color: #403b38;
 }
 
 h1.page-title {
@@ -101,4 +164,18 @@ button {
   display: inline-block;
   font-size: 15px;
   margin: 8px 2px;
+}
+
+footer {
+  margin: auto;
+  background-color: #e6bc9c;
+  color: #403b38;
+  width: 80%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  max-width: 1200px;
+}
+
+footer p{
+  text-align: center;
 }
