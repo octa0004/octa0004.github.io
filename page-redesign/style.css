@@ -26,20 +26,13 @@ nav#nav.nav {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-section#home.home {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  font-weight: normal;
-  font-size: 1.5rem;
-  padding: 100px;
-  background-color:#fadbc2;
-  color: #403b38;
-}
-
 /* ---------------------------------
           Mobile Styles
 ------------------------------------ */
 @media only screen and (max-width: 760px){
-a.nav-link ,
+/* navigation */
+
+a.nav-link a,
 .nav-link a:link,
 .nav-link a:visited {
   display: block;
@@ -47,25 +40,103 @@ a.nav-link ,
   text-decoration: none;
   color: #403b38;
 }
-  
+
 .nav-link a:hover,
 .nav-link a:focus,
 .nav-link a.current {
   background-color: #e6bc9c;
 }
 
+
 section#home.home {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: normal;
+  font-size: 1.5rem;
+  padding: 100px;
+  background-color:#fadbc2;
+  color: #403b38;
   text-align: left;
 }
-    
+
 h1.page-title {
- font-family: serif;
- font-size: 2.5rem;
- text-align: left;
+  font-family: serif;
+  font-size: 2.5rem;
+  text-align: left;
 }
-  
 
+section#about.about {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: normal;
+  font-size: 1.5rem;
+  text-align: left;
+  padding: 100px;
+  background-color:#403b38;
+  color: #fadbc2;
+}
 
+h2.section-title {
+  font-family: serif;
+  font-size: 2.5rem;
+  text-align: left;
+}
+
+section#contact.contact {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: normal;
+  font-size: 1.5rem;
+  text-align: left;
+  padding: 100px;
+  background-color:#a67e5e;
+  color: #403b38;
+}
+
+form.contact-form {
+  background-color:#a67e5e;
+  border: 3px solid #fadbc2;
+  text-align: left;
+  padding: 20px;
+  width: auto;
+  line-height: 1.8;
+}
+
+input.contact-form-input {
+  padding: 10px;
+  width: 98%;
+}
+
+.contact-form-input {
+  padding: 10px;
+  width: 98%;
+}
+
+textarea.contact-form-input {
+  padding: 10px;
+  width: 98%;
+}
+
+button {
+  padding: 8px 8px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  font-size: 15px;
+  margin: 8px 2px;
+}
+
+footer {
+  margin: auto;
+  background-color: #e6bc9c;
+  color: #403b38;
+  width: 80%;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  max-width: 1200px;
+}
+
+footer p{
+  text-align: left;
+}
 
 } 
 
@@ -74,29 +145,36 @@ h1.page-title {
           Desktop Styles
 ------------------------------------ */
 @media screen and (min-width: 761px){
-  html{
-      font-size: 16px;
-  }
+  
+html{
+  font-size: 16px;
+}
 
-  /* navigation */
+/* navigation */
 
 a.nav-link a,
 .nav-link a:link,
 .nav-link a:visited {
-    display: block;
-    padding: 1em 0;
-    text-decoration: none;
-    color: #403b38;
-  }
+  display: block;
+  padding: 1em 0;
+  text-decoration: none;
+  color: #403b38;
+}
 
 .nav-link a:hover,
 .nav-link a:focus,
 .nav-link a.current {
-    background-color: #e6bc9c;
-  }
+  background-color: #e6bc9c;
+}
 
 
 section#home.home {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-weight: normal;
+  font-size: 1.5rem;
+  padding: 100px;
+  background-color:#fadbc2;
+  color: #403b38;
   text-align: center;
 }
 
@@ -179,4 +257,5 @@ footer {
 footer p{
   text-align: center;
 }
+
 }
