@@ -3,7 +3,8 @@
 ------------------------------------ */
 @media only screen and (max-width: 760px){
 
-  /* navigation */
+ /* navigation - use display block so the navigation bar shows in column, 
+change background color, color when the cursor hover, use higher specificity to give different look*/
 
   #nav .nav-link ,
   #nav .nav-link:link,
@@ -21,7 +22,8 @@
     color: #e6bc9c;
   }
 
-
+/* change text align to left for mobile style, because the screen size smaller,
+and people tend to read from left side */
 section#home.home {
   text-align: left;
 }
@@ -30,6 +32,7 @@ h1.page-title {
   text-align: left;
 }
 
+/* consistent using left align for each section for mobile style*/
 section#about.about {
   display: flex;
   flex-direction: column;
@@ -39,11 +42,13 @@ section#about.about {
 h2.section-title {
   text-align: left;
 }
-
+/* consistent using left align for each section for mobile style*/
 section#contact.contact {
   text-align: left;
 }
 
+/* change width to 95% for the form input in mobile style, 
+so it the overview looks better*/
 input.contact-form-input, 
 .contact-form-input,
 textarea.contact-form-input {
@@ -57,12 +62,14 @@ textarea.contact-form-input {
           Desktop Styles
 ------------------------------------ */
 @media only screen and (min-width: 761px){
-  
+
+/* bigger font size for desktop */
 html{
   font-size: 16px;
 }
 
-/* navigation */
+/* navigation - use display inline so the navigation bar shows in row, 
+change background color, color when the cursor hover, use higher specificity to give different look*/
 
 #nav .nav-link ,
 #nav .nav-link:link,
@@ -80,6 +87,8 @@ html{
   color: #e6bc9c;
 }
 
+/* for the home section, for desktop style keep center alignment, 
+but change the font combination, so it easy to read */
 
 section#home.home {
   text-align: center;
@@ -89,25 +98,29 @@ h1.page-title {
   text-align: center;
 }
 
+/* 
+use overflow so the image still in the same container with the about me section
+content text for desktop style, about me page use text-align left,
+so can compliment the image on the left */
 section#about.about {
   text-align: left;
-  float:left;
-  width: 100%;
+  overflow: auto;
   max-width: 100%;
 }
 
-section#about.about p {
-  width: 90%;
-}
-
+/* to make it easy to read and consistent,
+h2 use center alignment, specificity 0,1,1 */
 h2.section-title {
   text-align: center;
 }
 
+/* to make it easy to read and consistent,
+center alignment, specificity 1,1,1  */
 section#contact.contact {
-  text-align: left;
+  text-align: center;
 }
-
+/* change width to 98% for the form input in desktop style
+, so it the overview looks better*/
 input.contact-form-input,
 .contact-form-input,
 textarea.contact-form-input {
@@ -120,10 +133,13 @@ textarea.contact-form-input {
           Custom Styles
 ------------------------------------ */
 
+/* use higher specificity 1,1,1
+to change width so there are no white color on the left and right side*/
 main#main.main {
   max-width: 100%;
 }
 
+/* change font family and use box sizing*/
 html {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 14px;
@@ -138,6 +154,8 @@ body {
   
 }
 
+/* use higher specificity 1,1,0
+so can overwrite and change font family, text-transform, background color and color */
 #nav.nav {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   margin: 0px auto;
@@ -149,6 +167,8 @@ body {
   width: auto;
 }
 
+/* use higher specificity 1,1,1
+so can overwrite and change font family, background color and color */
 section#home.home {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: normal;
@@ -158,11 +178,13 @@ section#home.home {
   color: #403b38;
 }
 
+/* use higher specificity to change font family*/
 h1.page-title {
   font-family: serif;
   font-size: 2.5rem;
 }
 
+/* use higher specificity to change font family, background color and color*/
 section#about.about {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: normal;
@@ -172,12 +194,13 @@ section#about.about {
   color: #fadbc2;
 }
 
-
+/* use higher specificity to change font family*/
 h2.section-title {
   font-family: serif;
   font-size: 2.5rem;
 }
 
+/* use higher specificity to change font family, background color and color*/
 section#contact.contact {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: normal;
@@ -188,6 +211,8 @@ section#contact.contact {
   color: #403b38;
 }
 
+/* use higher specificity to change font family, change form background color, 
+add border, change line height so easy to read*/
 form.contact-form {
   background-color:#a67e5e;
   border: 3px solid #fadbc2;
@@ -202,6 +227,7 @@ textarea.contact-form-input {
   padding: 10px;
 }
 
+/* add padding and margin, change text-transform to uppercase*/
 button {
   padding: 8px 8px;
   text-align: center;
@@ -212,6 +238,7 @@ button {
   margin: 8px 2px;
 }
 
+/* add background color, so it will look the same as the navigation */
 footer {
   margin: auto;
   background-color: #e6bc9c;
@@ -220,7 +247,7 @@ footer {
   padding-bottom: 30px;
 }
 
-
+/* change text-align to center, so it will look more clean */
 footer p{
   text-align: center;
 }
