@@ -33,9 +33,6 @@ h1.page-title {
 section#about.about {
   display: flex;
   flex-direction: column;
-}
-
-section#about.about {
   text-align: left;
 }
 
@@ -95,6 +92,7 @@ h1.page-title {
 section#about.about {
   text-align: left;
   float:left;
+  max-width: 100%;
 }
 
 h2.section-title {
