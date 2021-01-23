@@ -92,7 +92,12 @@ h1.page-title {
 section#about.about {
   text-align: left;
   float:left;
+  width: 100%;
   max-width: 100%;
+}
+
+section#about.about p {
+  width: 90%;
 }
 
 h2.section-title {
@@ -166,6 +171,7 @@ section#about.about {
   background-color:#403b38;
   color: #fadbc2;
 }
+
 
 h2.section-title {
   font-family: serif;
