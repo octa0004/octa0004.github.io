@@ -6,11 +6,62 @@
     <title>Dash Landing Page</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <section>
+    <!-- Site Header-->   
+    <header>
+        <!-- use div class to make specific part for the dash logo, so in the responsive i can target and change it-->
         <div class="logo">
             <img src="images/logo/logo.png" alt="logo image">
         </div>
-    </section>
+    </header> 
+
+    <main>
+        <section>
+            <div class="own-boss">
+                <h1>Want to be your own boss?</h1>
+                <p>
+                    Start today and make up to $30/hr driving your own vehicle with Dash
+                </p>
+            </div>
+
+            <div class="image">
+                <img src="images/bg-image/scooter.svg" alt="background image">
+            </div>
+
+            <div class="applyform">
+                <div>
+                    <h2>Apply now</h2>
+                    <p> Enter your info below</p>
+                </div>
+                
+                    <!--adding a apply now form
+                    form action needed for using the drive with us button -->
+                    <form action="apply.html" method="post">
+                        <div class="lineform">
+                            <label for="firstname">First name</label>
+                            <input type="text" id="firstname" name="firstname">
+                        </div>
+
+                        <div class="lineform">
+                            <label for="phonenumber">Phone number</label>
+                            <input type="text" id="phonenumber" name="phonenumber">
+                        </div>
+
+                        <div class="lineform">
+                            <label for="emailaddress">Email Address</label>
+                            <input type="text" id="emailaddress" name="emailaddress">
+                        </div>
+
+                        <button class="applybutton" type="submit">
+                            <h3>Drive with us</h3>
+                        </button>
+                    </form>
+            </div>
+        </section>
+    </main>
+
+
+
 </body>
 </html>
