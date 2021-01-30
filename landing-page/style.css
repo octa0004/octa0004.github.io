@@ -131,12 +131,14 @@ box-shadow to make a shadow*/
     padding: 24px;
     border-radius: 26px;
     box-shadow: 10px 15px 18px rgba(51, 49, 49, 0.4);
+    padding-bottom: 0px;
 }
 
 #firstname,
 #lastname,
 #phonenumber,
 #emailaddress {
+    font-family:'Montserrat', sans-serif;
     background-color: #F4F4F5;
     margin-top: 8px;
     margin-bottom: 8px;
@@ -155,9 +157,11 @@ box-shadow to make a shadow*/
 input {
     width: 25px;
     height: 25px;
-    border-style: solid #333131;
+    border-style: solid;
+    border-color: #333131;
     border-radius: 5px;
 }
+
 input[type="checkbox"]
 {
     vertical-align: middle;
@@ -199,6 +203,7 @@ label{
 footer {
     background-color: #FFFD8C;
     padding-top: 25px;
+    padding-bottom: 25px;
 }
 
 .footer-container {
@@ -227,6 +232,7 @@ h4 {
     width: 28%;
     height: 40px;
     padding-left: 12px;
+    font-family:'Montserrat', sans-serif;
 }
 
 #city {
@@ -237,6 +243,7 @@ h4 {
     width: 60%;
     height: 40px;
     padding-left: 12px;
+    font-family:'Montserrat', sans-serif;
 }
 
 .hourscityform{
@@ -273,3 +280,9 @@ a img{
 }
 
 }
+
+
+/* ---------------------------------
+          Tablet Styles
+------------------------------------ */
+
