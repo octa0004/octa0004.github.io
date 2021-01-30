@@ -65,19 +65,14 @@ body {
   line-height: 1.5;
 }
 
-header,
-main {
-  padding: 38px;
-}
-
 header {
-    padding-top: 16px;
+    padding-top: 25px;
     padding-bottom: 0px;
 }
 
 main {
     padding-top: 0px;
-  
+    padding-bottom: 25px;
 }
 
 .logo img{
@@ -91,6 +86,12 @@ main {
 ------------------------------------ */
 @media only screen and (max-width: 375px){
 
+header,
+main {
+  padding-left: 38px;
+  padding-right: 38px;
+}
+
 h1 {
     font-size: 60px;
     font-weight: bold;
@@ -100,12 +101,6 @@ p{
     font-size: 24px;
     font-weight: normal;
 }
-
-/*
-img {
-    min-width: 289px;
-}
-*/
 
 h2 {
     font-size: 40px;
@@ -163,19 +158,20 @@ input {
     border-radius: 5px;
 }
 
+/* use this format so the checkbox align with the text*/
 input[type="checkbox"]
 {
     vertical-align: middle;
 }
 
 label {
-    font-size: 21px;
+    font-size: 16px;
 }
 
 .applytext p{
     font-size: 14px;
 }
-
+/*change color for the link*/
 .applytext a{
     font-size: 14px;
     color: #FF8480;
@@ -195,18 +191,13 @@ label {
    font-weight: bold;
    text-transform: uppercase;
 }
-
-label{
-    font-size: 16px;
-}
-
-
+/*add background color, and set up for the padding */
 footer {
     background-color: #FFFD8C;
     padding-top: 25px;
     padding-bottom: 25px;
 }
-
+/*use margin to make sure in the center alignment */
 .footer-container {
     width: 302px;
     height: auto;
@@ -225,39 +216,40 @@ h4 {
     margin-bottom: 5px;
 }
 
+/*change width presentage to make sure it can fit in display inline*/
 #hours {
     border-radius: 11px;
     background-color: #F7F7FF;
     border-style: none;
-    /*width: 68px;*/
     width: 28%;
     height: 40px;
     padding-left: 12px;
     font-family:'Montserrat', sans-serif;
 }
 
+/*change width presentage to make sure it can fit in display inline*/
 #city {
     border-radius: 11px;
     background-color: #F7F7FF;
     border-style: none;
-    /*width: 224px;*/
     width: 60%;
     height: 40px;
     padding-left: 12px;
     font-family:'Montserrat', sans-serif;
 }
 
+/*use display inline so the hours and city lineform side by side*/
 .hourscityform{
     display: inline;
     flex-direction: row;
     align-items: flex-start;
-    
 }
 
 a img{
    border: 0; 
 }
-
+/* Use text transform to change to all caps
+add background color, and border radius*/
 .calculatebutton {
     border-radius: 11px;
     background-color: #FF8480;
@@ -271,7 +263,7 @@ a img{
     text-transform: uppercase;
     margin-top: 10px;
 }
-
+/*use justify content space around so equal space around*/
 .socialmedialogo {
     display: flex;
     flex-direction: row;
@@ -286,21 +278,12 @@ a img{
 /* -----------------------------------------------------------------------
           Tablet Styles
 ------------------------------------ */
-@media only screen and (max-width: 768px){
+@media only screen and (min-width: 376px) and (max-width: 768px){
 
     /* Need to responsive, and change padding to make look similar as the example given */
     header,
     main {
       padding: 82px;
-    }
-
-    header {
-        padding-top: 16px;
-        padding-bottom: 0px;
-    } 
-    
-    main {
-        padding-top: 0px;
     }
 
     /* bigger than mobile device, change font size */
@@ -452,7 +435,7 @@ a img{
         padding-bottom: 25px;
     }
     
-    /*use margin to maks sure in the center alignment */
+    /*use margin to make sure in the center alignment */
     .footer-container {
         width: 608px;
         height: auto;
@@ -501,7 +484,8 @@ a img{
         flex-direction: row;
     }
 
-    /* Use text transform to change to all caps*/
+    /* Use text transform to change to all caps
+    add background color, and border radius, change width*/
     .calculatebutton {
         border-radius: 11px;
         background-color: #FF8480;
