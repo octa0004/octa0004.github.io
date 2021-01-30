@@ -88,6 +88,10 @@ p{
     font-weight: normal;
 }
 
+img {
+    min-width: 289px;
+}
+
 h2 {
     font-size: 53px;
     font-weight: bold;
