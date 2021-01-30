@@ -59,46 +59,60 @@ html {
   width: 100%;
   background-color: #F7F7FF;
   color: #333131;
-  /*padding: 38px;*/
 }
 
 body {
   line-height: 1.5;
 }
 
-/*
-.logo{
-    height: 114px;
+header,
+main {
+  padding: 38px;
+}
+
+header {
+    padding-bottom: 0px;
+}
+
+main {
+    padding-top: 0px;
+  
+}
+
+.logo img{
     width: 81px; 
  }
-*/
+
 
 
 /* ---------------------------------
           Mobile Styles
 ------------------------------------ */
+@media only screen and (max-width: 375px){
 
 h1 {
-    font-size: 80px;
+    font-size: 60px;
     font-weight: bold;
 }
 
 p{
-    font-size: 32px;
+    font-size: 24px;
     font-weight: normal;
 }
 
+/*
 img {
     min-width: 289px;
 }
+*/
 
 h2 {
-    font-size: 53px;
+    font-size: 40px;
     font-weight: bold;
 }
 
 .applyform p{
-    font-size: 21px;
+    font-size: 16px;
     font-weight: normal;
 }
 
@@ -107,7 +121,7 @@ Make a center using display and margin
 border-radius to make round corner
 box-shadow to make a shadow*/
 .applyform {
-    width: 300px;
+   /* width: 300px;*/
     height: 495px;
     background-color: white;
     display: block;
@@ -116,7 +130,7 @@ box-shadow to make a shadow*/
     margin-right: auto;
     padding: 24px;
     border-radius: 26px;
-    box-shadow: 10px 15px 18px #333131;
+    box-shadow: 10px 15px 18px rgba(51, 49, 49, 0.4);
 }
 
 #firstname,
@@ -126,13 +140,16 @@ box-shadow to make a shadow*/
     background-color: #F4F4F5;
     margin-top: 8px;
     margin-bottom: 8px;
-    width: 280px;
+    width: 230px;
     height: 40px;
     border-radius: 11px;
     border-style: none;
     padding-left: 12px;
     color: #9B9B9B;
-    font-size: 21px;
+    font-size: 16px;
+}
+.agreecheckbox {
+    display: inline-block;
 }
 
 input {
@@ -141,42 +158,47 @@ input {
     border-style: solid #333131;
     border-radius: 5px;
 }
+input[type="checkbox"]
+{
+    vertical-align: middle;
+}
 
 label {
     font-size: 21px;
 }
 
 .applytext p{
-    font-size: 18px;
+    font-size: 14px;
 }
 
 .applytext a{
-    font-size: 18px;
+    font-size: 14px;
     color: #FF8480;
 }
 
+/* use text-transform to change to all caps*/
 .applybutton {
    background-color: #57EEAB;
-   width: 295px;
+   width: 250px;
    height: 55px;
    border-style: none;
    border-radius: 11px;
    margin-top: 8px;
    margin-bottom: 8px;
+   font-family:'Montserrat', sans-serif;
+   font-size: 24px;
+   font-weight: bold;
+   text-transform: uppercase;
 }
 
-/* use text-transform to change to all caps*/
-h3 {
-    font-family:'Montserrat', sans-serif;
-    font-size: 32px;
-    font-weight: bold;
-    text-transform: uppercase;
+label{
+    font-size: 16px;
 }
+
 
 footer {
     background-color: #FFFD8C;
-    margin-top: 25px;
-    
+    padding-top: 25px;
 }
 
 .footer-container {
@@ -184,38 +206,44 @@ footer {
     height: auto;
     margin-left: auto;
     margin-right: auto;
+    
 }
 
 h4 {
-    font-size: 24px;
+    font-size: 18px;
     font-weight: bold;
 }
 
 .footer-container p{
-    font-size: 21px;
+    font-size: 16px;
+    margin-bottom: 5px;
 }
 
 #hours {
     border-radius: 11px;
     background-color: #F7F7FF;
     border-style: none;
-    width: 68px;
+    /*width: 68px;*/
+    width: 28%;
     height: 40px;
+    padding-left: 12px;
 }
 
 #city {
     border-radius: 11px;
     background-color: #F7F7FF;
     border-style: none;
-    width: 224px;
+    /*width: 224px;*/
+    width: 60%;
     height: 40px;
+    padding-left: 12px;
 }
 
 .hourscityform{
-    display: flex;
+    display: inline;
     flex-direction: row;
-    
     align-items: flex-start;
+    
 }
 
 a img{
@@ -230,9 +258,10 @@ a img{
     height: 40px;
     color:#F7F7FF;
     font-family:'Montserrat', sans-serif;
-    font-size: 32px;
+    font-size: 24px;
     font-weight: bold;
     text-transform: uppercase;
+    margin-top: 10px;
 }
 
 .socialmedialogo {
@@ -241,4 +270,6 @@ a img{
     align-items: center;
     justify-content: space-around;
     margin-top: 15px;
+}
+
 }
