@@ -72,7 +72,6 @@ header {
 
 main {
     padding-top: 0px;
-    padding-bottom: 25px;
 }
 
 .logo img{
@@ -90,6 +89,10 @@ header,
 main {
   padding-left: 38px;
   padding-right: 38px;
+}
+
+main {
+    padding-bottom: 25px;
 }
 
 h1 {
@@ -283,7 +286,12 @@ add background color, and border radius*/
     /* Need to responsive, and change padding to make look similar as the example given */
     header,
     main {
-      padding: 82px;
+        padding-left: 82px;
+        padding-right: 82px;
+    }
+
+    main {
+        padding-bottom: 93px;
     }
 
     /* bigger than mobile device, change font size */
