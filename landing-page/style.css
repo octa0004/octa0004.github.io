@@ -75,7 +75,7 @@ main {
 }
 
 .logo img{
-    width: 81px; 
+    width: 115px; 
  }
 
 /* ---------------------------------
@@ -535,9 +535,6 @@ add background color, and border radius*/
         padding-bottom: 100px;
     }
 
-    .logo img{
-        width: 115px;
-    }
     main {
         padding-bottom: 88px;
     }
