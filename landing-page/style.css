@@ -525,7 +525,7 @@ add background color, and border radius*/
 /* -----------------------------------------------------------------------
           Desktop Styles
 ------------------------------------ */
-@media only screen and (min-width: 769px) and (max-width: 1920px){
+@media only screen and (min-width: 769px){
     
     /* Need to responsive, and change padding to make look similar as the example given */
     header,
@@ -790,7 +790,7 @@ add background color, and border radius*/
         border-radius: 11px;
         background-color: #FF8480;
         border-style: none;
-        width: 200px;
+        width: 200px; 
         height: 40px;
         color:#F7F7FF;
         font-family:'Montserrat', sans-serif;
