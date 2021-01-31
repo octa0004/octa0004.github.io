@@ -732,6 +732,10 @@ add background color, and border radius*/
     .site-footer{
         display: flex;
         align-items: center;
+        position: fixed;
+        width: 100%;
+        bottom: 0;
+        left: 0;
     }    
 
     /*use margin to make sure in the center alignment */
