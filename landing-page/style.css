@@ -614,14 +614,6 @@ add background color, and border radius*/
     .applyform {
         background-color: white;
         width: 535px;
-         /*
-        width: 535px;
-        height: 590px;
-        display: grid;
-        margin-top: 30px;
-        margin-left: auto;
-        margin-right: auto;
-        */
         padding: 40px;
         border-radius: 26px;
         box-shadow: 10px 15px 18px rgba(51, 49, 49, 0.4);
@@ -737,12 +729,20 @@ add background color, and border radius*/
         padding-top: 25px;
         padding-bottom: 25px;
     }
-    
+
+    /*Need to be flex and align to center, useful to change socialmedialogo place*/
+    .site-footer{
+        display: flex;
+        align-items: center;
+    }    
+
     /*use margin to make sure in the center alignment */
     .footer-container {
         width: 608px;
         height: auto;
         margin-left: 139px;
+        display: flex;
+        flex-wrap: wrap;
     }
     
     h4 {
@@ -808,13 +808,36 @@ add background color, and border radius*/
        padding-right: 40px; 
     }
     
-    /* mesti ganti ke align k kanan */
+    
+    /*  */
     .socialmedialogo {
         display: flex;
         flex-direction: row;
-        align-self: flex-end;
-        justify-content: center;
         margin-top: 15px;
+        margin-right: 139px;
+        position: absolute;
+        right: 0;
+    }
+
+    /* use nth-child so i can change the order*/
+    /* facebook logo move to 3rd place so change order*/
+    .socialmedialogo a:nth-child(1){
+        order: 3;
+    }
+
+    /* instagram logo move to 1st place, so change order*/
+    .socialmedialogo a:nth-child(2){
+        order: 1;
     }
     
+    /* instagram logo move to 1st place, so change order*/
+    .socialmedialogo a:nth-child(3){
+        order: 2;
+    }
+
+    /* linkedin logo same position, put order number 4*/
+    .socialmedialogo a:nth-child(4){
+        order: 4;
+    }
+
     }
