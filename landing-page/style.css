@@ -553,6 +553,9 @@ add background color, and border radius*/
 ------------------------------------ */
 @media only screen and (min-width: 992px){
     
+    html{
+        max-height: 1080px;
+    }
     /* Need to responsive, and change padding to make look similar as the example given */
     header,
     main {
@@ -593,7 +596,8 @@ add background color, and border radius*/
         grid-column-gap:0px;
         background-image: url(images/bg-image/scooter.svg);
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: center 40%;
+        background-size: 50%;
     }
 
     .own-boss {
