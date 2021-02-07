@@ -207,14 +207,9 @@ footer {
 .footer-container {
     box-sizing: border-box;
     width: 100%;
-    /*max-width: 500px;*/
     margin: 0 auto;
     padding-left: 38px;
     padding-right: 38px;
-    /*margin-left: auto;
-    margin-right: auto;
-    /*padding-left: 38px;
-    padding-right: 38px;*/
 }
 
 h4 {
@@ -349,7 +344,6 @@ add background color, and border radius*/
         box-sizing: border-box;
         background-color: white;
         display: block;
-    
         padding: 38px;
         border-radius: 26px;
         box-shadow: 10px 15px 18px rgba(51, 49, 49, 0.4);
@@ -460,7 +454,6 @@ add background color, and border radius*/
     /*add background color, and set up for the padding */
     footer {
         background-color: #FFFD8C;
-        /*width: 100%;*/
         padding-top: 25px;
         padding-bottom: 25px;
     }
@@ -471,7 +464,6 @@ add background color, and border radius*/
         max-width: 1200px;
         margin: 0 auto;
         box-sizing: border-box;
-        /*padding-left: 82px;*/
     }
     
     h4 {
@@ -522,7 +514,6 @@ add background color, and border radius*/
         background-color: #FF8480;
         border-style: none;
         box-sizing: border-box;
-        /*width: 100%;*/
         height: 40px;
         color:#F7F7FF;
         font-family:'Montserrat', sans-serif;
@@ -553,21 +544,31 @@ add background color, and border radius*/
 ------------------------------------ */
 @media only screen and (min-width: 992px){
     
-    html{
-        max-height: 1080px;
+    html, body{
+        margin: 0;
+        padding: 0;
+        height: 100%;
     }
+
+    #container{
+        min-height: 100%;
+        position: relative;
+    }
+
     /* Need to responsive, and change padding to make look similar as the example given */
     header,
     main {
-       /* padding-left: 139px;
-        padding-right: 139px;*/
-        padding-bottom: 100px;
         max-width: 1460px;
         margin: 0 auto;
     }
 
+    header{
+        padding: 10px;
+    }
+
     main {
-        padding-bottom: 88px;
+        padding: 10px;
+        padding-bottom: 148px;
     }
 
     /* same size as tablet font size */
@@ -589,7 +590,7 @@ add background color, and border radius*/
     }
 
     /* start with using diplay grid
-    make the image as background image */
+    make the image as background image and use no repeat s only 1 image appear */
     section {
         display: grid;
         grid-template-columns: repeat(6, 1fr);
@@ -609,21 +610,20 @@ add background color, and border radius*/
 
     .image {
         display: none;
-        /*
+        /*padding-right: 30px;
         grid-column-start: 3;
         grid-column-end: 5;
         grid-row-start: 1;
         grid-row-end: 2;
-        /*width: 820px;*/
-        width: 100%;
+        width: 820px;
+        /*width: 100%;*/
     }
 
-
-    /**/
     form {
         display: flex;
         flex-direction: column ;
     }
+
     /* change font size*/
     /*change text replacement using css visibility */
     .applyform > p{
@@ -656,7 +656,6 @@ add background color, and border radius*/
         border-radius: 26px;
         box-shadow: 10px 15px 18px rgba(51, 49, 49, 0.4);
         padding-bottom: 0px;
-
         grid-column-start: 6;
         grid-column-end: 6;
         grid-row-start: 1;
@@ -764,6 +763,10 @@ add background color, and border radius*/
     
     /*add background color, and set up for the padding */
     footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 148px;
         background-color: #FFFD8C;
         padding-top: 25px;
         padding-bottom: 25px;
@@ -773,10 +776,9 @@ add background color, and border radius*/
     .site-footer{
         display: flex;
         align-items: center;
-        position: fixed;
+        /*position: fixed;*/
         width: 100%;
-        bottom: 0;
-        left: 0;
+        /*bottom: 0;*/
     }    
 
     /*use margin to make sure in the center alignment */
@@ -835,7 +837,6 @@ add background color, and border radius*/
         border-radius: 11px;
         background-color: #FF8480;
         border-style: none;
-       /* width: 100%; */
         box-sizing: border-box;
         color:#F7F7FF;
         font-family:'Montserrat', sans-serif;
@@ -852,16 +853,10 @@ add background color, and border radius*/
        padding-right: 40px; 
     }
     
-    
-    /*  */
     .socialmedialogo {
         display: flex;
         flex-direction: row;
         margin-left: auto;
-        /*margin-top: 15px;
-        margin-right: 139px;
-        position: absolute;
-        right: 0;*/
     }
 
     /* use nth-child so i can change the order*/
