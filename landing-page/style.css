@@ -565,6 +565,7 @@ add background color, and border radius*/
 
     header{
         padding: 10px;
+        padding-left: 80px;
     }
 
     main {
