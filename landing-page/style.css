@@ -609,15 +609,9 @@ add background color, and border radius*/
         grid-row-end: 2;
     }
 
+    /* make sure this display none, since i use background image command*/
     .image {
         display: none;
-        /*padding-right: 30px;
-        grid-column-start: 3;
-        grid-column-end: 5;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        width: 820px;
-        /*width: 100%;*/
     }
 
     form {
@@ -777,9 +771,8 @@ add background color, and border radius*/
     .site-footer{
         display: flex;
         align-items: center;
-        /*position: fixed;*/
         width: 100%;
-        /*bottom: 0;*/
+    
     }    
 
     /*use margin to make sure in the center alignment */
