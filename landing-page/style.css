@@ -559,7 +559,7 @@ add background color, and border radius*/
     /* Need to responsive, and change padding to make look similar as the example given */
     header,
     main {
-        max-width: 1460px;
+        max-width: 1640px;
         margin: 0 auto;
     }
 
