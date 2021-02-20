@@ -51,22 +51,38 @@ body{
     background-color: var(--grey);
 }
 
-a { 
-    text-decoration: none; 
-    color:var(--lightgrey); 
-}
-
-a:visited { 
-    text-decoration: none; 
-    color:white; 
-    font-weight: bold;
-}
-
 .logo {
+    display: block;
+    text-align: center;
     max-width: 100%;
     width: 88px;
-    display: flex;
-    height: auto;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+a { 
+    text-decoration: none; 
+    color:var(--lightgrey);  
+}
+
+
+a:link,
+a:visited { 
+    display: block;
+    /*padding: 1em 0;*/
+    text-decoration: none; 
+    color: var(--lightgrey);
+ 
+}
+
+a:hover,
+a:focus,
+a.current {
+    text-decoration: none; 
+    color:var(--lightgrey); 
+    font-weight: bold; 
 }
 
 li {
@@ -75,26 +91,80 @@ li {
     text-align: center;
     list-style: none;
     font-size: 18px;
+    padding: 1em 0;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+p{
+    font-size: 20px;
+    line-height: 2;
+}
+
+svg{
+    display: block;
+    margin: auto;
 }
 
 .discovericon {
+    min-height: 100%;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    margin: auto;
+}
+
+.discovericon > div{
+    display: flex;
+    flex-basis: calc(50% - 40px);
+    justify-content: center;
+    flex-direction: column;
+}
+
+.discovericon > div > div{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.discovericon div p {
+    font-size: 17px;
+    color: var(--green);
+    text-align: center;
 }
 
 .button {
-    display: flex;
     width: 100%;
     background-color: var(--green);
     color: var(--lightgrey);
     font-size: 32px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
     border-radius: 40px;
+    border: none;
     text-align: center;
-    margin: 15px;
+    box-shadow: 8px 8px 20px rgba(51, 49, 49, 0.4);
     padding: 15px;
 }
 
+.discoverimagesvg img{
+    max-width: 100%;
+    width: 300px;
+    height: auto;
+    margin: auto;
+    padding-top: 38px;
+    padding-left: 16px;
+    padding-right: 16px;
+}
 
+/*use display nont to hide the scroll for the mobile*/
+.scroll,
+.scroll img {
+    display: none;
+}
 
 
 
