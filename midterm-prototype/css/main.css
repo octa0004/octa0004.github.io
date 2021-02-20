@@ -99,14 +99,33 @@ h1{
     font-weight: bold;
 }
 
+h2{
+    font-size: 32px;
+    font-style: italic;
+    margin-bottom: 0px;
+}
+
+h3{
+    font-size: 24px;
+    font-weight: lighter;
+    color: var(--green);
+    margin-top: 20px;
+}
+
 p{
     font-size: 20px;
+    font-weight: lighter;
     line-height: 2;
 }
 
 svg{
     display: block;
     margin: auto;
+}
+
+.discoverac{
+    padding: 10px;
+    overflow: hidden;
 }
 
 .discovericon {
@@ -144,15 +163,36 @@ svg{
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
     border-radius: 40px;
-    border: none;
+    border: none; 
     text-align: center;
     box-shadow: 8px 8px 20px rgba(51, 49, 49, 0.4);
     padding: 15px;
 }
 
+/* move button to the right side*/
+
+.learnmorebutton {
+    width: 45%;
+    background-color: var(--green);
+    color: var(--lightgrey);
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    border-radius: 40px;
+    border: none;
+    text-align: center;
+    white-space: nowrap;
+    box-shadow: 2px 8px 8px rgba(51, 49, 49, 0.4);
+    padding: 20px;
+    text-align: center;
+    float: right;
+    margin-bottom: 30px;
+}
+
+
 .discoverimagesvg img{
     max-width: 100%;
-    width: 300px;
+   
     height: auto;
     margin: auto;
     padding-top: 38px;
@@ -166,16 +206,89 @@ svg{
     display: none;
 }
 
+/*use max-width to cover from left to right*/
+.discoverimage img{
+    padding-top: 38px;
+    max-width: 100%;
+}
 
-
-
-/* use wrapper for the space siae*/
+/* use wrapper for the space size*/
 .wrapper {
     width: 90%;
     margin: auto;
 }
 
+.sa{
+    background-color: var(--grey);
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.wrapper img{
+    max-width: 100%;
+    border-radius: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.simon img{
+    width: 175px;
+    max-width: 100%;
+    border-radius: 100px;
+    border: 5px solid var(--lightgrey);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+
+}
+
+.sa h4{
+    font-size: 24px;
+    color: var(--lightgrey);
+    text-align: center;
+}
+.sa p{
+    color: var(--lightgrey);
+    font-size: 16px;
+}
+
+.discoverentertainment img {
+    max-width: 100%;
+}
+
+/* use overflow hidden to hide the overlay*/
+.discoveren{
+    padding: 10px;
+    overflow: hidden;
+}
+
 
 footer {
     background-color: var(--grey);
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+/*use margin to make sure in the center alignment */
+.site-footer{
+    width: 100%;
+    margin: auto;
+    padding-left: 38px;
+    padding-right: 38px;
+}
+
+.site-footer p{
+    font-size: 24px;
+    color: var(--lightgrey);
+    text-align: center;
+}
+
+/*use justify content space around so equal space around*/
+.socialmedialogo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
 }
