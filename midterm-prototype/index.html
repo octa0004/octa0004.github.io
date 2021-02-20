@@ -5,18 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Inserting Google Fonts-->
+    <!-- Inserting Normalize, so all the browser will look the same-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <!-- Inserting Google Fonts so it will affecting the css below -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,700;1,600;1,700&display=swap" rel="stylesheet">
-    <!-- masuking di css font-family: 'Raleway', sans-serif;-->
+    
+    <!-- css for the index home page-->
     <link rel="stylesheet" href="css/main.css">
+
+    <!-- css for the about page-->
+    <link rel="stylesheet" href="css/about.css">
+
+    <!-- css for the contact page-->
+    <link rel="stylesheet" href="css/contact.css">
     
     <title> Discover Your ARC. </title>
 </head>
 
 <body>
     <!-- Repeat Header-->
-    <div class="wrapper"> 
+    <div>
         <div class="navbackground">
             <div class="nav">
                 <!--Navigation Bar-->
@@ -39,7 +49,7 @@
         </div>
 
        <div>
-            <div>
+            <div class="wrapper"> 
                 <!--site-header-->
                 <header class="home-header">
                     <div class="headercontainer">
@@ -51,8 +61,8 @@
                             </p>
                         </div>
 
-                        <div>
-                            <!-- use iconmonstr to inser the icon -->
+                        <div class="discovericon">
+                            <!-- copy svg form the adobe xd prototype -->
                             <div>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="34.875" height="34.875" viewBox="0 0 34.875 34.875">
                                     <path id="Icon_awesome-bowling-ball" data-name="Icon awesome-bowling-ball" d="M17.438.563A17.438,17.438,0,1,0,34.875,18,17.434,17.434,0,0,0,17.438.563Zm-9,12.938a2.25,2.25,0,1,1,2.25-2.25A2.248,2.248,0,0,1,8.438,13.5Zm4.5-6.75A2.25,2.25,0,1,1,15.188,9,2.248,2.248,0,0,1,12.938,6.75Zm3.375,10.125a2.25,2.25,0,1,1,2.25-2.25A2.248,2.248,0,0,1,16.313,16.875Z" transform="translate(0 -0.563)" fill="#3c3b3a"/>
@@ -170,7 +180,7 @@
         </main>
 
         <!--Site Footer-->
-        <footer>
+        <footer class="wrapper"> 
             <div class="site-footer">
                 <div>
                     <p>Follow us</p>

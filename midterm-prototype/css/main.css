@@ -1,0 +1,111 @@
+html {
+    font-family: 'Raleway', sans-serif;
+    font-size: 100%;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+
+/*set color library for easy use*/
+:root {
+    --green: #26A682;
+    --grey: #3C3B3A;
+    --lightgrey: #F2F2F2;
+}
+
+/* set a font size use Modular Scale https://www.modularscale.com/?1&rem&1.5 */
+/*
+h1 {
+font-size: 5.063rem;
+}
+
+h2 {
+font-size: 3.375rem;
+}
+
+h3 {
+font-size: 2.25rem;
+}
+
+h4 {
+font-size: 1.5rem;
+}
+
+h5 {
+font-size: 1rem;
+}
+
+p {
+margin: 1em 0;
+}
+
+    
+body{
+    background-color: white;   
+}
+*/
+
+
+/* starting the navigation bar*/
+.navbackground {
+    background-color: var(--grey);
+}
+
+a { 
+    text-decoration: none; 
+    color:var(--lightgrey); 
+}
+
+a:visited { 
+    text-decoration: none; 
+    color:white; 
+    font-weight: bold;
+}
+
+.logo {
+    max-width: 100%;
+    width: 88px;
+    display: flex;
+    height: auto;
+}
+
+li {
+    display: list-item;
+    color: var(--lightgrey);
+    text-align: center;
+    list-style: none;
+    font-size: 18px;
+}
+
+.discovericon {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.button {
+    display: flex;
+    width: 100%;
+    background-color: var(--green);
+    color: var(--lightgrey);
+    font-size: 32px;
+    border-radius: 40px;
+    text-align: center;
+    margin: 15px;
+    padding: 15px;
+}
+
+
+
+
+
+
+/* use wrapper for the space siae*/
+.wrapper {
+    width: 90%;
+    margin: auto;
+}
+
+
+footer {
+    background-color: var(--grey);
+}
