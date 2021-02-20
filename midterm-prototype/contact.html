@@ -5,18 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Inserting Google Fonts-->
+    <!-- Inserting Normalize, so all the browser will look the same-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <!-- Inserting Google Fonts so it will affecting the css below -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,700;1,600;1,700&display=swap" rel="stylesheet">
-    <!-- masuking di css font-family: 'Raleway', sans-serif;-->
+    
+    <!-- css for the index home page-->
     <link rel="stylesheet" href="css/main.css">
+
+    <!-- css for the about page-->
+    <link rel="stylesheet" href="css/about.css">
+
+    <!-- css for the contact page-->
+    <link rel="stylesheet" href="css/contact.css">
     
     <title> Discover Your ARC. </title>
 </head>
 
 <body>
     <!-- Repeat Header-->
-    <div class="wrapper"> 
+    <div> 
         <div class="navbackground">
             <div class="nav">
                 <!--Navigation Bar-->
@@ -39,29 +49,31 @@
         </div>
 
         <div>
-            <!--about about site-header start-->
-            <header class="contact-header">
-                <div class="contactcontainer">
-                    <div>
-                        <h1> We Want to Hear From You </h1>
-                        <p>
-                            If you have an idea for an activity that you think you 
-                            and your fellow students would love to participate in that we are not already offering,
-                            we want to know about it!
-                        </p>
+            <div class="wrapper">
+                <!--about about site-header start-->
+                <header class="contact-header">
+                    <div class="contactcontainer">
+                        <div>
+                            <h1> We Want to Hear From You </h1>
+                            <p>
+                                If you have an idea for an activity that you think you 
+                                and your fellow students would love to participate in that we are not already offering,
+                                we want to know about it!
+                            </p>
+                        </div>
                     </div>
 
-                    <div>
+                    <div class="contact">
                         <!-- insert contact image -->
-                        <img src="images/contact-img.svg" alt="contactimage">
+                        <img src="images/contact-img.svg" alt="contactimage">    
                     </div>
-                </div>
-            </header>    
+                </header> 
+            </div>       
         </div>
 
         <main> 
             <!--contact us form-->
-            <section>
+            <section class="wrapper">
                 <div class="contactform">
                     <h2>Contact us</h2>
                 

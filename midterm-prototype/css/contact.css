@@ -1,0 +1,169 @@
+html {
+    font-family: 'Raleway', sans-serif;
+    font-size: 100%;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+
+/*set color library for easy use*/
+:root {
+    --green: #26A682;
+    --grey: #3C3B3A;
+    --lightgrey: #F2F2F2;
+}
+
+/* starting the navigation bar*/
+.navbackground {
+    background-color: var(--grey);
+}
+
+.navlink {
+    margin: 0px;
+    padding: 0px;
+}
+
+.logo {
+    display: block;
+    text-align: center;
+    max-width: 100%;
+    width: 88px;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+a { 
+    text-decoration: none; 
+    color:var(--lightgrey);  
+}
+
+
+a:link,
+a:visited { 
+    display: block;
+    /*padding: 1em 0;*/
+    text-decoration: none; 
+    color: var(--lightgrey);
+ 
+}
+
+a:hover,
+a:focus,
+a.current {
+    text-decoration: none; 
+    color:var(--lightgrey); 
+    font-weight: bold; 
+}
+
+li {
+    display: list-item;
+    color: var(--lightgrey);
+    text-align: center;
+    list-style: none;
+    font-size: 18px;
+    padding: 1em 0;
+}
+
+h3{
+    font-size: 24px;
+    font-weight: lighter;
+    margin-top: 20px;
+}
+
+p{
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: 2;
+}
+
+.wrapper img{
+    max-width: 100%;
+    border-radius: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* change background color
+Make a center using display and margin
+border-radius to make round corner
+box-shadow to make a shadow*/
+.contactform{
+    width: 100%;
+    background-color: var(--green);
+    display: block;
+    margin-top: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 24px;
+
+    border-radius: 26px;
+    box-shadow: 10px 15px 18px rgba(51, 49, 49, 0.4);
+    padding-bottom: 26px;
+}
+
+.contactform h2{
+    font-size: 40px;
+    font-style: normal;
+    color: var(--lightgrey);
+    margin-bottom: 20px;
+    margin-top: 0px;
+}
+.contactform label{
+    font-size: 18px;
+    color: var(--lightgrey);
+}
+
+.lineform {
+    padding-bottom: 10px;
+}
+
+
+#fullname,
+#studentnumber,
+#email ,
+#message {
+    font-family: 'Raleway', sans-serif;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    width: 100%;
+    height: 40px;
+    box-sizing: border-box;
+    border-style: none;
+    padding-left: 12px;
+    color: var(--lightgrey);
+    font-size: 16px; 
+}
+
+#fullname,
+#studentnumber,
+#email {
+    height: 40px;
+    border-radius: 72px;
+}
+
+
+/* change the height szie
+change the border radius
+,more height compare to the fullname,student number and email */
+#message{
+    height: 100px;
+    border-radius: 10px;
+}
+
+.submitbutton {
+    background-color: var(--grey);
+    box-sizing: border-box;
+    color: var(--lightgrey);
+    width: 100%;
+    height: 50px;
+    border-style: none;
+    border-radius: 40px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+
+    font-size: 32px;
+    font-weight: bold;
+
+ }
