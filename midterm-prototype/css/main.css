@@ -51,6 +51,11 @@ body{
     background-color: var(--grey);
 }
 
+.navlink {
+    margin: 0px;
+    padding: 0px;
+}
+
 .logo {
     display: block;
     text-align: center;
@@ -133,6 +138,7 @@ svg{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    justify-content: space-around;
     margin: auto;
 }
 
