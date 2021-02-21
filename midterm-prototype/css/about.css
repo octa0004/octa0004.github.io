@@ -125,8 +125,93 @@ p{
 
 /* starting point for the main */
 
-/* use wrapper for the blank space on left and right, look much better*/
-.wrapper {
-    width: 90%;
-    margin: auto;
+/* change style to normal for this pecific h2, since the other h2 is different style */
+.servicessection h2{
+    font-style: normal;
+}
+
+.competitivecontainer{
+    background-color: var(--lightgrey);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.competitivecontainer h2{
+    font-style: normal;
+}
+
+.bowlingimg{
+    display: none;
+}
+
+.newsletter{
+    background-color: var(--grey);
+    /*margin-top: 20px;*/
+    margin-bottom: 20px;
+}
+
+.newsletterp p{
+    font-size: 18px;
+    text-align: center;
+    color: var(--lightgrey);
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.subscribebutton{
+    width: 30%;
+    background-color: var(--green);
+    color: var(--lightgrey);
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    border-radius: 40px;
+    border: none; 
+    text-align: center;
+    box-shadow: 8px 8px 20px rgba(51, 49, 49, 0.4);
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+.fitness h2{
+    font-style: normal;
+}
+
+.fitness img{
+    display: none;
+}
+
+.climbing{
+    background-color: var(--lightgrey);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.climbing h2{
+    font-style: normal;
+}
+
+.climbingimage{
+    display: none;
+}
+
+.thankyou h2{
+    font-size: 56px;
+    font-weight: bold;
+    font-style: normal;
+    text-align: center;
+}
+
+.logo {
+    max-width: 100%;
+}
+
+
+/*use justify content space around so equal space around*/
+.socialmedialogo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
 }
