@@ -90,7 +90,8 @@ Make a center using display and margin
 border-radius to make round corner
 box-shadow to make a shadow*/
 .contactform{
-    width: 100%;
+    max-width: 100%;
+    
     background-color: var(--green);
     display: block;
     margin-top: 16px;
@@ -165,5 +166,36 @@ change the border radius
 
     font-size: 32px;
     font-weight: bold;
+}
 
- }
+.location h2{
+    font-size: 40px;
+    font-style: normal;
+    border-style: none;
+}
+
+.location h3{
+    font-size: 24px;
+    font-weight: lighter;
+    color: var(--grey);
+}
+
+.location p{
+    font-size: 16px;
+    line-height: 2;
+}
+
+.map{
+    width: 100%;
+}
+
+
+
+/*use justify content space around so equal space around*/
+.socialmedialogo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
