@@ -1,0 +1,132 @@
+html {
+    font-family: 'Raleway', sans-serif;
+    font-size: 100%;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+}
+
+/*set color library for easy use*/
+:root {
+    --green: #26A682;
+    --grey: #3C3B3A;
+    --lightgrey: #F2F2F2;
+}
+
+/* set a font size use Modular Scale https://www.modularscale.com/?1&rem&1.5 */
+/*
+h1 {
+font-size: 5.063rem;
+}
+
+h2 {
+font-size: 3.375rem;
+}
+
+h3 {
+font-size: 2.25rem;
+}
+
+h4 {
+font-size: 1.5rem;
+}
+
+h5 {
+font-size: 1rem;
+}
+
+p {
+margin: 1em 0;
+}
+
+    
+body{
+    background-color: white;   
+}
+*/
+
+
+/* starting the navigation bar*/
+.navbackground {
+    background-color: var(--grey);
+}
+
+.navlink {
+    margin: 0px;
+    padding: 0px;
+}
+
+.logo {
+    display: block;
+    text-align: center;
+    max-width: 100%;
+    width: 88px;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+a { 
+    text-decoration: none; 
+    color:var(--lightgrey);  
+}
+
+
+a:link,
+a:visited { 
+    display: block;
+    /*padding: 1em 0;*/
+    text-decoration: none; 
+    color: var(--lightgrey);
+ 
+}
+
+a:hover,
+a:focus,
+a.current {
+    text-decoration: none; 
+    color:var(--lightgrey); 
+    font-weight: bold; 
+}
+
+li {
+    display: list-item;
+    color: var(--lightgrey);
+    text-align: center;
+    list-style: none;
+    font-size: 18px;
+    padding: 1em 0;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 32px;
+    font-style: italic;
+    margin-bottom: 0px;
+}
+
+h3{
+    font-size: 24px;
+    font-weight: lighter;
+    color: var(--green);
+    margin-top: 20px;
+}
+
+p{
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: 2;
+}
+
+/* starting point for the main */
+
+/* use wrapper for the blank space on left and right, look much better*/
+.wrapper {
+    width: 90%;
+    margin: auto;
+}

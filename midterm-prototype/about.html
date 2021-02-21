@@ -5,18 +5,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Inserting Google Fonts-->
+    <!-- Inserting Normalize, so all the browser will look the same-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+
+    <!-- Inserting Google Fonts so it will affecting the css below -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,700;1,600;1,700&display=swap" rel="stylesheet">
-    <!-- masuking di css font-family: 'Raleway', sans-serif;-->
+    
+    <!-- css for the index home page-->
     <link rel="stylesheet" href="css/main.css">
+
+    <!-- css for the about page-->
+    <link rel="stylesheet" href="css/about.css">
+
+    <!-- css for the contact page-->
+    <link rel="stylesheet" href="css/contact.css">
     
     <title> Discover Your ARC. </title>
 </head>
 
 <body>
     <!-- Repeat Header-->
-    <div class="wrapper"> 
+    <div> 
         <div class="navbackground">
             <div class="nav">
                 <!--Navigation Bar-->
@@ -39,28 +49,30 @@
         </div>
 
         <div>
-            <!--about about site-header start-->
-            <header class="about-header">
-                <div class="aboutcontainer">
-                    <div>
-                        <h1> What to expect during construction. </h1>
-                        <p>
-                            With construction starting in April 2019 
-                            we anticipate the new arrival of the ARC building as early as August 2021.
-                        </p>
-                        <p>
-                            The current SA Fitness Zone and gym will be operating and open as usual. 
-                            Please visit the Fitness Zone and the Gymnasium for more information on the hours, 
-                            offerings, and pricing.
-                        </p>
-                    </div>
+            <div class="wrapper"></div>
+                <!--about about site-header start-->
+                <header class="about-header">
+                    <div class="aboutcontainer">
+                        <div>
+                            <h1> What to expect during construction. </h1>
+                            <p>
+                                With construction starting in April 2019 
+                                we anticipate the new arrival of the ARC building as early as August 2021.
+                            </p>
+                            <p>
+                                The current SA Fitness Zone and gym will be operating and open as usual. 
+                                Please visit the Fitness Zone and the Gymnasium for more information on the hours, 
+                                offerings, and pricing.
+                            </p>
+                        </div>
 
-                    <div>
-                        <!-- insert construction image -->
-                        <img src="images/construction.svg" alt="constructionimage">
+                        <div class="constructionimg">
+                            <!-- insert construction image -->
+                            <img src="images/construction.svg" alt="constructionimage">
+                        </div>
                     </div>
-                </div>
-            </header>    
+                </header>    
+            </div>    
         </div>
 
         <main> 
