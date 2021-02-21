@@ -186,7 +186,8 @@ svg{
     padding: 15px;
 }
 
-/* move button to the right side*/
+/* move button to the right side, float
+change width size*/
 
 .learnmorebutton {
     width: 45%;
@@ -215,7 +216,7 @@ svg{
     padding-top: 38px;
 }
 
-/*use display nont to hide the scroll for the mobile*/
+/*use display none to hide the scroll for the mobile*/
 .scroll,
 .scroll img {
     display: none;
@@ -238,6 +239,9 @@ svg{
     padding-top: 30px;
     padding-bottom: 30px;
 }
+
+
+/*ude border radius so it shape round from the css*/
 .wrapper img{
     max-width: 100%;
     border-radius: 100px;
@@ -290,7 +294,6 @@ footer {
     padding-bottom: 25px;
 }
 
-/*use margin to make sure in the center alignment */
 .site-footer{
     position: relative;
     max-height: 125px;
@@ -322,7 +325,7 @@ footer {
 }
 
 
-/*use justify content space around so equal space around*/
+/*use display flex so it can change side by side with the back to top*/
 .socialmedialogo {
     display: flex;
     flex-direction: row;
@@ -334,6 +337,7 @@ footer {
     padding: 5px;
 }
 
+/*use float to put it on the right side*/
 .backtotop{
     float: right;
     overflow:hidden;
