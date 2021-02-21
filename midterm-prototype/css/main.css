@@ -114,7 +114,8 @@ h3{
     font-size: 24px;
     font-weight: lighter;
     color: var(--green);
-    margin-top: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 p{
@@ -133,6 +134,11 @@ svg{
 .discoverac{
     padding: 10px;
     overflow: hidden;
+}
+
+.discoverac p{
+    margin-top: 5px;
+    color: var(--grey);
 }
 
 .discovericon {
@@ -161,10 +167,13 @@ svg{
     font-size: 17px;
     color: var(--green);
     text-align: center;
+    white-space: nowrap;
+    margin-top: 0;
 }
 
 .button {
     width: 100%;
+    line-height: 25px;
     background-color: var(--green);
     color: var(--lightgrey);
     font-size: 32px;
@@ -181,6 +190,7 @@ svg{
 
 .learnmorebutton {
     width: 45%;
+    line-height: 5px;
     background-color: var(--green);
     color: var(--lightgrey);
     font-size: 20px;
@@ -203,8 +213,6 @@ svg{
     height: auto;
     margin: auto;
     padding-top: 38px;
-    padding-left: 16px;
-    padding-right: 16px;
 }
 
 /*use display nont to hide the scroll for the mobile*/
@@ -221,7 +229,7 @@ svg{
 
 /* use wrapper for the space size and better*/
 .wrapper {
-    width: 90%;
+    width: 80%;
     margin: auto;
 }
 
@@ -241,8 +249,9 @@ svg{
 .simon img{
     width: 175px;
     max-width: 100%;
-    border-radius: 100px;
+    border-radius: 100%;
     border: 5px solid var(--lightgrey);
+    background-color: var(--lightgrey);
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -252,12 +261,16 @@ svg{
 
 .sa h4{
     font-size: 24px;
+    line-height: 40px;
     color: var(--lightgrey);
     text-align: center;
+    font-weight: normal;
+    margin-bottom: 5px;
 }
 .sa p{
     color: var(--lightgrey);
     font-size: 16px;
+    line-height: 35px;
 }
 
 .discoverentertainment img {
@@ -279,17 +292,35 @@ footer {
 
 /*use margin to make sure in the center alignment */
 .site-footer{
-    width: 100%;
-    margin: auto;
-    padding-left: 38px;
-    padding-right: 38px;
+    position: relative;
+    max-height: 125px;
+    display: flex;
+    flex: 1 1 auto;
+    align-items:center;
+    justify-content: center;
+
 }
 
-.site-footer p{
+.site-footer > div{
+    overflow: hidden;
+    display:inline;
+}
+
+
+.site-footer > div > p{
     font-size: 24px;
     color: var(--lightgrey);
     text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
 }
+
+.site-footer > a{
+    position: absolute;
+    align-self: flex-end;
+    right: 20px;
+}
+
 
 /*use justify content space around so equal space around*/
 .socialmedialogo {
@@ -297,5 +328,23 @@ footer {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 15px;
+}
+
+.socialmedialogo > a {
+    padding: 5px;
+}
+
+.backtotop{
+    float: right;
+    overflow:hidden;
+}
+
+.backtotop img{
+    display:block;
+    width: 23px;
+    margin:auto;
+}
+
+.backtotop p{
+    font-size: 9px;
 }

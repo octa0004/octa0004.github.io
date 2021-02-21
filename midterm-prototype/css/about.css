@@ -72,7 +72,6 @@ a {
     color:var(--lightgrey);  
 }
 
-
 a:link,
 a:visited { 
     display: block;
@@ -213,5 +212,4 @@ p{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    margin-top: 15px;
 }
