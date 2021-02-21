@@ -89,6 +89,7 @@ a.current {
     font-weight: bold; 
 }
 
+/*use list-none so the it hide the bullets point*/
 li {
     display: list-item;
     color: var(--lightgrey);
@@ -98,6 +99,7 @@ li {
     padding: 1em 0;
 }
 
+/*setting the size for the h and the p*/
 h1{
     font-size: 40px;
     font-weight: bold;
@@ -124,6 +126,51 @@ p{
 
 /* starting point for the main */
 
+main {
+    margin-top: 30px;
+}
+
+/*change size to fill the image left to right*/
+
+.aboutimg,
+.servicesimg {
+    position: relative;
+    width: 100vw;
+    background: rgba(38,166,130,1);
+    overflow: hidden;
+    text-align: center;
+}
+
+.aboutimg img,
+.servicesimg img{
+    width: 100%;
+    height: 100%;
+    filter: grayscale(100%);
+    max-height: 200px;
+    object-fit: cover;
+    opacity: 0.5;
+    vertical-align: top;;
+}
+
+
+.aboutimg h3,
+.servicesimg h3 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 50px;
+    color: white;
+    margin: 0;
+}
+
+
+.barimg img,
+.bowlingimg img{
+    display: none;
+}
+
 /* change style to normal for this pecific h2, since the other h2 is different style */
 .servicessection h2{
     font-style: normal;
@@ -146,22 +193,24 @@ p{
 .newsletter{
     background-color: var(--grey);
     /*margin-top: 20px;*/
-    margin-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
-.newsletterp p{
+.newsletter p{
     font-size: 18px;
     text-align: center;
     color: var(--lightgrey);
     margin-top: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 15px;
 }
 
 .subscribebutton{
-    width: 30%;
+    display: block;
     background-color: var(--green);
     color: var(--lightgrey);
     font-size: 20px;
+    line-height: 10px;
     font-family: 'Raleway', sans-serif;
     font-weight: bold;
     border-radius: 40px;
@@ -169,7 +218,7 @@ p{
     text-align: center;
     box-shadow: 8px 8px 20px rgba(51, 49, 49, 0.4);
     padding: 15px;
-    margin-bottom: 20px;
+    margin: 0 auto;
 }
 
 .fitness h2{
@@ -194,15 +243,31 @@ p{
     display: none;
 }
 
+.thankyou{
+    width: 80%;
+    margin: auto;
+}
+
 .thankyou h2{
     font-size: 56px;
     font-weight: bold;
     font-style: normal;
     text-align: center;
+    overflow: auto;
+    margin-bottom: 15px;
 }
 
-.logo {
-    max-width: 100%;
+.sponsors{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.sponsors img {
+    width: 80%;
+    height: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 

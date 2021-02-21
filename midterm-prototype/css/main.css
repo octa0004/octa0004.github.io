@@ -90,6 +90,7 @@ a.current {
     font-weight: bold; 
 }
 
+/*use list-none so the it hide the bullets point*/
 li {
     display: list-item;
     color: var(--lightgrey);
@@ -99,6 +100,7 @@ li {
     padding: 1em 0;
 }
 
+/*setting the size for the h and the p*/
 h1{
     font-size: 40px;
     font-weight: bold;
@@ -242,7 +244,7 @@ change width size*/
 
 
 /*ude border radius so it shape round from the css*/
-.wrapper img{
+.simonimg{
     max-width: 100%;
     border-radius: 100px;
     display: block;
