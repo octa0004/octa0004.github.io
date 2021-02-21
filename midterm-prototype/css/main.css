@@ -287,7 +287,8 @@ change width size*/
     overflow: hidden;
 }
 
-
+/*start the footer area, use padding first 
+and then use position with mac height*/
 footer {
     background-color: var(--grey);
     padding-top: 25px;

@@ -207,9 +207,78 @@ p{
 
 
 /*use justify content space around so equal space around*/
+/*
 .socialmedialogo {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+}
+*/
+
+/*start the footer area, use padding first 
+and then use position with mac height*/
+footer {
+    background-color: var(--grey);
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.site-footer{
+    position: relative;
+    max-height: 125px;
+    display: flex;
+    flex: 1 1 auto;
+    align-items:center;
+    justify-content: center;
+
+}
+
+.site-footer > div{
+    overflow: hidden;
+    display:inline;
+}
+
+
+.site-footer > div > p{
+    font-size: 24px;
+    color: var(--lightgrey);
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.site-footer > a{
+    position: absolute;
+    align-self: flex-end;
+    right: 20px;
+}
+
+
+/*use display flex so it can change side by side with the back to top*/
+.socialmedialogo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialmedialogo > a {
+    padding: 5px;
+}
+
+/*use float to put it on the right side*/
+.backtotop{
+    float: right;
+    overflow:hidden;
+}
+
+.backtotop img{
+    display:block;
+    width: 23px;
+    margin:auto;
+}
+
+.backtotop p{
+    font-size: 9px;
 }
