@@ -13,39 +13,6 @@ html {
     --lightgrey: #F2F2F2;
 }
 
-/* set a font size use Modular Scale https://www.modularscale.com/?1&rem&1.5 */
-/*
-h1 {
-font-size: 5.063rem;
-}
-
-h2 {
-font-size: 3.375rem;
-}
-
-h3 {
-font-size: 2.25rem;
-}
-
-h4 {
-font-size: 1.5rem;
-}
-
-h5 {
-font-size: 1rem;
-}
-
-p {
-margin: 1em 0;
-}
-
-    
-body{
-    background-color: white;   
-}
-*/
-
-
 /* starting the navigation bar*/
 .navbackground {
     background-color: var(--grey);
@@ -212,7 +179,6 @@ change width size*/
 
 .discoverimagesvg img{
     max-width: 100%;
-   
     height: auto;
     margin: auto;
     padding-top: 38px;
@@ -243,7 +209,7 @@ change width size*/
 }
 
 
-/*ude border radius so it shape round from the css*/
+/*use border radius so it change shape to round from the css*/
 .simonimg{
     max-width: 100%;
     border-radius: 100px;
@@ -354,4 +320,18 @@ footer {
 
 .backtotop p{
     font-size: 9px;
+}
+
+/*-----------------------------------------------
+Tablet Style
+--------------------------*/
+@media only screen nad (min-width: 768px){
+
+
+
+
+
+
+
+    
 }
