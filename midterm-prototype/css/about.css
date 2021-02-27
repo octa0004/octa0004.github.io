@@ -264,25 +264,27 @@ main {
 }
 
 .sponsors img {
-    width: 80%;
+    width: 100%;
     height: auto;
     margin-top: 15px;
     margin-bottom: 15px;
 }
-
-
-/*use justify content space around so equal space around*/
-/*
-.socialmedialogo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+/*use nth-child to change the size for the sponsor logo*/
+.sponsors img:nth-child(2) {
+    width: 65%;
 }
-*/
+
+.sponsors img:nth-child(3) {
+    width: 80%;
+}
+
+.sponsors img:nth-child(4) {
+    width: 60%;
+}
+
 
 /*start the footer area, use padding first 
-and then use position with mac height*/
+and then use position with max height*/
 footer {
     background-color: var(--grey);
     padding-top: 25px;
