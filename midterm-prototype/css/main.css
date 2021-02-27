@@ -141,6 +141,7 @@ svg{
 }
 
 .button {
+    display: block;
     width: 100%;
     line-height: 25px;
     background-color: var(--green);
@@ -192,8 +193,10 @@ change width size*/
 
 /*use max-width to cover from left to right*/
 .discoverimage img{
-    padding-top: 38px;
-    max-width: 100%;
+    width:100%;
+    max-height: 200px;
+    object-fit: cover;
+    object-position: 0 -200px;
 }
 
 /* use wrapper for the space size and better*/
@@ -325,13 +328,84 @@ footer {
 /*-----------------------------------------------
 Tablet Style
 --------------------------*/
-@media only screen nad (min-width: 768px){
+@media only screen and (min-width: 768px){
+
+/* change to menu direction */
+/*repeat navigation bar*/
+
+li:first-child{
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding-left: 30px;
+}
+
+.navlink {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 30px; 
+    max-width: 1200px;
+}
+
+/*align to the right*/
+
+li {
+    display: flex;
+    margin-left: 20px;
+    padding: 5px;
+}
+/*
+
+.navlink li:nth-child(2){
+    padding-right: 30px;
+    justify-content: flex-end;
+}
+
+.navlink li:nth-child(3){
+    padding-right: 30px;
+}
+*/
+
+/*change to 1 row, flex no wrap
+change the justofy content for same spacing in the middle*/
+.discovericon {
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+}
+
+/*change the width for the tablet display,
+change font size */
+.button {
+    width: 50%;
+    font-size: 40px;
+    margin: auto;
+}
 
 
+/* change display, so it will show up for tablet style*/
 
+.scroll {
+    display: block;
+}
 
+.scroll p{
+    font-size: 9px;
+    text-align: center;
+}
 
+.scroll img {
+    display: block;
+    width: 23px;
+    margin: auto;
 
+    transform: rotate(180deg);
+}
 
-    
+/* change image height */
+.discoverimage img{
+    padding-top: 38px;
+    max-width: 100%;
 }

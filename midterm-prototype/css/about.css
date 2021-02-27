@@ -51,11 +51,6 @@ body{
     background-color: var(--grey);
 }
 
-.navlink {
-    margin: 0px;
-    padding: 0px;
-}
-
 .logo {
     display: block;
     text-align: center;
@@ -87,16 +82,6 @@ a.current {
     text-decoration: none; 
     color:var(--lightgrey); 
     font-weight: bold; 
-}
-
-/*use list-none so the it hide the bullets point*/
-li {
-    display: list-item;
-    color: var(--lightgrey);
-    text-align: center;
-    list-style: none;
-    font-size: 18px;
-    padding: 1em 0;
 }
 
 /*setting the size for the h and the p*/
