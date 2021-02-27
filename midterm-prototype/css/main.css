@@ -139,7 +139,7 @@ svg{
     white-space: nowrap;
     margin-top: 0;
 }
-
+/* use border radius to make round shape button and use box shadow to add shadow*/
 .button {
     display: block;
     width: 100%;
@@ -160,7 +160,7 @@ svg{
 change width size*/
 
 .learnmorebutton {
-    width: 45%;
+    width: 55%;
     line-height: 5px;
     background-color: var(--green);
     color: var(--lightgrey);
@@ -193,10 +193,8 @@ change width size*/
 
 /*use max-width to cover from left to right*/
 .discoverimage img{
-    width:100%;
-    max-height: 200px;
-    object-fit: cover;
-    object-position: 0 -200px;
+    padding-top: 38px;
+    max-width: 100%;
 }
 
 /* use wrapper for the space size and better*/
@@ -337,14 +335,19 @@ li:first-child{
     position: absolute;
     left: 0;
     top: 0;
-    padding-left: 30px;
+    /*padding-left: 30px;*/
+    padding-left: 50px;
 }
 
 .navlink {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    padding: 30px; 
+    margin-left: 80px;
+    padding-right: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    /*padding: 30px;*/
     max-width: 1200px;
 }
 
@@ -353,27 +356,55 @@ li:first-child{
 li {
     display: flex;
     margin-left: 20px;
+    margin-right: 0px;
     padding: 5px;
+    /*padding-right: 80px;
+    /*
+    padding-left: 80px;
+    padding-right: 80px;
+    /*padding: 5px;*/
 }
-/*
 
-.navlink li:nth-child(2){
-    padding-right: 30px;
-    justify-content: flex-end;
+
+/* change the size for tablet*/
+/*setting the size for the h and the p*/
+h1{
+    font-size: 72px;
+    font-weight: bold;
+    margin-bottom: 0px;
 }
 
-.navlink li:nth-child(3){
-    padding-right: 30px;
+h2{
+    font-size: 40px;
+    font-style: italic;
+    margin-bottom: 0px;
 }
-*/
+
+h3{
+    font-size: 32px;
+    font-weight: lighter;
+    color: var(--green);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+p{
+    font-size: 18px;
+    font-weight: lighter;
+    line-height: 2;
+}
+
+
 
 /*change to 1 row, flex no wrap
-change the justofy content for same spacing in the middle*/
+change the justify content for same spacing in the middle*/
 .discovericon {
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: space-between;
-    margin: auto;
+    
+    margin: 0px;
+
 }
 
 /*change the width for the tablet display,
@@ -384,28 +415,83 @@ change font size */
     margin: auto;
 }
 
+/*change image size smaller for the tablet */
+.discoverimagesvg img{
+    max-width: 100%;
+    width: 50%;
+    height: auto;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    padding-top: 38px;
+}
 
-/* change display, so it will show up for tablet style*/
+/* change display, so it will show up for tablet style
+use transform to rotate the arrow image*/
 
 .scroll {
     display: block;
 }
 
+/*use margin bottom to remove the spacing*/
 .scroll p{
     font-size: 9px;
     text-align: center;
+    margin-bottom: 0px;
 }
 
 .scroll img {
     display: block;
     width: 23px;
     margin: auto;
-
     transform: rotate(180deg);
 }
 
-/* change image height */
-.discoverimage img{
-    padding-top: 38px;
-    max-width: 100%;
+/* change image height, use object fit and position to fit the image size */
+.discoverentertainment img,
+.discoverimage img{    
+    width:100%;
+    max-height: 200px;
+    object-fit: cover;
+    object-position: 0 -170px;
 }
+
+/* use grid to make image on the left and text on the right */
+.sa .wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.simon{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+/*change font size bigger for tablet*/
+.sa h4{
+    font-size: 24px;
+    font-weight: bold;
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+/*change font size bigger for tablet*/
+.sa p{
+    font-size: 24px;
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+/*change width button for tablet style*/
+.learnmorebutton {
+    width: 35%;
+}    
