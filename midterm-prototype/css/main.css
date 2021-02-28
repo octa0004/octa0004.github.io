@@ -462,6 +462,11 @@ use transform to rotate the arrow image*/
     object-position: 0 -170px;
 }
 
+.discoverimage img{   
+    padding-top: 0px;
+}
+
+
 /* use grid to make image on the left and text on the right */
 .sa .wrapper {
     display: grid;
@@ -480,7 +485,7 @@ use transform to rotate the arrow image*/
 .sa h4{
     font-size: 24px;
     font-weight: bold;
-
+    margin-top: 0px;
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 2;
@@ -490,7 +495,8 @@ use transform to rotate the arrow image*/
 /*change font size bigger for tablet*/
 .sa p{
     font-size: 24px;
-
+    
+    max-width: 100%;
     grid-column-start: 2;
     grid-column-end: 3;
     grid-row-start: 1;

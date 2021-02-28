@@ -322,6 +322,7 @@ p{
 }
 
 /*.constructionimg {
+    display:block;
     max-width: 100%;
     width: 90%;
     height: auto;
@@ -332,8 +333,9 @@ p{
 }
 */
 
-/*change display, so the image can appear */
-.servicecontainer, .competitivecontainer, .fitnesscontainer, .climbingcontainer{
+
+.servicecontainer, 
+.fitnesscontainer{
     display: grid;
     grid-column: 2;
     grid-row: 1;
@@ -366,7 +368,8 @@ p{
     line-height: 35px;
 }
 
-.barimg {
+.barimg, 
+.fitnessimg {
     grid-column-start: 1;
     grid-column-end: 2;
     grid-row-start: 1;
@@ -388,7 +391,14 @@ p{
 
 /*competitive section*/
 
-.competitivecontainer .wrapper{
+.competitivecontainer, .climbingcontainer{
+    display: grid;
+    grid-column: 3;
+    grid-row: 1;
+}
+
+
+/*.competitivecontainer .wrapper{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
@@ -425,7 +435,7 @@ p{
 }
 
 /*climbing section*/
-.climbing .wrapper{
+/*.climbing .wrapper{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
