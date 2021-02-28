@@ -333,24 +333,57 @@ p{
 */
 
 /*change display, so the image can appear */
-.servicecontainer .wrapper{
+.servicecontainer, .competitivecontainer, .fitnesscontainer, .climbingcontainer{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-column: 2;
+    grid-row: 1;
 }
 
-.servicecontainer h2, h3,p{
+.servicecontainer .wrapper{
     grid-column-start: 2;
     grid-column-end: 3;
-    /*grid-row-start: 1;
-    grid-row-end: 3;*/
+    grid-row-start: 1;
+    grid-row-end: 2;
+    margin-left: 20px;
 }
 
-.servicecontainer .barimg{
-    display: grid;
+.wrapper{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 66%;
+}
+
+.wrapper>h2{
+    margin-top: 0px;
+}
+
+.wrapper>h3{
+    margin-top: 5px;
+}
+
+.wrapper>p{
+    margin-top: 5px;
+    line-height: 35px;
+}
+
+.barimg {
     grid-column-start: 1;
     grid-column-end: 2;
-    /*grid-row-start: 1;
-    grid-row-end: 3;*/
+    grid-row-start: 1;
+    grid-row-end: 2;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 160px;
+    padding-right: 0px;
+}
+
+.barimg img, .bowlingimg img, .fitnessimg img, .climbingimg img{
+    display:block;
+    width: 218px;
+    height: 375px;
+    object-fit: cover;
+    object-position: -100px;
+
 }
 
 /*competitive section*/
@@ -389,21 +422,6 @@ p{
 .subscribebutton{
     margin-left: 60px;
     margin-right: 60px;
-}
-
-.fitness .wrapper{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-
-.fitness h2,h3,p{
-    grid-column-start: 2;
-    grid-column-end: 3;
-}
-
-.fitness img{
-    grid-column-start: 1;
-    grid-column-end: 2;
 }
 
 /*climbing section*/
