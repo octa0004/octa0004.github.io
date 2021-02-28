@@ -56,6 +56,18 @@ main {
     margin-top: 30px;
 }
 
+.constructionimg{
+    padding-top: 0px;
+}
+
+.constructionimg img{
+    max-width: 100%;
+    
+    height: auto;
+    margin: auto;
+    padding-top: 0px;
+}
+
 /*change size to fill the image left to right*/
 
 .aboutimg,
@@ -91,7 +103,7 @@ main {
     margin: 0;
 }
 
-
+/*hidden image for mobile, so use display none */
 .barimg img,
 .bowlingimg img{
     display: none;
@@ -112,6 +124,7 @@ main {
     font-style: normal;
 }
 
+/*hidden image for mobile, so use display none */
 .bowlingimg{
     display: none;
 }
@@ -193,7 +206,7 @@ main {
     width: 100%;
     height: auto;
     margin-top: 15px;
-    margin-bottom: 15px;
+    margin-bottom: 70px;
 }
 /*use nth-child to change the size for the sponsor logo*/
 .sponsors img:nth-child(2) {
@@ -279,3 +292,153 @@ footer {
 /*-----------------------------------------------
 Tablet Style
 --------------------------*/
+/* change the size for tablet*/
+/*setting the size for the h and the p*/
+h1{
+    font-size: 72px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+h2{
+    font-size: 40px;
+    font-style: italic;
+    margin-bottom: 0px;
+}
+
+h3{
+    font-size: 32px;
+    font-weight: lighter;
+    color: var(--green);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+p{
+    font-size: 18px;
+    font-weight: lighter;
+    line-height: 2;
+}
+
+/*.constructionimg {
+    max-width: 100%;
+    width: 90%;
+    height: auto;
+    margin: auto;
+   
+    justify-content: center;
+    padding-top: 38px;
+}
+*/
+
+/*change display, so the image can appear */
+.servicecontainer .wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.servicecontainer h2, h3,p{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    /*grid-row-start: 1;
+    grid-row-end: 3;*/
+}
+
+.servicecontainer .barimg{
+    display: grid;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    /*grid-row-start: 1;
+    grid-row-end: 3;*/
+}
+
+/*competitive section*/
+
+.competitivecontainer .wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.competitivecontainer h2,h3,p {
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.competitivecontainer .bowlingimg {
+   
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+/* change to display flex so its side by side with the button*/
+.newsletter {
+    display: flex;
+    justify-content: center;
+    padding-top: 17px;
+    padding-bottom: 17px;
+}
+
+/*change p to marign bottom 0 so in the same line with the button */
+.newsletter p{
+    margin-bottom: 0px;
+}
+
+/*make it balance by change the margin left and right*/
+.subscribebutton{
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+.fitness .wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.fitness h2,h3,p{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+.fitness img{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+/*climbing section*/
+.climbing .wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.climbing h2,h3,p{
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.climbingimage{
+    grid-column-start: 2;
+    grid-column-end: 3;
+}
+
+
+/*change the size for sponsors logo*/
+
+.sponsors img {
+    width: 80%;
+    height: auto;
+    margin-top: 15px;
+    margin-bottom: 70px;
+}
+/*use nth-child to change the size for the sponsor logo*/
+.sponsors img:nth-child(2) {
+    width: 45%;
+}
+
+.sponsors img:nth-child(3) {
+    width: 55%;
+}
+
+.sponsors img:nth-child(4) {
+    width: 45%;
+}
