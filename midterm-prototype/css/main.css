@@ -391,7 +391,7 @@ h3{
 p{
     font-size: 18px;
     font-weight: lighter;
-    line-height: 2;
+    line-height: 1.5;
 }
 
 
@@ -494,4 +494,5 @@ use transform to rotate the arrow image*/
 /*change width button for tablet style*/
 .learnmorebutton {
     width: 35%;
+}
 }

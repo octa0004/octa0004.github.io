@@ -150,7 +150,7 @@ change the border radius
     border-radius: 40px;
     margin-top: 8px;
     margin-bottom: 8px;
-
+    box-shadow: 2px 8px 8px rgba(51, 49, 49, 0.4);
     font-size: 32px;
     font-weight: bold;
 }
@@ -264,3 +264,100 @@ footer {
 /*-----------------------------------------------
 Tablet Style
 --------------------------*/
+@media only screen and (min-width: 768px){
+
+/* change the size for tablet*/
+/*setting the size for the h and the p*/
+h1,
+h2{
+    font-size: 72px;
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+h3{
+    font-size: 40px;
+}
+
+p{
+    font-size: 18px;
+    font-weight: lighter;
+    line-height: 1.5;
+}
+
+/*change size to smaller for the tablet */
+.contact img{
+    width: 85%;
+}
+
+/*adjust the padding for tablet style*/
+.contactform{
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 111px;
+}
+
+
+.contactform h2{
+    font-size: 72px;
+    font-weight: bold;
+    margin-top: 40px; 
+    margin-bottom: 40px; 
+}
+
+.contactform label{
+    font-size: 24px;
+    font-weight: lighter;
+    line-height: 2;
+}
+
+#fullname,
+#studentnumber,
+#email {
+    height: 50px;
+}
+
+#message {
+    height: 148px;
+}
+
+/*change submit button to the right*/
+.submitbutton{
+    width: 55%;
+    height: 65px;
+    line-height: 5px;
+    font-size: 40px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    white-space: nowrap;
+    box-shadow: 2px 8px 8px rgba(51, 49, 49, 0.4);
+    padding: 20px;
+    float: right;
+    
+}
+
+.location {
+    margin-top: 45px;
+    margin-bottom: 45px;
+
+}
+.location h2{
+    font-size: 72px;
+    font-weight: bold;
+}
+
+.location h3{
+    font-size: 40px;
+}
+
+.location p{
+    font-size: 18px;
+}
+
+/*change size for the location map*/
+iframe{
+    width: 100%;
+    height: 500px;
+}
+
+}

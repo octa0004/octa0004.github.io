@@ -292,6 +292,7 @@ footer {
 /*-----------------------------------------------
 Tablet Style
 --------------------------*/
+@media only screen and (min-width: 768px){
 /* change the size for tablet*/
 /*setting the size for the h and the p*/
 h1{
@@ -317,7 +318,7 @@ h3{
 p{
     font-size: 18px;
     font-weight: lighter;
-    line-height: 2;
+    line-height: 1.5;
 }
 
 /*.constructionimg {
@@ -441,4 +442,5 @@ p{
 
 .sponsors img:nth-child(4) {
     width: 45%;
+}
 }
