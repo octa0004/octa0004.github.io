@@ -69,7 +69,6 @@ main {
 }
 
 /*change size to fill the image left to right*/
-
 .aboutimg,
 .servicesimg {
     position: relative;
@@ -103,6 +102,11 @@ main {
     margin: 0;
 }
 
+.sectionwrapper {
+    width:80%;
+    margin: auto;
+}
+
 /*hidden image for mobile, so use display none */
 .barimg img,
 .bowlingimg img,
@@ -126,7 +130,7 @@ main {
 }
 
 .newsletter p{
-    font-size: 24px;
+    font-size: 18px;
     text-align: center;
     color: var(--lightgrey);
     margin-top: 0px;
@@ -285,8 +289,8 @@ Tablet Style
     }
 
 
-    .servicecontainer .wrapper,
-    .fitnesscontainer .wrapper{
+    .servicecontainer .sectionwrapper,
+    .fitnesscontainer .sectionwrapper{
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: 1;
@@ -294,8 +298,8 @@ Tablet Style
         margin-left: 20px;
     }
 
-    .competitivecontainer .wrapper,
-    .climbingcontainer .wrapper{
+    .competitivecontainer .sectionwrapper,
+    .climbingcontainer .sectionwrapper{
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 1;
@@ -303,21 +307,21 @@ Tablet Style
         margin-right: 20px;
     }
 
-    .wrapper{
+    .sectionwrapper{
         margin-top: 50px;
         margin-bottom: 50px;
         width: 66%;
     }
 
-    .wrapper>h2{
+    .sectionwrapper>h2{
         margin-top: 0px;
     }
 
-    .wrapper>h3{
+    .sectionwrapper>h3{
         margin-top: 5px;
     }
 
-    .wrapper>p{
+    .sectionwrapperr>p{
         margin-top: 5px;
         line-height: 35px;
     }
@@ -359,13 +363,13 @@ Tablet Style
     }
 
     /*competitive section*/
-
-    .competitivecontainer .wrapper {
+    .climbingcontainer .sectionwrapper, 
+    .competitivecontainer .sectionwrapper {
         grid-column-start: 1;
         grid-column-end: 2;
         grid-row-start: 1;
         grid-row-end: 2;
-        /*margin-left: 20px;*/
+        margin-left: 80px;
     }
 
     .bowlingimg img, 
@@ -388,19 +392,22 @@ Tablet Style
 
     /*change p to marign bottom 0 so in the same line with the button */
     .newsletter p{
+        font-size: 24px;
         margin-bottom: 0px;
     }
 
     /*make it balance by change the margin left and right*/
     .subscribebutton{
         margin-left: 60px;
-        margin-right: 60px;
+        margin-right: 0px;
     }
 
 
+    .thankyou h2{
+        margin-top: 70px;
+    }
 
     /*change the size for sponsors logo*/
-
     .sponsors img {
         width: 80%;
         height: auto;
