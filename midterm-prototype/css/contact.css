@@ -66,11 +66,12 @@ p{
 
 .contact img{
     max-width: 100%;
-    border-radius: none;
+    /*border-radius: none;*/
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
+
 /* change background color
 Make a center using display and margin
 border-radius to make round corner
@@ -184,16 +185,6 @@ iframe{
 
 
 
-/*use justify content space around so equal space around*/
-/*
-.socialmedialogo {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}*/
-
-
 /*start the footer area, use padding first 
 and then use position with mac height*/
 footer {
@@ -266,87 +257,86 @@ Tablet Style
 --------------------------*/
 @media only screen and (min-width: 768px){
 
-/* change the size for tablet*/
-/*setting the size for the h and the p*/
+    /* change the size for tablet*/
+    /*setting the size for the h and the p*/
 
-p{
-    font-size: 18px;
-    font-weight: lighter;
-    line-height: 1.5;
-}
+    p{
+        font-size: 18px;
+        font-weight: lighter;
+        line-height: 1.5;
+    }
 
-/*change size to smaller for the tablet */
-.contact img{
-    width: 85%;
-}
+    /*change size to smaller for the tablet */
+    .contact img{
+        width: 85%;
+    }
 
-/*adjust the padding for tablet style*/
-.contactform{
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 111px;
-}
+    /*adjust the padding for tablet style*/
+    .contactform{
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 111px;
+    }
 
-.contactform h2{
-    font-size: 72px;
-    font-weight: bold;
-    margin-top: 40px; 
-    margin-bottom: 40px; 
-}
+    .contactform h2{
+        font-size: 72px;
+        font-weight: bold;
+        margin-top: 40px; 
+        margin-bottom: 40px; 
+    }
 
-.contactform label{
-    font-size: 24px;
-    font-weight: lighter;
-    line-height: 2;
-}
+    .contactform label{
+        font-size: 24px;
+        font-weight: lighter;
+        line-height: 2;
+    }
 
-#fullname,
-#studentnumber,
-#email {
-    height: 50px;
-}
+    #fullname,
+    #studentnumber,
+    #email {
+        height: 50px;
+    }
 
-#message {
-    height: 148px;
-}
+    #message {
+        height: 148px;
+    }
 
-/*change submit button to the right*/
-.submitbutton{
-    width: 45%;
-    height: 65px;
-    line-height: 5px;
-    font-size: 40px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    white-space: nowrap;
-    box-shadow: 2px 8px 8px rgba(51, 49, 49, 0.4);
-    padding: 20px;
-    float: right;
-    
-}
+    /*change submit button to the right*/
+    .submitbutton{
+        width: 45%;
+        height: 65px;
+        line-height: 5px;
+        font-size: 40px;
+        font-family: 'Raleway', sans-serif;
+        font-weight: bold;
+        white-space: nowrap;
+        box-shadow: 2px 8px 8px rgba(51, 49, 49, 0.4);
+        padding: 20px;
+        float: right;  
+    }
 
-.location {
-    margin-top: 45px;
-    margin-bottom: 45px;
+    .location {
+        margin-top: 45px;
+        margin-bottom: 45px;
 
-}
-.location h2{
-    font-size: 72px;
-    font-weight: bold;
-}
+    }
+    .location h2{
+        font-size: 72px;
+        font-weight: bold;
+    }
 
-.location h3{
-    font-size: 40px;
-}
+    .location h3{
+        font-size: 40px;
+    }
 
-.location p{
-    font-size: 18px;
-}
+    .location p{
+        font-size: 18px;
+    }
 
-/*change size for the location map*/
-iframe{
-    width: 100%;
-    height: 500px;
-}
+    /*change size for the location map*/
+    iframe{
+        width: 100%;
+        height: 500px;
+    }
 
 }
