@@ -37,11 +37,19 @@ a {
 a:link,
 a:visited { 
     display: block;
-    /*padding: 1em 0;*/
     text-decoration: none; 
     color: var(--lightgrey);
- 
 }
+
+/*a:link { 
+    display: block;
+    text-decoration: none; 
+    color: var(--lightgrey);
+}
+
+a:visited { 
+    font-weight: bold; 
+}*/
 
 a:hover,
 a:focus,
