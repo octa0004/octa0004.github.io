@@ -161,6 +161,20 @@ main {
     margin: 0 auto;
 }
 
+/* add animation transition for button */
+.subscribebutton {
+    transition-property: background-color;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-out;
+    transition-delay: 0.1s;
+}
+
+/*transition to dark green*/
+.subscribebutton:hover {
+    background-color: #1F7A60
+}
+
+
 /* change style to normal for this pecific h2, since the other h2 is different style */
 .servicessection h2,
 .fitnesscontainer h2{

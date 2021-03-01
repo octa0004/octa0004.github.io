@@ -110,6 +110,11 @@ svg{
     color: var(--grey);
 }
 
+.discoverac p,
+.discoveren p {
+    line-height: 35px;
+}
+
 .discovericon {
     min-height: 100%;
     display: flex;
@@ -139,6 +144,19 @@ svg{
     white-space: nowrap;
     margin-top: 0;
 }
+
+/*add animation to scroll with scroll behaviour*/
+/*@keyframes scrollmove {
+    from {top:0px}
+    to{top:200px}
+}
+
+.scroll {
+    animation: scrollmove 1s;
+    animation-fill-mode: forwards;
+    /*scroll-behavior: smooth;
+}*/
+
 /* use border radius to make round shape button and use box shadow to add shadow*/
 .button {
     display: block;
@@ -155,6 +173,32 @@ svg{
     box-shadow: 8px 8px 20px rgba(51, 49, 49, 0.4);
     padding: 15px;
 }
+
+
+/* add animation transition for button */
+.button {
+    transition-property: background-color;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-out;
+    transition-delay: 0.1s;
+}
+
+/*transition to dark green*/
+.button:hover {
+    background-color: #1F7A60
+}
+
+/*add animation to learnmore button for pressed effect*/
+
+.learnmorebutton:hover {
+    background-color: #1F7A60
+}
+
+.learnmorebutton:active {
+    background-color: var(--green);
+    transform: translateY(4px);
+}
+
 
 /* move button to the right side, float
 change width size*/
@@ -405,8 +449,7 @@ Tablet Style
         flex-wrap: nowrap;
         flex-direction: row;
         justify-content: space-between;
-        margin: 0px;
-
+        margin: 25px 0 0 0;
     }
 
     /*remove flex basis so can spread through evenly*/
@@ -422,15 +465,20 @@ Tablet Style
     change font size */
     .button {
         width: 50%;
+        height: 65px;
         font-size: 40px;
-        margin: auto;
+        margin-left: auto;
+        margin-right:auto;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        
     }
 
     /*change image size smaller for the tablet */
     .discoverimagesvg img{
         display: block;
         max-width: 100%;
-        width: 60%;
+        width: 65%;
         height: auto;
         margin: auto;
         text-align: center;
@@ -598,7 +646,7 @@ Desktop Style
 
     .headercontainer .button{
         width: 60%;
-        line-height: 47/2px;
+        height: 65px;
     }
 
     .scroll{

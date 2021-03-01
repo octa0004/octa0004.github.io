@@ -156,6 +156,19 @@ change the border radius
     font-weight: bold;
 }
 
+/* add animation transition for submit button */
+.submitbutton {
+    transition-property: background-color;
+    transition-duration: 0.15s;
+    transition-timing-function: ease-out;
+    transition-delay: 0.1s;
+}
+
+/*transition to different color*/
+.submitbutton:hover {
+    background-color: #7D7A77
+}
+
 .location{
     margin-top: 100px;
     margin-bottom: 100px;
@@ -384,7 +397,7 @@ Desktop Style
     }
 
     .submitbutton {
-        width: 35%;
+        width: 35%;    
     }
 
     .location {
