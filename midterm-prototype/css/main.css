@@ -157,6 +157,16 @@ svg{
     /*scroll-behavior: smooth;
 }*/
 
+
+/*.scroll {
+    transition: transform 0.5s;
+}
+
+.scroll:active {
+    transform: translate(0px,200px);
+}
+*/
+
 /* use border radius to make round shape button and use box shadow to add shadow*/
 .button {
     display: block;
@@ -786,7 +796,6 @@ Desktop Style
     /*change to bigger size*/
     .backtotop img{
         width: 50px;
-        
     }
 
     .backtotop p{
@@ -795,7 +804,6 @@ Desktop Style
         margin-bottom: 0px;
     }
     
-
 
 
 }
