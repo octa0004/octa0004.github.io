@@ -534,7 +534,10 @@ Desktop Style
         padding-left: 90px;
     }
 
-
+    /*for desktop, change width so it fill left to right*/
+    .thankyou {
+        width: 100%;
+    }
 
     .thankyou h2{
         text-align: center;
@@ -554,8 +557,9 @@ Desktop Style
     }
     
     .sponsors img{
-        width: 40%;
+        width: 36%;
         height: auto;
+        padding-right: 50px;
         /*margin-top: 96px;
         margin-bottom: 154px;*/
         margin: auto;
@@ -565,15 +569,15 @@ Desktop Style
 
     /*use nth-child to change the size for the sponsor logo*/
     .sponsors img:nth-child(2) {
-        width: 20%;
+        width: 16%;
     }
     
     .sponsors img:nth-child(3) {
-        width: 20%;
+        width: 16%;
     }
     
     .sponsors img:nth-child(4) {
-        width: 13%;
+        width: 9%;
     }
 
 
