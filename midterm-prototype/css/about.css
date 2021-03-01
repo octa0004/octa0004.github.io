@@ -68,6 +68,14 @@ main {
     padding-top: 0px;
 }
 
+.aboutsection {
+    background-color: var(--lightgrey);
+    
+    padding-bottom: 20px;
+}
+
+
+
 /*change size to fill the image left to right*/
 .aboutimg,
 .servicesimg {
@@ -225,6 +233,10 @@ footer {
 
 }
 
+.site-footer p{
+    padding-right: 0px;
+}
+
 .site-footer > div{
     overflow: hidden;
     display:inline;
@@ -298,15 +310,7 @@ Tablet Style
         margin-left: 20px;
     }
 
-    .competitivecontainer .sectionwrapper,
-    .climbingcontainer .sectionwrapper{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        margin-right: 20px;
-    }
-
+    
     .sectionwrapper{
         margin-top: 50px;
         margin-bottom: 50px;
@@ -362,7 +366,7 @@ Tablet Style
 
     }
 
-    /*competitive section*/
+    
     .climbingcontainer .sectionwrapper, 
     .competitivecontainer .sectionwrapper {
         grid-column-start: 1;
@@ -434,11 +438,147 @@ Tablet Style
 Desktop Style
 --------------------------*/
 @media only screen and (min-width: 992px){
+    header {
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+
+    p {
+        font-size: 24px;
+    }
+
+    .navlink {
+        max-width: 1920px;
+    }
+
+    .wrapper {
+        width: 90%;
+    }
+
+    /* make a grid for the header */
+    .aboutcontainer {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-column-start: 1;
+        grid-column-end: 2;
+        margin-top: 125px;
+        margin-bottom: 125px;
+    }
+
+    .constructionimg {
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    /*use display flex to change to 1 row*/
+    /*change the height size, its longer for desktop version*/
+    .aboutsection .wrapper {
+        display: flex;
+        flex-shrink: 3;
+        margin-top: 200px;
+        margin-bottom: 200px;
+
+    }
+
+    .aboutsection h2,p {
+        padding-right: 95px;
+    }
+
+
+ 
+    /*change size for desktop*/
+    .newsletter p{
+        font-size: 40px;
+        padding-right: 24px;
+    }
+
+    /*change the width for the subsribe button and margin left so it close with the text*/
+    .subscribebutton {
+        width: 15%;
+        font-size: 27px;
+        font-weight: bold;
+        margin-left: 20px;
+    }
+
+    .servicecontainer,
+    .competitivecontainer,
+    .fitnesscontainer,
+    .climbingcontainer {
+        margin-top: 80px;
+    }
+
+
+    .sectionwrapper{
+        width: 90%;
+    }
+
+    /*change size*/
+    .barimg img, 
+    .bowlingimg img, 
+    .fitnessimg img, 
+    .climbingimg img {
+        display: block;
+        width: 814px;
+        height: 337px;
+        object-fit: cover;
+        /*object-position: -100px;*/
+    }
+
+    .barimg,
+    .fitnessimg {
+        padding-left: 90px;
+    }
 
 
 
+    .thankyou h2{
+        text-align: center;
+        font-size: 72px;
+        font-weight: bold;
+        width: 625px;
+        margin: 140px auto;
+    }
 
+    .sponsors {
+        display: flex;
+        margin: auto;
+        margin-bottom: 154px;
+        text-align: center;
+        justify-content: space-between ;
 
-
+    }
     
+    .sponsors img{
+        width: 40%;
+        height: auto;
+        /*margin-top: 96px;
+        margin-bottom: 154px;*/
+        margin: auto;
+        
+    }
+
+
+    /*use nth-child to change the size for the sponsor logo*/
+    .sponsors img:nth-child(2) {
+        width: 20%;
+    }
+    
+    .sponsors img:nth-child(3) {
+        width: 20%;
+    }
+    
+    .sponsors img:nth-child(4) {
+        width: 13%;
+    }
+
+
+    /*change to bigger size*/
+    .backtotop img{
+        width: 50px;
+    }
+
+    .backtotop p{
+        font-size: 16px;
+        margin-top: 0px;
+    }
 }

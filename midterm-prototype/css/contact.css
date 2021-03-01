@@ -349,9 +349,61 @@ Desktop Style
 --------------------------*/
 @media only screen and (min-width: 992px){
 
+    header {
+        max-width: 1920px;
+        margin: 0 auto;
+    }
+
+    p {
+        font-size: 24px;
+    }
+
+    .navlink {
+        max-width: 1920px;
+    }
+
+    /* start with using diplay grid*/
+    section {
+        display: grid;
+        grid-template-columns: 55% 45%;
+        width:95%;
+        margin-top: 125px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .contact-header {
+        grid-column-start: 1;
+        grid-column-end: 2;
+    }
+
+    .contactform {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        padding-top: 10px;
+    }
+
+    .submitbutton {
+        width: 35%;
+    }
+
+    .location {
+        grid-template-columns: 48% 50%;
+        margin-bottom: 125px;
+    }
+
+    .iframe {
+        width: 812px;
+    }
+    /*change to bigger size*/
+    .backtotop img{
+        width: 50px;
+    }
+
+    .backtotop p{
+        font-size: 16px;
+        margin-top: 0px;
+    }
 
 
-
-
-    
 }

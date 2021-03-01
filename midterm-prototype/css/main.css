@@ -520,11 +520,225 @@ Tablet Style
 Desktop Style
 --------------------------*/
 @media only screen and (min-width: 992px){
+    header {
+        max-width: 1920px;
+        margin: 0 auto;
+    }
 
+    p {
+        font-size: 24px;
+    }
 
+    .navlink {
+        max-width: 1920px;
+        padding-right: 0px;
+    }
 
+    /*change and specification for the navigation*/
+    li:first-child{
+        margin-left: 140px;
+    }
 
-
-
+    li:last-child{
+        margin-right: 140px;
+    }
     
+    li{
+        margin-right: 20px;
+    }
+
+    .wrapper {
+        width: 90%;
+        display: block;
+        margin-left: 140px;
+        margin-right: 140px;
+    }
+
+    /*start display grid*/
+    .headercontainer{
+        display: grid;
+        grid-column: 2;
+        grid-row: 1;
+        grid-template-columns: 45% 55%;
+    }
+
+    .headertext{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        justify-content: start;
+        width: 80%;
+        margin-right: auto;
+    }
+
+    /*margin left to make same alignment with the text*/
+    .button {
+        margin-left: 0px;
+        width: 25%;
+    }
+
+    .discoverimagesvg {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        margin-right: 100px;
+    }
+
+    .discoverimagesvg img{
+        width: 100%
+    }
+
+    .discovericon{
+        min-height: 0%;
+        margin-bottom: 25px;
+    }
+
+    .discovericon svg{
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+    .headercontainer .button{
+        width: 60%;
+        line-height: 47/2px;
+    }
+
+    .scroll{
+        margin-top: 30px;
+    }
+
+    .scroll img{
+        width: 50px;
+        height: 50px;
+    }
+
+    /* change to use display grid to make it side by side,
+    add background color,
+    add padding to make the spacing look the same and align*/
+    .discover {
+        display: grid;
+        background-color: var(--lightgrey);
+        grid-template-columns: repeat(2,1fr);
+        padding-left: 110px;
+        padding-right: 110px;
+        padding-top: 80px;
+    }
+
+    .discover>.wrapper{
+        margin: 0 0 0 0 ;
+        width: 100%;
+    }
+    
+    .discoverac{
+        padding: 0px;
+        padding-left: 40px;
+        overflow: visible;
+    }
+
+    .discoverac p{
+        font-size: 18px;
+    }
+
+    .discoverimage{
+        width:100%;
+        max-height: 100%;
+        object-fit: cover;
+    }
+
+    .discoverimage img{
+        max-height: 337px;
+        
+    }
+
+    .discover .wrapper{
+        grid-column-start: 2;
+        grid-column-end: 3;
+    }
+
+    /*change width shorter*/
+    .learnmorebutton{
+        width: 33%;
+        font-size: 27px;
+        line-height: 1.5px;
+    }
+
+
+    /*change to 3 side by side layout*/
+    .sa .wrapper{
+        display: grid;
+        grid-row: 1;
+        grid-column: 3;
+        grid-template-columns: 20% 20% 60%;
+    }
+
+    .simon img{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .sa h4 {
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .sa p {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+
+    .discoverent {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        padding-left: 110px;
+        padding-right: 110px;
+        padding-top: 80px;
+    }
+
+    .discoverent .wrapper{
+        width: 90%;
+    }
+
+    .discoverentertainment{
+        width:100%;
+        max-height: 100%;
+        object-fit: cover;
+    }
+
+    .discoverentertainment img{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        max-height: 337px;
+    }
+
+    .discoveren .wrapper{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        padding-top: 0px;
+        padding-left: 0px;
+    }
+
+
+
+
+
+
+    /*change to bigger size*/
+    .backtotop img{
+        width: 50px;
+        
+    }
+
+    .backtotop p{
+        font-size: 16px;
+        margin-top: 0px;
+    }
+    
+
+
+
 }
