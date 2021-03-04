@@ -35,7 +35,7 @@
                             </li>
 
                             <!--use href and link in to seperate pages-->
-                            <li><a href="index.html">Home</a></li>
+                            <li><a class="current" href="index.html">Home</a></li>
                             <li><a href="about.html">About</a></li>
                             <li><a href="contact.html">Contact</a></li>
                     
@@ -103,11 +103,11 @@
                         </div>
 
 
-                        <div class="scroll">
+                        <div class="scroll">  
                             <!--add scroll down button image and will change image direction in css-->
                             <!--<button class="scrollbutton" type="submit"-->
-                                 <p>scroll</p>
-                                <img src="icons/arrow.svg" alt="arrow image">                   
+                                <p>scroll</p>
+                                <a href="#scrollend"><img src="icons/arrow.svg" alt="arrow image"></a>                  
                         </div>
                         
                     </section>
@@ -119,7 +119,7 @@
         <main>
         <!-- main content area-->
             <!-- Discover AC-->
-            <section>
+            <section id="scrollend">
                 <div class="discover">
                     <div class="discoverimage">
                         <img src="images/school.jpg" alt="schoolimage">    
@@ -169,6 +169,7 @@
             <!-- Discover Entertainment-->
             <section>
                 <div class="discoverent">
+               <!-- <div class="discoverent">-->
                     <div class="discoverentertainment">
                         <img src="images/entertainment.jpg" alt="entertanimentimg">
                     </div>

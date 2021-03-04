@@ -161,6 +161,27 @@ main {
     margin: 0 auto;
 }
 
+/*make a keyframe for the wave animation*/
+@keyframes wave{
+    0%,
+    50%,
+    100% {
+        background-color: var(--green);
+        transform: scale(1);
+    }
+
+    25% {
+        background-color: #286654;
+        transform: scale(1,1.5);
+    }
+
+    75%{
+        background-color: #102B23;
+        transform: scale(1,1.5);
+    }
+}
+
+
 /* add animation transition for button */
 .subscribebutton {
     transition-property: background-color;
@@ -171,9 +192,12 @@ main {
 
 /*transition to dark green*/
 .subscribebutton:hover {
-    background-color: #1F7A60
+    background-color: #1F7A60;
+    /*add the animation wave*/
+    animation-name: wave;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
-
 
 /* change style to normal for this pecific h2, since the other h2 is different style */
 .servicessection h2,
@@ -199,7 +223,7 @@ main {
     font-weight: bold;
     font-style: normal;
     text-align: center;
-    overflow: auto;
+    /*overflow: auto;*/
     margin-bottom: 15px;
 }
 
@@ -558,6 +582,7 @@ Desktop Style
         font-size: 72px;
         font-weight: bold;
         width: 625px;
+    
         margin: 140px auto;
     }
 

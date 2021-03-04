@@ -165,7 +165,7 @@ change the border radius
     font-weight: bold;
 }
 
-/* add animation transition for submit button */
+/* add transition for submit button */
 .submitbutton {
     transition-property: background-color;
     transition-duration: 0.15s;
@@ -173,9 +173,11 @@ change the border radius
     transition-delay: 0.1s;
 }
 
-/*transition to different color*/
+/*transition to different color
+bigger when its hover */
 .submitbutton:hover {
-    background-color: #7D7A77
+    background-color: #7D7A77;
+    transform: scale(1.3);
 }
 
 .location{

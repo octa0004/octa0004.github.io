@@ -4,6 +4,7 @@ html {
     box-sizing: border-box;
     height: 100%;
     width: 100%;
+    scroll-behavior: smooth;
 }
 
 /*set color library for easy use*/
@@ -145,27 +146,6 @@ svg{
     margin-top: 0;
 }
 
-/*add animation to scroll with scroll behaviour*/
-/*@keyframes scrollmove {
-    from {top:0px}
-    to{top:200px}
-}
-
-.scroll {
-    animation: scrollmove 1s;
-    animation-fill-mode: forwards;
-    /*scroll-behavior: smooth;
-}*/
-
-
-/*.scroll {
-    transition: transform 0.5s;
-}
-
-.scroll:active {
-    transform: translate(0px,200px);
-}
-*/
 
 /* use border radius to make round shape button and use box shadow to add shadow*/
 .button {
@@ -184,22 +164,32 @@ svg{
     padding: 15px;
 }
 
+/* make keyframe for the button to jump*/
 
-/* add animation transition for button */
+@keyframes jump{
+    50% {transform: translate(0, -30px);}
+}
+
+/* add transition for button */
 .button {
     transition-property: background-color;
     transition-duration: 0.15s;
     transition-timing-function: ease-out;
     transition-delay: 0.1s;
 }
+ 
 
-/*transition to dark green*/
+/*transition to dark green and jump */
 .button:hover {
-    background-color: #1F7A60
+    background-color: #1F7A60;
+
+    /*make the button jump with the transform*/
+    animation-name: jump;
+    animation-duration: 1s;
 }
 
-/*add animation to learnmore button for pressed effect*/
 
+/*add transfrom to learnmore button for pressed effect*/
 .learnmorebutton:hover {
     background-color: #1F7A60
 }
