@@ -86,6 +86,7 @@ main {
     text-align: center;
 }
 
+/*add filter to change to grayscale so can overlay with the background color*/
 .aboutimg img,
 .servicesimg img{
     width: 100%;

@@ -182,7 +182,7 @@ bigger when its hover */
 
 .location{
     margin-top: 100px;
-    margin-bottom: 100px;
+    /*margin-bottom: 100px;*/
 }
 
 .location h2{
@@ -341,9 +341,8 @@ Tablet Style
 
     .location {
         margin-top: 45px;
-        margin-bottom: 45px;
-
     }
+
     .location h2{
         font-size: 72px;
         font-weight: bold;

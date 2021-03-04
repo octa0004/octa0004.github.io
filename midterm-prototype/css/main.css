@@ -372,7 +372,7 @@ Tablet Style
 --------------------------*/
 @media only screen and (min-width: 768px){
 
-    /* change to menu direction */
+    /* change menu direction */
     /*repeat navigation bar*/
 
     .wrapper{
@@ -465,7 +465,7 @@ Tablet Style
     change font size */
     .button {
         width: 50%;
-        height: 65px;
+        /*height: 65px;*/
         font-size: 40px;
         margin-left: auto;
         margin-right:auto;
@@ -621,7 +621,7 @@ Desktop Style
     /*margin left to make same alignment with the text*/
     .button {
         margin-left: 0px;
-        width: 25%;
+        /*width: 25%;*/
     }
 
     .discoverimagesvg {
@@ -646,7 +646,7 @@ Desktop Style
 
     .headercontainer .button{
         width: 60%;
-        height: 65px;
+        /*height: 65px;*/
     }
 
     .scroll{
