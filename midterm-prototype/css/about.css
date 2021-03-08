@@ -27,7 +27,6 @@ html {
     padding: 0px;
     margin-left: auto;
     margin-right: auto;
-    
 }
 
 a { 
@@ -38,7 +37,6 @@ a {
 a:link,
 a:visited { 
     display: block;
-    /*padding: 1em 0;*/
     text-decoration: none; 
     color: var(--lightgrey);
 }
@@ -61,7 +59,6 @@ main {
 
 .constructionimg img{
     max-width: 100%;
-    
     height: auto;
     margin: auto;
     padding-top: 0px;
@@ -75,11 +72,25 @@ main {
 /*change size to fill the image left to right*/
 .aboutimg,
 .servicesimg {
+    height: 250px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     position: relative;
     width: 100vw;
-    background: rgba(38,166,130,1);
+    background-blend-mode: multiply;
+    background-color: rgba(38,166,130,1);
     overflow: hidden;
     text-align: center;
+}
+
+/*use the background image instead of image tag, so can use the multiply effect*/
+.servicesimg {
+    background-image: url(/images/services.jpg);
+}
+
+.aboutimg {
+    background-image: url(/images/about.jpg);
 }
 
 /*add filter to change to grayscale so can overlay with the background color*/
@@ -128,7 +139,6 @@ main {
 
 .newsletter{
     background-color: var(--grey);
-    /*margin-top: 20px;*/
     padding-top: 30px;
     padding-bottom: 30px;
 }
@@ -157,7 +167,8 @@ main {
     margin: 0 auto;
 }
 
-/*make a keyframe for the wave animation*/
+/*make a keyframe for the wave animation
+use a different precentage so it can show the wave affect*/
 @keyframes wave{
     0%,
     50%,
@@ -195,7 +206,8 @@ main {
     animation-iteration-count: infinite;
 }
 
-/* change style to normal for this pecific h2, since the other h2 is different style */
+/* change style to normal for this specific h2, 
+since the other h2 is different style */
 .servicessection h2,
 .fitnesscontainer h2{
     font-size: 40px;
@@ -236,7 +248,8 @@ main {
     margin-bottom: 70px;
 }
 
-/*use nth-child to change the size for the sponsor logo*/
+/*use nth-child to change the size for the sponsor logo
+because need to adjust each logo size*/
 .sponsors img:nth-child(2) {
     width: 65%;
 }
@@ -606,5 +619,5 @@ Desktop Style
         margin-top: 0px;
         margin-bottom: 0px;
     }
-    
+
 }
