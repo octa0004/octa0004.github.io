@@ -32,7 +32,6 @@ html {
     padding: 0px;
     margin-left: auto;
     margin-right: auto;
-    
 }
 
 a { 
@@ -40,14 +39,11 @@ a {
     color:var(--lightgrey);  
 }
 
-
 a:link,
 a:visited { 
     display: block;
-    /*padding: 1em 0;*/
     text-decoration: none; 
     color: var(--lightgrey);
- 
 }
 
 a:hover,
@@ -69,18 +65,18 @@ li {
 }
 
 /*setting the size for the h and the p*/
-h1{
+h1 {
     font-size: 40px;
     font-weight: bold;
 }
 
-h2{
+h2 {
     font-size: 32px;
     font-style: italic;
     margin-bottom: 0px;
 }
 
-h3{
+h3 {
     font-size: 24px;
     font-weight: lighter;
     color: var(--green);
@@ -88,14 +84,13 @@ h3{
     margin-bottom: 5px;
 }
 
-p{
+p {
     font-size: 20px;
     font-weight: lighter;
     line-height: 2;
 }
 
 /* starting point for the main */
-
 svg{
     display: block;
     margin: auto;
@@ -146,7 +141,6 @@ svg{
     margin-top: 0;
 }
 
-
 /* use border radius to make round shape button and use box shadow to add shadow*/
 .button {
     display: block;
@@ -165,7 +159,6 @@ svg{
 }
 
 /* make keyframe for the button to jump*/
-
 @keyframes jump{
     50% {transform: translate(0, -30px);}
 }
@@ -177,17 +170,14 @@ svg{
     transition-timing-function: ease-out;
     transition-delay: 0.1s;
 }
- 
 
 /*transition to dark green and jump */
 .button:hover {
     background-color: #1F7A60;
-
     /*make the button jump with the transform*/
     animation-name: jump;
     animation-duration: 1s;
 }
-
 
 /*add transfrom to learnmore button for pressed effect*/
 .learnmorebutton:hover {
@@ -199,10 +189,8 @@ svg{
     transform: translateY(4px);
 }
 
-
 /* move button to the right side, float
 change width size*/
-
 .learnmorebutton {
     width: 55%;
     line-height: 5px;
@@ -220,7 +208,6 @@ change width size*/
     float: right;
     margin-bottom: 30px;
 }
-
 
 .discoverimagesvg img{
     max-width: 100%;
@@ -253,7 +240,6 @@ change width size*/
     padding-bottom: 30px;
 }
 
-
 /*use border radius so it change shape to round from the css*/
 .simonimg{
     max-width: 100%;
@@ -273,7 +259,6 @@ change width size*/
     margin-left: auto;
     margin-right: auto;
     margin-top: 30px;
-
 }
 
 .sa h4{
@@ -284,6 +269,7 @@ change width size*/
     font-weight: normal;
     margin-bottom: 5px;
 }
+
 .sa p{
     color: var(--lightgrey);
     font-size: 16px;
@@ -315,14 +301,12 @@ footer {
     flex: 1 1 auto;
     align-items:center;
     justify-content: center;
-
 }
 
 .site-footer > div{
     overflow: hidden;
     display:inline;
 }
-
 
 .site-footer > div > p{
     font-size: 24px;
@@ -337,7 +321,6 @@ footer {
     align-self: flex-end;
     right: 20px;
 }
-
 
 /*use display flex so it can change side by side with the back to top*/
 .socialmedialogo {
@@ -371,10 +354,8 @@ footer {
 Tablet Style
 --------------------------*/
 @media only screen and (min-width: 768px){
-
     /* change menu direction */
     /*repeat navigation bar*/
-
     .wrapper{
         margin-top: 50px;
         margin-bottom: 50px;
@@ -385,7 +366,6 @@ Tablet Style
         position: absolute;
         left: 0;
         top: 0;
-    
         margin-left: 80px;
     }
 
@@ -397,7 +377,6 @@ Tablet Style
         padding-right: 50px;
         padding-top: 30px;
         padding-bottom: 30px;
-        
         max-width: 1200px;
     }
 
@@ -408,9 +387,7 @@ Tablet Style
         margin-left: 20px;
         margin-right: 0px;
         padding: 5px;
-    
     }
-
 
     /* change the size for tablet*/
     /*setting the size for the h and the p*/
@@ -441,8 +418,6 @@ Tablet Style
         line-height: 1.5;
     }
 
-
-
     /*change to 1 row, flex no wrap
     change the justify content for same spacing in the middle*/
     .discovericon {
@@ -460,7 +435,6 @@ Tablet Style
         flex-direction: column;
     }
 
-
     /*change the width for the tablet display,
     change font size */
     .button {
@@ -470,8 +444,7 @@ Tablet Style
         margin-left: auto;
         margin-right:auto;
         margin-top: 30px;
-        margin-bottom: 30px;
-        
+        margin-bottom: 30px;  
     }
 
     /*change image size smaller for the tablet */
@@ -488,7 +461,6 @@ Tablet Style
 
     /* change display, so it will show up for tablet style
     use transform to rotate the arrow image*/
-
     .scroll {
         display: block;
     }
@@ -519,7 +491,6 @@ Tablet Style
     .discoverimage img{   
         padding-top: 0px;
     }
-
 
     /* use grid to make image on the left and text on the right */
     .sa .wrapper {
@@ -562,6 +533,7 @@ Tablet Style
         width: 35%;
         margin-bottom: 0px;
     }
+
 }
 
 /*-----------------------------------------------
@@ -621,7 +593,6 @@ Desktop Style
     /*margin left to make same alignment with the text*/
     .button {
         margin-left: 0px;
-        /*width: 25%;*/
     }
 
     .discoverimagesvg {
@@ -646,7 +617,6 @@ Desktop Style
 
     .headercontainer .button{
         width: 60%;
-        /*height: 65px;*/
     }
 
     .scroll{
@@ -694,8 +664,7 @@ Desktop Style
     }
 
     .discoverimage img{
-        max-height: 337px;
-        
+        max-height: 337px;  
     }
 
     .discover .wrapper{
@@ -748,7 +717,6 @@ Desktop Style
         margin-right: 140px;
     }
 
-
     .discoverent {
         display: grid;
         grid-template-columns: repeat(2,1fr);
@@ -794,6 +762,4 @@ Desktop Style
         margin-bottom: 0px;
     }
     
-
-
 }

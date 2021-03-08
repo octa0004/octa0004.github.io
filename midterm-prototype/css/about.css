@@ -41,7 +41,6 @@ a:visited {
     /*padding: 1em 0;*/
     text-decoration: none; 
     color: var(--lightgrey);
- 
 }
 
 a:hover,
@@ -70,11 +69,8 @@ main {
 
 .aboutsection {
     background-color: var(--lightgrey);
-    
     padding-bottom: 20px;
 }
-
-
 
 /*change size to fill the image left to right*/
 .aboutimg,
@@ -97,7 +93,6 @@ main {
     opacity: 0.5;
     vertical-align: top;;
 }
-
 
 .aboutimg h3,
 .servicesimg h3 {
@@ -214,6 +209,7 @@ main {
     font-style: normal;
     font-weight: bold;
 }
+
 .thankyou{
     width: 80%;
     margin: auto;
@@ -224,7 +220,6 @@ main {
     font-weight: bold;
     font-style: normal;
     text-align: center;
-    /*overflow: auto;*/
     margin-bottom: 15px;
 }
 
@@ -240,6 +235,7 @@ main {
     margin-top: 15px;
     margin-bottom: 70px;
 }
+
 /*use nth-child to change the size for the sponsor logo*/
 .sponsors img:nth-child(2) {
     width: 65%;
@@ -252,7 +248,6 @@ main {
 .sponsors img:nth-child(4) {
     width: 60%;
 }
-
 
 /*start the footer area, use padding first 
 and then use position with max height*/
@@ -269,7 +264,6 @@ footer {
     flex: 1 1 auto;
     align-items:center;
     justify-content: center;
-
 }
 
 .site-footer p{
@@ -280,7 +274,6 @@ footer {
     overflow: hidden;
     display:inline;
 }
-
 
 .site-footer > div > p{
     font-size: 24px;
@@ -295,7 +288,6 @@ footer {
     align-self: flex-end;
     right: 20px;
 }
-
 
 /*use display flex so it can change side by side with the back to top*/
 .socialmedialogo {
@@ -339,7 +331,6 @@ Tablet Style
         grid-row: 1;
     }
 
-
     .servicecontainer .sectionwrapper,
     .fitnesscontainer .sectionwrapper{
         grid-column-start: 2;
@@ -349,7 +340,6 @@ Tablet Style
         margin-left: 20px;
     }
 
-    
     .sectionwrapper{
         margin-top: 50px;
         margin-bottom: 50px;
@@ -402,10 +392,8 @@ Tablet Style
         height: 375px;
         object-fit: cover;
         object-position: -100px;
-
     }
 
-    
     .climbingcontainer .sectionwrapper, 
     .competitivecontainer .sectionwrapper {
         grid-column-start: 1;
@@ -423,7 +411,6 @@ Tablet Style
         object-fit: cover;
         object-position: -10px;
     }
-
 
     /* change to display flex so its side by side with the button*/
     .newsletter {
@@ -445,7 +432,6 @@ Tablet Style
         margin-right: 0px;
     }
 
-
     .thankyou h2{
         margin-top: 70px;
     }
@@ -457,6 +443,7 @@ Tablet Style
         margin-top: 15px;
         margin-bottom: 70px;
     }
+
     /*use nth-child to change the size for the sponsor logo*/
     .sponsors img:nth-child(2) {
         width: 45%;
@@ -471,7 +458,6 @@ Tablet Style
     }
 
 }
-
 
 /*-----------------------------------------------
 Desktop Style
@@ -516,15 +502,12 @@ Desktop Style
         flex-shrink: 3;
         margin-top: 200px;
         margin-bottom: 200px;
-
     }
 
     .aboutsection h2,p {
         padding-right: 95px;
     }
 
-
- 
     /*change size for desktop*/
     .newsletter p{
         font-size: 40px;
@@ -565,7 +548,6 @@ Desktop Style
         width: 814px;
         height: 337px;
         object-fit: cover;
-        /*object-position: -100px;*/
     }
 
     .barimg,
@@ -583,7 +565,6 @@ Desktop Style
         font-size: 72px;
         font-weight: bold;
         width: 625px;
-    
         margin: 140px auto;
     }
 
@@ -593,17 +574,14 @@ Desktop Style
         margin-bottom: 154px;
         text-align: center;
         justify-content: space-between ;
-
     }
     
     .sponsors img{
         width: 36%;
         height: auto;
         padding-right: 50px;
-        margin: auto;
-        
+        margin: auto;  
     }
-
 
     /*use nth-child to change the size for the sponsor logo*/
     .sponsors img:nth-child(2) {
@@ -618,7 +596,6 @@ Desktop Style
         width: 9%;
     }
 
-
     /*change to bigger size*/
     .backtotop img{
         width: 50px;
@@ -629,4 +606,5 @@ Desktop Style
         margin-top: 0px;
         margin-bottom: 0px;
     }
+    
 }

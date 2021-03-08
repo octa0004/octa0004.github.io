@@ -33,23 +33,12 @@ a {
     color:var(--lightgrey);  
 }
 
-
 a:link,
 a:visited { 
     display: block;
     text-decoration: none; 
     color: var(--lightgrey);
 }
-
-/*a:link { 
-    display: block;
-    text-decoration: none; 
-    color: var(--lightgrey);
-}
-
-a:visited { 
-    font-weight: bold; 
-}*/
 
 a:hover,
 a:focus,
@@ -86,7 +75,6 @@ border-radius to make round corner
 box-shadow to make a shadow*/
 .contactform{
     max-width: 100%;
-    
     background-color: var(--green);
     display: block;
     margin-top: 16px;
@@ -94,7 +82,6 @@ box-shadow to make a shadow*/
     margin-right: auto;
     margin-bottom: 30px;
     padding: 24px;
-
     border-radius: 26px;
     box-shadow: 10px 15px 18px rgba(51, 49, 49, 0.4);
     padding-bottom: 26px;
@@ -107,6 +94,7 @@ box-shadow to make a shadow*/
     margin-bottom: 20px;
     margin-top: 0px;
 }
+
 .contactform label{
     font-size: 18px;
     color: var(--lightgrey);
@@ -115,7 +103,6 @@ box-shadow to make a shadow*/
 .lineform {
     padding-bottom: 10px;
 }
-
 
 #fullname,
 #studentnumber,
@@ -139,7 +126,6 @@ box-shadow to make a shadow*/
     height: 40px;
     border-radius: 72px;
 }
-
 
 /* change the height szie
 change the border radius
@@ -207,8 +193,6 @@ iframe{
     height: 300px;
 }
 
-
-
 /*start the footer area, use padding first 
 and then use position with mac height*/
 footer {
@@ -224,14 +208,12 @@ footer {
     flex: 1 1 auto;
     align-items:center;
     justify-content: center;
-
 }
 
 .site-footer > div{
     overflow: hidden;
     display:inline;
 }
-
 
 .site-footer > div > p{
     font-size: 24px;
@@ -246,7 +228,6 @@ footer {
     align-self: flex-end;
     right: 20px;
 }
-
 
 /*use display flex so it can change side by side with the back to top*/
 .socialmedialogo {
@@ -364,9 +345,6 @@ Tablet Style
 
 }
 
-
-
-
 /*-----------------------------------------------
 Desktop Style
 --------------------------*/
@@ -428,6 +406,5 @@ Desktop Style
         margin-top: 0px;
         margin-bottom: 0px;
     }
-
-
+    
 }
