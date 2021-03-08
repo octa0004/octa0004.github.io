@@ -86,11 +86,11 @@ main {
 
 /*use the background image instead of image tag, so can use the multiply effect*/
 .servicesimg {
-    background-image: url(/images/services.jpg);
+    background-image: url(images/services.jpg);
 }
 
 .aboutimg {
-    background-image: url(/images/about.jpg);
+    background-image: url(images/about.jpg);
 }
 
 /*add filter to change to grayscale so can overlay with the background color*/
