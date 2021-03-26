@@ -11,19 +11,24 @@
     <title>Bootstrap this</title>
   </head>
   <body>
-    <header>
-    <!--put the navigation-->
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container d-flex align-items-center justify-content-between">
+    <header class="sticky-top">
+    <!--put the navigation, start to expand in medium screen size, change the hamburger menu to nav link-->
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <!--<div class="container d-flex align-items-center justify-content-between">-->
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
                 <a class="navbar-brand" href="index.html">
-                    <img src="/images/bootstrap-5-ogo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+                    <img src="images/bootstrap-logo.svg" alt="bootstraplogo" width="30" height="24" class="d-inline-block align-text-top">
                     Bootstrap
                 </a>
         
                 <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="ms-auto navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Get Started</a>
+                            <a class="nav-link active" aria-current="page" href="#getstarted">Get Started</a>
                         </li>
 
                         <li class="nav-item dropdown">
@@ -87,7 +92,7 @@
     <section class="container">
         <div class="row justify-content-center">
             <div class="col-6">
-                <h1 class="display-1 fw-bolder">
+                <h1 class="display-3 fw-bolder mx-auto">
                     Hail to Bootstrap!
                 </h1>
 
@@ -103,9 +108,9 @@
               
             </div>
 
-            <div class="col-6">
-                <img src="images/header image.svg" class="img-fluid" alt="headerimage">
-            </div>
+            <!--<div class="col-6">
+                <img src="images/header-image.svg" class="img-fluid" alt="headerimage">
+            </div>-->
         </div>
     </section>
 
@@ -116,7 +121,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="text-center">
-                            <h2>
+                            <h2 id="getstarted">
                                 Get Started
                             </h2>
 
@@ -140,7 +145,7 @@
                                         and make sure to read through the Installation instructions
                                         </p>
 
-                                        <img src="" class="img-fluid" alt="">
+                                        <img src="images/download.png" class="img-fluid" alt="downloadimage">
                                     </div>
 
                                     <div class="col-6">
@@ -154,7 +159,7 @@
                                             directly into a Visual Studio code, and you are ready to make your magic in index.html
                                         </p>
 
-                                        <img src="" class="img-fluid" alt="">
+                                        <img src="images/starter-template2.png" class="img-fluid" alt="starterimage">
                                     </div>
                                 </div>
                             </div>
@@ -215,7 +220,8 @@
                         </h4>
 
                         <p>
-                            Grid is managing 
+                            Grid system is managing the width for each of element in the layout. It based on 12 grid.
+                            Grid helps to make a responsive website. There are several classes to use to get the grid system work, such as breakpoints, container, rows, and col. Col or column class is to set the width in the elements. For example col-6, means that from 12 column, you will use 6 coloumn, or half of the page width. 
                         </p>
                     </div>
                 </div>
