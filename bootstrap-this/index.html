@@ -11,11 +11,11 @@
     <title>Bootstrap this</title>
   </head>
   <body>
-    <section>
+    <header>
     <!--put the navigation-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+            <div class="container d-flex align-items-center justify-content-between">
+                <a class="navbar-brand" href="index.html">
                     <img src="/images/bootstrap-5-ogo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
                     Bootstrap
                 </a>
@@ -81,12 +81,13 @@
                 </div>
             </div>
         </nav>
-    </section>
+    </header>
 
+    <!--hero image-->
     <section class="container">
-        <div class="row">
+        <div class="row justify-content-center">
             <div class="col-6">
-                <h1 class="display-1">
+                <h1 class="display-1 fw-bolder">
                     Hail to Bootstrap!
                 </h1>
 
@@ -106,6 +107,32 @@
             </div>
         </div>
     </section>
+
+    <!--main section-->
+    <main>
+        <div class="p-3 mb-2 bg-dark text-white">
+            <div class="container">
+                <div class="row">
+                    <div class= "text-center">
+                        <h2>
+                            Get Started
+                        </h2>
+
+                        <p>
+                            First step is to know which version you want to use.
+                            There are 2 ways to start using Bootstrap. 
+                            You can download the file from the <a href="https://getbootstrap.com/docs/5.0/getting-started/download/">getbootstrap.com</a>
+                            or you can use the Starter template. Starter template is the simple and best way to start!
+                        </p>
+                    </div>
+
+                    <div class="col-6">
+                        <img src="" class="img-fluid" alt="">
+                    </div>
+                </div>    
+            </div>
+        </div>
+    </main>
 
 
     <!-- Optional JavaScript; choose one of the two! -->
