@@ -14,16 +14,15 @@
     <header class="sticky-top">
     <!--put the navigation, start to expand in medium screen size, change the hamburger menu to nav link-->
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
-            <!--<div class="container d-flex align-items-center justify-content-between">-->
             <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
                 <a class="navbar-brand" href="index.html">
                     <img src="images/bootstrap-logo.svg" alt="bootstraplogo" width="30" height="24" class="d-inline-block align-text-top">
                     Bootstrap
                 </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
         
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="ms-auto navbar-nav">
@@ -65,8 +64,8 @@
                                 </a>
 
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#helpers">Clearfix</a></li>
                                 <li><a class="dropdown-item" href="#helpers">Colored Links</a></li>
-                                <li><a class="dropdown-item" href="#helpers">Position</a></li>
                                 <li><a class="dropdown-item" href="#helpers">Stretched Links</a></li>
                                 </ul>
                             </li>
@@ -93,7 +92,7 @@
     <!--hero image-->
     <section class="container text-center mt-5 mb-5">
         <div class="row justify-content-center">
-            <div class="col-12">
+            <div class="col-10 col-md-12">
                 <h1 class="display-3 fw-bolder">
                     Hail to Bootstrap!
                 </h1>
@@ -182,7 +181,7 @@
 
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-12 col md-4">
+                    <div class="col-12 col-md-4">
                         <h4>
                             Breakpoints
                         </h4>
@@ -196,7 +195,7 @@
                         </p>
                     </div>
 
-                    <div class="col-sm-12 col md-4">
+                    <div class="col-12 col-md-4">
                         <h4>
                             Container
                         </h4>
@@ -210,7 +209,7 @@
                         </p>
                     </div>
 
-                    <div class="col-sm-12 col md-4">
+                    <div class="col-12 col-md-4">
                         <h4>
                             Grid
                         </h4>
@@ -228,7 +227,7 @@
             <div class="container-fluid bg-light">
                 <div class="container">
                     <div class="row">
-                        <h2 id="components" class="display-5 fw-bolder text-center mt-5">
+                        <h2 id="components" class="display-5 fw-bolder text-center mt-4">
                             Components
                         </h2>
                     
@@ -248,9 +247,9 @@
     
                             <img src="images/buttons.png" class="img-fluid" alt="buttonimage">
 
-                            <p class="pt-3">
+                            <p class="pt-3 text-start text-lg-center">
                                In bootstrap there are button library style to use for several action, including color, sizes and states.
-                               The button color provided based on the action, for example red is shows for danger, yellow is for warning, and green is for success or ok to go.
+                               The button color provided based on the action, for example red is shows for danger, yellow is for warning, and green is for success.
                         
                             </p>
     
@@ -258,20 +257,19 @@
                     </div>
     
 
-                    <div class="bg-dark me-md-3 pt-3 px-3 px-md-5 mb-5 text-center text-white overflow-hidden">
-                        <div class="my-3 py-3">
-                            <h4 class="display-6">
-                                Navbar
-                            </h4>
+                <div class="bg-dark me-md-3 pt-3 px-3 px-md-5 mb-5 text-center text-white overflow-hidden">
+                    <div class="my-3 py-3">
+                        <h4 class="display-6">
+                            Navbar
+                        </h4>
     
-                            <img src="images/navbar.png" class="img-fluid" alt="navbarimage">
+                        <img src="images/navbar.png" class="img-fluid" alt="navbarimage">
 
-                            <p class="pt-3">
-                               Navbar is the navigation bar and help to set up. Bootstrap had a library of choices for Navbar ready to use.
-                               Navbar cosist of the menu, and using list we can style like active or hover states, alignment, dropdownlink, search and also applying the background color.
-                            </p>
+                        <p class="pt-3 text-start text-lg-center">
+                           Navbar is the navigation bar and help to set up. Bootstrap had a library of choices for Navbar ready to use.
+                           Navbar cosist of the menu, and using list we can style like active or hover states, alignment, dropdownlink, search and also applying the background color.
+                        </p>
     
-                        </div>
                     </div>
                 </div>
             </div>
@@ -284,7 +282,7 @@
                         Helpers
                     </h2>
     
-                    <p class="col-md-8 offset-md-2 mb-5 text-center"> 
+                    <p class="mb-5 text-center"> 
                         Contain of clearfix, coloured links, ration, position, visually hidden, stretched link, and text truncation.
                     </p>
                 </div>
@@ -292,19 +290,19 @@
 
             <div class="container">
                 <div class="row">
-                    <div class="col-sm-12 col md-4">
+                    <div class="col-12 col-md-4">
                         <h4>
                             Clearfix
                         </h4>
 
                         <p>
                             is to clear or remove element in child page, and normally happens in the float layout.
-                            Using clearfix to avoid broken 
+                            Using clearfix to ?? -tanya p
                            
                         </p>
                     </div>
 
-                    <div class="col-sm-12 col md-4">
+                    <div class="col-12 col-md-4">
                         <h4>
                             Colored Links
                         </h4>
@@ -312,11 +310,11 @@
                         <p>
                             is to give color in text link when in the hover state. 
                             It is recommended to choose a color that reflect the action.
-                            Here is the example, for more information click <a href="https://getbootstrap.com/docs/5.0/helpers/colored-links/" class="link-info">here</a>
+                            Here is the example, for more information click <a href="https://getbootstrap.com/docs/5.0/helpers/colored-links/" class="link-info">here.</a>
                         </p>
                     </div>
 
-                    <div class="col-sm-12 col md-4">
+                    <div class="col-12 col-md-4">
                         <h4>
                             Position
                         </h4>
@@ -325,13 +323,83 @@
                             is a class to help the placement of the elements. There are fixed top, fixed bottom and sticky top. Same as the name fixed means whateve your screen, the position will be always fixed. One of the example of sticky top is apply in this page navigation.
                         </p>
                     </div>
-
                 </div>
             </div>
         </section>
 
+        <section>
+            <div class="container-fluid bg-light mb-5">
+                <div class="container">
+                    <div class="row">
+                        <h2 id="utilities" class="display-5 fw-bolder text-center mt-4">
+                            Utilities
+                        </h2>
+                    
+                        <p class="col-12 text-center">
+                            Contain of API, background, borders, colors, display, flex, float, insteractions, overflow, position,
+                            shadows, sizing, spacing,text, vertical align,and visibility.
+                        </p>
+                    </div>
+                </div>
 
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-6">
+                            <div class="card">
+                                <img src="" class="card-img-top" alt="">
+
+                                <div class="card-body">
+                                    <h4>
+                                        Background
+                                    </h4>
+
+                                    <p class="card-text"> 
+                                        decorate the background, by appling color or color gradient using classes.
+                                        Bootstrap already provided with the color coding for the funcitiopn, but if you need to 
+                                        custom, you can explore Sass functionality. </p>
+                                </div>
+
+                                <!--<a href="https://getbootstrap.com/docs/5.0/utilities/background/" class="btn btn-primary">Example</a>-->
+                            </div>
+                        </div>
+                        
+                        <div class="col-12 col-md-6 mb-5">
+                            <div class="card">
+                                <img src="" class="card-img-top" alt="">
+
+                                <div class="card-body">
+                                    <h4>
+                                        Flex
+                                    </h4>
+                                    
+                                    <p class="card-text"> 
+                                        is very powerful. Help to make a responsive and wrapping the content, 
+                                        including set up for the grid coloumn, components, alignments and many more.
+                                        Flexbox had lots of variation properties to use, such as apply flex behaviour, whether it is flex or inline, direction, flex-row or flex-column,
+                                        and you can apply the responsiveness using the justify to manage the spacing.
+                                    </p>
+                                </div>
+
+                                <!--<a href="https://getbootstrap.com/docs/5.0/utilities/flex/" class="btn btn-primary">Example</a>-->
+                            </div>
+                        </div>
+                    </div>
+                <div>
+            </div>    
+        </section>
     </main>
+
+    <footer>
+        <section class="bg-dark text-start text-white">
+            <div class="container">
+                <div class="row">
+                    <p class="fs-6">
+                        Reference from <a href="https://getbootstrap.com/docs/5.0/getting-started/introduction/">getbootstrap.com</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </footer>
     
     <!--start to menu link-->
 
