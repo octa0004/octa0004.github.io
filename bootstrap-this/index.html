@@ -16,7 +16,7 @@
         <nav class="navbar navbar-expand-md navbar-dark bg-dark">
             <!--<div class="container d-flex align-items-center justify-content-between">-->
             <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
@@ -93,14 +93,14 @@
     <!--hero image-->
     <section class="container text-center mt-5 mb-5">
         <div class="row justify-content-center">
-            <div class="col-sm-12 col-md-7">
+            <div class="col-12">
                 <h1 class="display-3 fw-bolder">
                     Hail to Bootstrap!
                 </h1>
 
                 <p> 
-                    Bootstap is a framework that will give you a heaven in earth for all coding and styling.
-                    It is an open source toolkit that is simple build, prebuild components, provide complete document library and responsive.
+                    Bootstap is a framework CSS, HTML, Javascript to develop responsive website. It is like heaven in earth for all coding and styling.
+                    It is an open source toolkit that is simple with prebuild components, provide complete document library and examples.
                     Whether you are a coding wizard or coding wanna-be, Bootstrap is your magic wand.
                 </p>
 
@@ -117,16 +117,18 @@
     <!--main section-->
     <main>
         <div class="container-fluid bg-light">
+            <div class="container">
                 <div class="row">
-                    <h2 id="getstarted" class="display-5 fw-bolder text-center mt-5">
+                    <h2 id="getstarted" class="display-5 fw-bolder text-center mt-4">
                         Get started
                     </h2>
 
-                    <p class="text-center">
+                    <p class="col-12 text-center">
                         First step is to know which version you want to use.
                         There are 2 ways to start using Bootstrap, download or use starter template.
                     </p>
                 </div>
+            </div>
 
             <div class="container d-md-flex flex-md-equal w-100 my-md-3 ps-md-3 mb-5">
                 <div class="bg-dark me-md-3 pt-3 px-3 px-md-5  mb-5 text-center text-white overflow-hidden">
@@ -164,14 +166,14 @@
         </div>
 
         <!--menu - layout section-->
-        <section class="container">
+        <section class="container mb-5">
             <div class="row justify-content-center">
                 <div>
-                    <h2 id="layout" class="display-5 fw-bolder text-center">
+                    <h2 id="layout" class="display-5 fw-bolder text-center mt-3">
                         Layout
                     </h2>
     
-                    <p class="col-md-8 offset-md-2 mb-5 text-center"> 
+                    <p class="col-12 mb-5 text-center"> 
                         One of essential in building a site is to make a layout and design looks good.
                         Bootstrap layout are covering breakpoints, containers, grid, columns, gutters, utilities and z-index.
                     </p>
@@ -180,7 +182,7 @@
 
             <div class="container">
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-sm-12 col md-4">
                         <h4>
                             Breakpoints
                         </h4>
@@ -194,7 +196,7 @@
                         </p>
                     </div>
 
-                    <div class="col-4">
+                    <div class="col-sm-12 col md-4">
                         <h4>
                             Container
                         </h4>
@@ -208,7 +210,7 @@
                         </p>
                     </div>
 
-                    <div class="col-4">
+                    <div class="col-sm-12 col md-4">
                         <h4>
                             Grid
                         </h4>
@@ -224,15 +226,17 @@
 
         <section>
             <div class="container-fluid bg-light">
-                <div class="row">
-                    <h2 id="components" class="display-5 fw-bolder text-center mt-5">
-                        Components
-                    </h2>
-
-                    <p class="col-8 offset-2 text-center">
-                        As the name implies, components contain elements that control the website look and display.
-                        Bootstrap components library consist of many elements, such as buttons, cards and navbar ready to use. 
-                    </p>
+                <div class="container">
+                    <div class="row">
+                        <h2 id="components" class="display-5 fw-bolder text-center mt-5">
+                            Components
+                        </h2>
+                    
+                        <p class="col-12 text-center">
+                            As the name implies, components contain elements that control the website look and display.
+                            Bootstrap components library consist of many elements, such as accordion, alerts, badge, breadcrumb, buttons, card, carousel, collapse, dropdown,list group, modal,pagination, popovers, progress, scrollspy, spinners, toasts, tooltips and navbar ready to use. 
+                        </p>
+                    </div>
                 </div>
 
                 <div class="container d-md-flex flex-md-equal w-100 my-md-3 ps-md-3 mb-5">
@@ -244,8 +248,10 @@
     
                             <img src="images/buttons.png" class="img-fluid" alt="buttonimage">
 
-                            <p>
-                               xxx
+                            <p class="pt-3">
+                               In bootstrap there are button library style to use for several action, including color, sizes and states.
+                               The button color provided based on the action, for example red is shows for danger, yellow is for warning, and green is for success or ok to go.
+                        
                             </p>
     
                         </div>
@@ -260,8 +266,9 @@
     
                             <img src="images/navbar.png" class="img-fluid" alt="navbarimage">
 
-                            <p>
-                               xxxx
+                            <p class="pt-3">
+                               Navbar is the navigation bar and help to set up. Bootstrap had a library of choices for Navbar ready to use.
+                               Navbar cosist of the menu, and using list we can style like active or hover states, alignment, dropdownlink, search and also applying the background color.
                             </p>
     
                         </div>
@@ -285,40 +292,40 @@
 
             <div class="container">
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-sm-12 col md-4">
+                        <h4>
+                            Clearfix
+                        </h4>
+
+                        <p>
+                            is to clear or remove element in child page, and normally happens in the float layout.
+                            Using clearfix to avoid broken 
+                           
+                        </p>
+                    </div>
+
+                    <div class="col-sm-12 col md-4">
                         <h4>
                             Colored Links
                         </h4>
 
                         <p>
-                            One indication of a a good website is responsive. 
-                            In order to make it responsive, we need to have a different screen size.
-                            Normally, it consist 3 different screen size, from mobile, tablet and desktop.
-                            In the coding process, the changing from one screen size to the other screen size called "breakpoints".
-                            In bootstrap, we can directly use the class infix such as sm,md and lg or customized it using Sass file.
+                            is to give color in text link when in the hover state. 
+                            It is recommended to choose a color that reflect the action.
+                            Here is the example, for more information click <a href="https://getbootstrap.com/docs/5.0/helpers/colored-links/" class="link-info">here</a>
                         </p>
                     </div>
 
-                    <div class="col-4">
+                    <div class="col-sm-12 col md-4">
                         <h4>
                             Position
                         </h4>
 
                         <p>
-                            Position is the class to help the placement of the elements. There are fixed top, fixed bottom and sticky top. Same as the name fixed means whateve your screen, the position will be always fixed. One of the example of sticky top is apply in this navigation.
+                            is a class to help the placement of the elements. There are fixed top, fixed bottom and sticky top. Same as the name fixed means whateve your screen, the position will be always fixed. One of the example of sticky top is apply in this page navigation.
                         </p>
                     </div>
 
-                    <div class="col-4">
-                        <h4>
-                            Stretched Links
-                        </h4>
-
-                        <p>
-                            Grid system is managing the width for each of element in the layout. It based on 12 grid.
-                            Grid helps to make a responsive website. There are several classes to use to get the grid system work, such as breakpoints, container, rows, and col. Col or column class is to set the width in the elements. For example col-6, means that from 12 column, you will use 6 coloumn, or half of the page width. 
-                        </p>
-                    </div>
                 </div>
             </div>
         </section>
