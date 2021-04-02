@@ -29,7 +29,7 @@ html {
 }
 
 hr{
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 /* starting the navigation bar*/
@@ -52,18 +52,42 @@ hr{
     padding: 0px;
 }
 
-.navlink li{
+.nav .navlink li{
     display: none;
 }
 
-.navlink li:nth-child(3){
+.nav .navlink li:nth-child(3){
     display: block;
 }
 
+/*specific style for the dropdown menu*/
 #navDropDown {
     display: none;
+    position: absolute;
+    min-width: 100%;
+    width: 375px;
 }
 
+#navDropDown li{
+    display: block;
+}
+
+
+#navDropDown .navlink li{
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    background-color: rgba(248, 243, 238, 0.9);
+    text-align: center;
+}
+
+#navDropDown .navlink li{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+
+/*make the hamburger menu in the middle of the logo*/
 .nav{
     height: 120px;
     position: relative;
