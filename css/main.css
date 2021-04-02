@@ -147,6 +147,51 @@ a img{
         padding-right: 80px;
     }
 
+    /*setting font type and size */
+    h1{
+        font-family: 'Playfair Display', serif;
+        font-size: 49px;
+        color: var(--grey);
+        margin-bottom: 5px;
+    }
+
+    h2{
+        font-family: 'Playfair Display', serif;
+        font-size: 35px;
+        color: var(--grey);
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    h3{
+        font-family: 'Playfair Display', serif;
+        font-size: 25px;
+        color: var(--brown);
+        margin-top: 0px;
+    }
+
+    p{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+    }
+
+    h5 {
+        font-family: 'Montserrat', sans-serif;
+        font-weight: normal;
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+    }
+
+    .site-footer{
+        box-sizing: border-box;
+        width: 100%;
+    
+        padding-bottom: 0px;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
 }
 
 
