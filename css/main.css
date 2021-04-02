@@ -122,3 +122,60 @@ a img{
     margin-left: auto;
 }
 
+/*-----------------------------------------------------------
+    Tablet Style
+-----------------------------------*/
+@media only screen and (min-width: 768px){
+    /* repeat navigation bar, same menu direction with mobile*/
+
+    .wrapper{
+
+    }
+
+    .h1{
+
+    }
+
+    .h2{
+
+    }
+
+    .h5{
+
+    }
+
+    .site-footer{
+
+    }
+
+}
+
+
+/*-----------------------------------------------------------
+    Desktop Style
+-----------------------------------*/
+
+@media only screen and (min-width: 992px){
+    /* repeat navigation bar, same menu direction with mobile*/
+
+    .wrapper{
+
+    }
+
+    .h1{
+
+    }
+
+    .h2{
+
+    }
+
+    .h5{
+
+    }
+
+    .site-footer{
+
+    }
+
+}
