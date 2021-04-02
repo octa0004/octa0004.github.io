@@ -22,6 +22,11 @@ html {
     padding-right: 80px;
 }
 
+.wrapper img{
+    width: 295px;
+    max-width: 100%;
+}
+
 /* starting the navigation bar*/
 .nav a {
     font-family: 'Montserrat', sans-serif;
@@ -63,8 +68,6 @@ a.current {
     text-decoration: none;
     color: var(--brown);
 }
-
-
 
 /*setting font type and size */
 h1{
