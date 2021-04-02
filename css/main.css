@@ -15,11 +15,12 @@ html {
    --brown: #D2AD90;
 }
 
+/*set wrapper as a container and make even space to left and right*/
 .wrapper {
     box-sizing: border-box;
     width: 100%;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-left: 40px;
+    padding-right: 40px;
 }
 
 .wrapper img{
@@ -32,14 +33,16 @@ hr{
 }
 
 /* starting the navigation bar*/
+
+/*  Use combination of 2 typeface
+    h use font-family: 'Playfair Display', serif;
+    body, navigation and the rest use font-family: 'Montserrat', sans-serif;*/
+
 .nav a {
     font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.1em;
 }
-
-/*  font-family: 'Playfair Display', serif;
-    font-family: 'Montserrat', sans-serif;*/
 
 .navlink {
     list-style-type: none;
@@ -76,26 +79,35 @@ a.current {
 /*setting font type and size */
 h1{
     font-family: 'Playfair Display', serif;
-    font-size: 25px ;
+    font-size: 35px;
+    color: var(--grey);
     margin-bottom: 5px;
 }
 
 h2{
     font-family: 'Playfair Display', serif;
-    font-size: 16px ;
+    font-size: 25px;
+    color: var(--grey);
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+h3{
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
     color: var(--brown);
-    margin-top: 5px;
+    margin-top: 0px;
 }
 
 p{
     font-family: 'Montserrat', sans-serif;
-    font-size: 14px ;
+    font-size: 14px;
 }
 
 h5 {
     font-family: 'Montserrat', sans-serif;
     font-weight: normal;
-    font-size: 10px ;
+    font-size: 10px;
     text-transform: uppercase;
     letter-spacing: 0.1em;
 }
@@ -129,23 +141,10 @@ a img{
     /* repeat navigation bar, same menu direction with mobile*/
 
     .wrapper{
-
-    }
-
-    .h1{
-
-    }
-
-    .h2{
-
-    }
-
-    .h5{
-
-    }
-
-    .site-footer{
-
+        box-sizing: border-box;
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 80px;
     }
 
 }
@@ -156,10 +155,13 @@ a img{
 -----------------------------------*/
 
 @media only screen and (min-width: 992px){
-    /* repeat navigation bar, same menu direction with mobile*/
+    /* change menu direction*/
 
     .wrapper{
-
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 80px;
     }
 
     .h1{
