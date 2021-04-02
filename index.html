@@ -34,6 +34,16 @@
     <header>
         <section class="wrapper">
             <div class="nav">
+
+                <!-- menu button for mobile and tablet-->
+                <div class="menu">
+                    <svg id="Menu" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                        <path id="Menu-2" data-name="Menu" d="M0,14V12H16v2ZM0,8V6H16V8ZM0,2V0H16V2Z" transform="translate(0 1)" fill="#414042"/>
+                        <rect id="Rectangle_1446" data-name="Rectangle 1446" width="12" height="12" transform="translate(0)" fill="none"/>
+                      </svg>
+                      
+                </div>
+
                 <ul class="navlink">
                     <li>
                         <a href="index.html">Work</a>
@@ -60,6 +70,32 @@
             </div>
             
             <hr>
+
+            <div id="navDropDown">
+                <ul class="navlink">
+                    <li>
+                        <a href="index.html">Work</a>
+                    </li>
+
+                    <li>
+                        <a href="profile.html">Profile</a>
+                    </li>
+
+                    <li>
+                        <div class="logo">
+                            <img src="images/Logo.png" alt="logo">
+                        </div>
+                    </li>
+
+                    <li>
+                        <a href="insight.html">Insight</a>
+                    </li>
+
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
               
         </section>
     </header>
@@ -69,53 +105,55 @@
     <main>
         <!--graphic gallery section-->
         <section class="wrapper">
-            <div>
-                <img src="images/graphic-ladies-cover.jpg" alt="ladiesimage">
+            <div class="graphic">
+                <div class="graphicladies">
+                    <img src="images/graphic-ladies-cover.jpg" alt="ladiesimage">
 
-                <h2>
-                    Ladies
-                </h2>
+                    <h2>
+                        Ladies
+                    </h2>
 
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="21" viewBox="0 0 18 21">
-                    <text id="_" data-name="— " transform="translate(0 17)" fill="#d2ad90" font-size="16" font-family="PlayfairDisplay-SemiBold, Playfair Display" font-weight="600"><tspan x="0" y="0">— </tspan></text>
-                </svg> 
-                
-                <h3>
-                    Graphic. Illustration
-                </h3>
-            </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="21" viewBox="0 0 18 21">
+                        <text id="_" data-name="— " transform="translate(0 17)" fill="#d2ad90" font-size="16" font-family="PlayfairDisplay-SemiBold, Playfair Display" font-weight="600"><tspan x="0" y="0">— </tspan></text>
+                    </svg> 
+                    
+                    <h3>
+                        Graphic. Illustration
+                    </h3>
+                </div>
 
-            <div>
-                <img src="images/graphic-artdate-image3.jpg" alt="artdateimage">
+                <div class="graphicartdate">
+                    <img src="images/graphic-artdate-image3.jpg" alt="artdateimage">
 
-                <h2>
-                    Art Date
-                </h2>
+                    <h2>
+                        Art Date
+                    </h2>
 
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="21" viewBox="0 0 18 21">
-                    <text id="_" data-name="— " transform="translate(0 17)" fill="#d2ad90" font-size="16" font-family="PlayfairDisplay-SemiBold, Playfair Display" font-weight="600"><tspan x="0" y="0">— </tspan></text>
-                </svg> 
-                
-                <h3>
-                    Graphic. Digital Calendar
-                </h3>
-            </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="21" viewBox="0 0 18 21">
+                        <text id="_" data-name="— " transform="translate(0 17)" fill="#d2ad90" font-size="16" font-family="PlayfairDisplay-SemiBold, Playfair Display" font-weight="600"><tspan x="0" y="0">— </tspan></text>
+                    </svg> 
+                    
+                    <h3>
+                        Graphic. Digital Calendar
+                    </h3>
+                </div>
 
-            <div>
-                <img src="images/graphic-portrait-cover.jpg" alt="portraitimage">
+                <div class="graphicportrait">
+                    <img src="images/graphic-portrait-cover.jpg" alt="portraitimage">
 
-                <h2>
-                    Portrait
-                </h2>
+                    <h2>
+                        Portrait
+                    </h2>
 
-                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="21" viewBox="0 0 18 21">
-                    <text id="_" data-name="— " transform="translate(0 17)" fill="#d2ad90" font-size="16" font-family="PlayfairDisplay-SemiBold, Playfair Display" font-weight="600"><tspan x="0" y="0">— </tspan></text>
-                </svg> 
-                
-                <h3>
-                    Graphic. Illustration
-                </h3>
-            </div>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="21" viewBox="0 0 18 21">
+                        <text id="_" data-name="— " transform="translate(0 17)" fill="#d2ad90" font-size="16" font-family="PlayfairDisplay-SemiBold, Playfair Display" font-weight="600"><tspan x="0" y="0">— </tspan></text>
+                    </svg> 
+                    
+                    <h3>
+                        Graphic. Illustration
+                    </h3>
+                </div>
+            </div>    
         </section>
 
         <!--print gallery section-->
@@ -249,5 +287,15 @@
             <a href="https://www.linkedin.com/in/tina-o-73145012a/"> <img alt="linkedin" src="images/linkedinlogo.png"></a>
         </div>
     </footer>
+    <script>
+        function showNavBar() {
+            document.getElementById("myDropdown").style.display = "block";
+        }
+
+        function hideNavBar() {
+            document.getElementById("myDropdown").style.display = "none";
+        }
+
+    </script>
 </body>
 </html>

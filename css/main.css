@@ -52,17 +52,62 @@ hr{
     padding: 0px;
 }
 
+.navlink li{
+    display: none;
+}
+
+.navlink li:nth-child(3){
+    display: block;
+}
+
+#navDropDown {
+    display: none;
+}
+
+.nav{
+    height: 120px;
+    position: relative;
+    padding-top: 30px;
+}
+.menu svg{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
 .logo img{
     display: block;
     text-align: center;
     max-width: 100%;
     width: 128px;
+    height: 108px;
     padding: 0px;
     margin-left: auto;
     margin-right: auto;
 }
 
-a{
+a,
+a:link {
+    text-decoration: none;
+    color: var(--grey);
+}
+
+a:hover,
+a:focus {
+    display: block;
+    text-decoration: none;
+    color: var(--brown);
+}
+
+a.current {
+    display: block;
+    text-decoration: none;
+    color: var(--red);
+}
+
+/*a{
     text-decoration: none;
     color: var(--grey);
 }
@@ -74,7 +119,7 @@ a.current {
     display: block;
     text-decoration: none;
     color: var(--brown);
-}
+}*/
 
 /*setting font type and size */
 h1{
@@ -206,6 +251,34 @@ a img{
         padding-right: 80px;
     }
 
+    /* change grid for the image in the work*/
+    .graphic{
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        margin:auto;
+    }
+    
+    .graphicladies{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }    
+
+    .graphicartdate{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    /*.graphicportrait{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start:2;
+        grid-row-end:3;
+    }*/
 }
 
 
@@ -267,7 +340,5 @@ a img{
         padding-left: 80px;
         padding-right: 80px;
     }
-
-    
 
 }
