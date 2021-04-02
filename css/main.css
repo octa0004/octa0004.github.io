@@ -15,6 +15,12 @@ html {
    --brown: #D2AD90;
 }
 
+.wrapper {
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 80px;
+    padding-right: 80px;
+}
 
 /* starting the navigation bar*/
 .nav a {
@@ -34,24 +40,31 @@ html {
     padding: 0px;
 }
 
-.li a{
+.logo img{
     display: block;
-    color: var(--grey);
-    text-decoration: none;
-}
-
-.li :active{
-    color: var(--brown); 
-}
-
-.logo {
     text-align: center;
     max-width: 100%;
-    width: 58px;
+    width: 128px;
     padding: 0px;
     margin-left: auto;
     margin-right: auto;
 }
+
+a{
+    text-decoration: none;
+    color: var(--grey);
+}
+
+a:hover,
+a:focus,
+a:active,
+a.current {
+    display: block;
+    text-decoration: none;
+    color: var(--brown);
+}
+
+
 
 /*setting font type and size */
 h1{
@@ -79,3 +92,26 @@ h5 {
     text-transform: uppercase;
     letter-spacing: 0.1em;
 }
+
+.site-footer{
+    box-sizing: border-box;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 0px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+/* padding to give space between logo*/
+a img{
+    border: 0;
+    width: 13px;
+    padding-left: 42px;
+}
+
+.socialmedialogo{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+}
+
