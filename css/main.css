@@ -259,11 +259,7 @@ padding left for spacing each icon*/
     
     /*footer*/
     h5 {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: normal;
         font-size: 14px;
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
     }
 
     .site-footer{
@@ -296,7 +292,6 @@ padding left for spacing each icon*/
         grid-row-start: 2;
         grid-row-end: 3;
     }
-
     
     .graphicportrait{
         width: 100%;
@@ -305,8 +300,6 @@ padding left for spacing each icon*/
         grid-row-start:3;
         grid-row-end:4;
     }
-
-
 
 }
 
@@ -317,6 +310,15 @@ padding left for spacing each icon*/
 
 @media only screen and (min-width: 992px){
     /* change menu direction*/
+
+    svg {
+        display: none;
+    } 
+
+
+
+
+
 
     .wrapper{
     box-sizing: border-box;
@@ -354,20 +356,8 @@ padding left for spacing each icon*/
     
     /*footer*/
     h5 {
-        font-family: 'Montserrat', sans-serif;
-        font-weight: normal;
         font-size: 14px;
-        text-transform: uppercase;
-        letter-spacing: 0.1em;
     }
 
-    .site-footer{
-        box-sizing: border-box;
-        width: 100%;
-    
-        padding-bottom: 0px;
-        padding-left: 80px;
-        padding-right: 80px;
-    }
-
+ 
 }
