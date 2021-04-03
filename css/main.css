@@ -73,7 +73,6 @@ hr{
     display: block;
 }
 
-
 #navDropDown .navlink li{
     font-size: 14px;
     text-transform: uppercase;
@@ -94,11 +93,12 @@ hr{
     position: relative;
     padding-top: 30px;
 }
+
 .menu svg{
     margin: 0;
     position: absolute;
     top: 50%;
-    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
     transform: translateY(-50%);
 }
 
@@ -392,15 +392,13 @@ padding left for spacing each icon*/
         font-size: 14px;
         padding-right: 40px;
         /*justify-content: flex-start;*/
-        
     }
 
     .navlink li:nth-child(n+2){
         display: flex;
         font-size: 14px;
         padding-left: 40px;
-        /*justify-content: flex-end;*/
-        
+        /*justify-content: flex-end;*/   
     }
 
     .navlink li:nth-child(2){
@@ -476,6 +474,10 @@ padding left for spacing each icon*/
         padding-right: 80px;
     }
 
+    .graphicladiesdesktop {
+        display: none;
+    }
+
     /*hide all the h2 and h3 for desktop -- desktop will change to hover*/
     .graphicladies h2,
     .graphicartdate h2,
@@ -507,8 +509,7 @@ padding left for spacing each icon*/
 
     /* make a fade in overlay for desktop*/
     .graphicladies{
-        position: relative;
-        
+        position: relative; 
     }
 
     .graphicladies img{
@@ -526,12 +527,12 @@ padding left for spacing each icon*/
         height:100%;
         width: 100%;
         opacity: 0;
-        transition: .5s ease;
+        transition: .3s ease;
         background-color: rgba( 64,62,70, 0.8)
     }
 
     .graphicladies:hover .overlay{
-        opacity: 1;
+        opacity: 0.8;
     }
 
     .graphicladies:hover .overlay h2,
@@ -542,12 +543,13 @@ padding left for spacing each icon*/
 
     .text{
         color: white;
-        top: 50%;
-        left: 50%;
+        top: 20%;
+        left: 35%;
         position: absolute;
         transform: translate(-50%, -50%);
-        text-align: center;
+        text-align: left;
     }
+
 
     /*change grid for work page desktop - 12 grid base*/
     .graphic {
@@ -560,7 +562,7 @@ padding left for spacing each icon*/
         width: 100%;
         height: auto;
     }
-    
+
     .graphicladies{
         grid-column-start: 1;
         grid-column-end: 2;
@@ -626,7 +628,7 @@ padding left for spacing each icon*/
     .web {
         display: grid;
         grid-gap: 2%;
-        grid-template-columns: 25% 46% 25%;
+        grid-template-columns: 23.5% 49% 23.5%;
         grid-row-start: 1;
         grid-row-end: 2;
         grid-auto-flow: column;
