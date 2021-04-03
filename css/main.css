@@ -181,7 +181,14 @@ but not affecting the navigation in the mobile */
 
 /*hide for mobile */
 .graphicladies-desktop,
+.graphicartdate .overlay,
 .graphicportraittablet,
+.printorigin .overlay,
+.printflorarecipe .overlay,
+.printnyahbakso .overlay,
+.printkillerb .overlay,
+.webtulis .overlay,
+.webcustomking .overlay,
 .websmoochytablet {
     display: none;
 }
@@ -304,9 +311,18 @@ padding left for spacing each icon*/
     }
     
     /*hide for tablet*/
+    .graphicladies-desktop,
+    .graphicartdate .overlay,
     .graphicportrait,
     .graphicportraittablet .overlay,
-    .graphicartdate .overlay{
+    .printorigin .overlay,
+    .printflorarecipe .overlay,
+    .printnyahbakso .overlay,
+    .printkillerb .overlay,
+    .webtulis .overlay,
+    .webcustomking .overlay,
+    .websmoochytablet,
+    .websmoochytablet .text {
         display: none;
     }
 
