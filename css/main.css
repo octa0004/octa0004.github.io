@@ -453,7 +453,8 @@ padding left for spacing each icon*/
         font-family: 'Playfair Display', serif;
         font-size: 25px;
         color: var(--brown);
-        margin-top: 0px;
+        margin-top: 5px;
+        margin-bottom: 0px;
     }
 
     h4{
@@ -543,8 +544,8 @@ padding left for spacing each icon*/
 
     .text{
         color: white;
-        top: 20%;
-        left: 35%;
+        top: 25%;
+        left: 25%;
         position: absolute;
         transform: translate(-50%, -50%);
         text-align: left;
