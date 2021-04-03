@@ -178,6 +178,11 @@ but not affecting the navigation in the mobile */
     margin-top: 20px;
 }
 
+/*hide for mobile*/
+.graphicportraittablet{
+    display: none;
+}
+
 .footerwrapper{
     display: flex;
     box-sizing: border-box;
@@ -292,12 +297,17 @@ padding left for spacing each icon*/
         grid-row-end: 3;
     }
 
-    /*.graphicportrait{
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start:2;
-        grid-row-end:3;
-    }*/
+    
+    .graphicportrait{
+        width: 100%;
+        grid-column-start:1;
+        grid-column-end:3;
+        grid-row-start:3;
+        grid-row-end:4;
+    }
+
+
+
 }
 
 
