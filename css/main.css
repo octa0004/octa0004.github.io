@@ -179,6 +179,12 @@ but not affecting the navigation in the mobile */
     margin-top: 20px;
 }
 
+/*hide for mobile */
+.graphicportraittablet,
+.websmoochytablet {
+    display: none;
+}
+
 .footerwrapper{
     display: flex;
     box-sizing: border-box;
@@ -303,6 +309,7 @@ padding left for spacing each icon*/
 
     /*change the size and look for tablet, change to 1 coloumn*/
     .graphicportraittablet{
+        display: grid;
         width: 100%;
         height: auto;
         grid-column-start:1;
@@ -338,6 +345,7 @@ padding left for spacing each icon*/
     }
 
     .websmoochytablet{
+        display: grid;
         width: 100%;
         height: auto;
         grid-column-start:1;
@@ -383,12 +391,16 @@ padding left for spacing each icon*/
         display: flex;
         font-size: 14px;
         padding-right: 40px;
+        /*justify-content: flex-start;*/
+        
     }
 
     .navlink li:nth-child(n+2){
         display: flex;
         font-size: 14px;
         padding-left: 40px;
+        /*justify-content: flex-end;*/
+        
     }
 
     .navlink li:nth-child(2){
@@ -409,12 +421,12 @@ padding left for spacing each icon*/
 
    /*target specific li child to make menu work and profile align left*/
    .li:nth-child(2){
-       margin-right: 110px;
+       margin-right: 150px;
    }
 
     /*target specific li child to make menu insight and contact align right*/
    .li:nth-child(4){
-       margin-left: 110px;
+       margin-left: 150px;
    }
 
     .wrapper{
@@ -464,7 +476,134 @@ padding left for spacing each icon*/
         padding-right: 80px;
     }
 
-    .site-footer{
-        padding: 0px;
+    /*hide all the h2 and h3 for desktop -- desktop will change to hover*/
+    .graphicladies h2,
+    .graphicartdate h2,
+    .graphicportrait h2,
+    .graphicportraittablet h2,
+    .printorigin h2,
+    .printflorarecipe h2,
+    .printnyahbakso h2,
+    .printkillerb h2,
+    .websmoochy h2,
+    .websmoochytablet h2,
+    .webtulis h2,
+    .webcustomking h2,
+
+    .graphicladies h3,
+    .graphicartdate h3,
+    .graphicportrait h3,
+    .graphicportraittablet h3,
+    .printorigin h3,
+    .printflorarecipe h3,
+    .printnyahbakso h3,
+    .printkillerb h3,
+    .websmoochy h3,
+    .websmoochytablet h3,
+    .webtulis h3,
+    .webcustomking h3 {
+        display:none;
     }
+
+    /* make a fade in overlay for desktop*/
+    .graphicladies{
+        position: relative;
+        
+    }
+
+    .graphicladies img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height:100%;
+        width: 100%;
+        transition: .3s ease;
+        background-color: rgba( 64,62,70, 0.8)
+    }
+
+    .graphicladies:hover .overlay{
+        opacity: 1;
+    }
+
+    .text{
+        top: 50%;
+        left: 50%;
+        position: absolute;
+        text-align: left;
+        -webkit-transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    ---------
+
+    /*change grid for work page desktop - 12 grid base*/
+    /*.graphic {
+        display: grid;
+        grid-gap: 20px;
+        /*grid-column-start: 1;
+        grid-column-end: 13;
+        grid-row-start: 1;
+        grid-row-end: 4;*/
+        /*width: 100%;
+        height: auto;
+        margin:auto;
+    }
+    
+    /* use col-5 = 41.6%*/
+    /*.graphicladies{
+        width: 41.66%;
+        height: auto;
+       
+        grid-column: 1 / span 5;
+        
+        grid-row: 1;
+       
+    }  
+ 
+    /* use col-2 = 16.6%*/
+    /*.graphicartdate{
+        width: 16.66%;
+        height: auto;
+        
+        grid-column-start: 6;
+        grid-column-end: 8;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    /* use col-5 = 41.6%*/
+    /*.graphicportraittablet{
+        width: 41.66%;
+        height: auto;
+        
+        grid-column-start: 8;
+        grid-column-end: 13;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .print {
+        display: grid;
+        grid-gap: 20px;
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+
+    /*.printorigin,
+    .printflorarecipe,
+    .printnyahbakso,
+    .printkillerb {
+        grid-column;1 / span 3;
+        grid-row: 2;
+    }*/
 }
