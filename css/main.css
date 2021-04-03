@@ -549,8 +549,6 @@ padding left for spacing each icon*/
         text-align: center;
     }
 
-    
-
     /*change grid for work page desktop - 12 grid base*/
     .graphic {
         display: grid;
@@ -563,7 +561,6 @@ padding left for spacing each icon*/
         height: auto;
     }
     
-    /* use col-5 = 41.6%*/
     .graphicladies{
         grid-column-start: 1;
         grid-column-end: 2;
@@ -577,7 +574,6 @@ padding left for spacing each icon*/
         min-height: 100%;
     }
  
-    /* use col-2 = 16.6%*/
     .graphicartdate{
         grid-column-start: 2;
         grid-column-end: 3;
@@ -591,8 +587,6 @@ padding left for spacing each icon*/
         min-height: 100%;
     }
 
-
-    /* use col-5 = 41.6%*/
     .graphicportraittablet{
         grid-column-start: 3;
         grid-column-end: 4;
@@ -614,20 +608,72 @@ padding left for spacing each icon*/
         min-height: 100%;
     }
 
+    /*change grid for the print desktop section*/
     .print {
         display: grid;
-        grid-gap: 20px;
-        grid-column-start: 1;
-        grid-column-end: 5;
+        grid-gap: 2%;
+        grid-template-columns: repeat(4, 1fr);
         grid-row-start: 1;
-        grid-row-end: 3;
+        grid-row-end: 2;
+        grid-auto-flow: column;
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
-    .printorigin,
-    .printflorarecipe,
-    .printnyahbakso,
-    .printkillerb {
-        grid-column:1 / span 3;
-        grid-row: 2;
+    /*change grid for the web desktop section*/
+    .web {
+        display: grid;
+        grid-gap: 2%;
+        grid-template-columns: 25% 46% 25%;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        grid-auto-flow: column;
+        width: 100%;
+        height: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
+    
+    .webtulis { 
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;  
+    }  
+
+    .webtulis > img{
+        object-fit: cover;
+        min-width: 0;
+        min-height: 100%;
+    }
+
+    .websmoochytablet{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;  
+    }
+
+    .websmoochytablet > img{
+        object-fit: cover;
+        min-width: 0;
+        min-height: 100%;
+    }
+
+    .webcustomking {
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .webcustomking  > img{
+        object-fit: cover;
+        min-width: 0;
+        min-height: 100%;
+    }
+    
+    
 }
