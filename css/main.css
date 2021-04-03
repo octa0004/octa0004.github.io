@@ -267,7 +267,7 @@ padding left for spacing each icon*/
         padding-right: 80px;
     }
 
-    /* change grid for the image in the work*/
+    /* change grid for the image in the work page*/
     .graphic {
         display: grid;
         grid-gap: 20px;
@@ -290,17 +290,19 @@ padding left for spacing each icon*/
     .graphicartdate{
         margin-top: 20px;
         width: 100%;
-        height: 50%;
+        height: auto;
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 2;
     }
     
+    /*hide for tablet*/
     .graphicportrait{
         display: none;
     }
 
+    /*change the size and look for tablet, change to 1 coloumn*/
     .graphicportraittablet{
         width: 100%;
         height: auto;
@@ -308,6 +310,59 @@ padding left for spacing each icon*/
         grid-column-end:3;
         grid-row-start:2;
         grid-row-end:3;
+    }
+
+    /* change grid for print image in the work page*/
+    .print {
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat( auto-fit, 48%);
+        grid-template-rows: 2;
+        width: 100%;
+        height: auto;
+        margin: auto;
+    }
+    
+    /* change grid for the web image in the work page*/
+    .web{
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat( auto-fit, 48%);
+        grid-template-rows: 2;
+        width: 100%;
+        height: auto;
+        margin:auto;
+    }
+    
+    .websmoochy{
+        display: none;
+    }
+
+    .websmoochytablet{
+        width: 100%;
+        height: auto;
+        grid-column-start:1;
+        grid-column-end:3;
+        grid-row-start:1;
+        grid-row-end:2;
+    }
+
+    .webtulis{
+        width: 100%;
+        height: auto;
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }    
+
+    .webcustomking{
+        width: 100%;
+        height: auto;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
     }
 
 }
