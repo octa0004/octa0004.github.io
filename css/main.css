@@ -181,15 +181,18 @@ but not affecting the navigation in the mobile */
 
 /*hide for mobile */
 .graphicladies-desktop,
-.graphicartdate .overlay,
+.graphicartdate-desktop,
 .graphicportraittablet,
-.printorigin .overlay,
-.printflorarecipe .overlay,
-.printnyahbakso .overlay,
-.printkillerb .overlay,
-.webtulis .overlay,
-.webcustomking .overlay,
-.websmoochytablet {
+.graphicportrait-desktop,
+.printorigin-desktop,
+.florarecipetext,
+.printnyahbakso-dekstop,
+.nyahbaksotext,
+.killerbtext,
+.printkillerb-dekstop,
+.webtulis-desktop,
+.websmoochytablet, 
+.webcustomking-desktop {
     display: none;
 }
 
@@ -312,17 +315,10 @@ padding left for spacing each icon*/
     
     /*hide for tablet*/
     .graphicladies-desktop,
-    .graphicartdate .overlay,
     .graphicportrait,
     .graphicportraittablet .overlay,
-    .printorigin .overlay,
-    .printflorarecipe .overlay,
-    .printnyahbakso .overlay,
-    .printkillerb .overlay,
-    .webtulis .overlay,
-    .webcustomking .overlay,
     .websmoochytablet,
-    .websmoochytablet .text {
+    .smoochytext {
         display: none;
     }
 
@@ -525,6 +521,7 @@ padding left for spacing each icon*/
     }
 
     /* make a fade in overlay for desktop*/
+    /*graphicladies*/
     .graphicladies-desktop {
         display: block;
     }
@@ -570,6 +567,516 @@ padding left for spacing each icon*/
         transform: translate(-50%, -50%);
         text-align: left;
     }
+
+    /*overlay graphiartdate for desktop*/
+    .graphicartdate-desktop {
+        display: block;
+    }
+    
+    .graphicartdate{
+        position: relative; 
+    }   
+
+    .graphicartdate img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .graphicartdate .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height:100%;
+        width: 100%;
+        opacity: 0;
+        transition: .3s ease;
+        background-color: rgba( 64,62,70, 0.8);
+    }
+
+    .graphicartdate:hover .overlay{
+        opacity: 0.8;
+    }
+
+    .graphicartdate:hover .overlay h2,
+    .graphicartdate:hover .overlay svg,
+    .graphicartdate:hover .overlay h3{
+        display:block;
+    }
+
+    .artdatetext{
+        color: white;
+        top: 25%;
+        left: 45%;
+        position: absolute;
+        transform: translate( -50%, -50%);
+        text-align: left;
+    }
+
+    /*overlay graphic portrait for desktop*/
+    .graphicportrait-desktop {
+        display: block;
+    }
+    
+    .graphicportrait{
+        position: relative; 
+    }   
+
+    .graphicportrait img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .graphicportrait .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height:100%;
+        width: 100%;
+        opacity: 0;
+        transition: .3s ease;
+        background-color: rgba( 64,62,70, 0.8);
+    }
+
+    .graphicportrait:hover .overlay{
+        opacity: 0.8;
+    }
+
+    .graphicportrait:hover .overlay h2,
+    .graphicportrait:hover .overlay svg,
+    .graphicportrait:hover .overlay h3{
+        display:block;
+    }
+
+    .portraittext{
+        color: white;
+        top: 35%;
+        left: 35%;
+        position: absolute;
+        transform: translate( -50%, -50%);
+        text-align: left;
+    }
+
+    /*overlay print origin for desktop*/
+    .printorigin-desktop {
+        display: block;
+    }
+    
+    .printorigin{
+        position: relative; 
+    }   
+
+    .printorigin img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .printorigin .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height:100%;
+        width: 100%;
+        opacity: 0;
+        transition: .3s ease;
+        background-color: rgba( 64,62,70, 0.8);
+    }
+
+    .printorigin:hover .overlay{
+        opacity: 0.8;
+    }
+
+    .printorigin:hover .overlay h2,
+    .printorigin:hover .overlay svg,
+    .printorigin:hover .overlay h3{
+        display:block;
+    }
+
+    .origintext{
+        color: white;
+        top: 35%;
+        left: 35%;
+        position: absolute;
+        transform: translate( -50%, -50%);
+        text-align: left;
+    }
+
+    /**/
+    /*overlay print florarecipe for desktop*/
+    .printflorarecipe-desktop {
+        display: block;
+    }
+    
+    .printflorarecipe{
+        position: relative; 
+    }   
+
+    .printflorarecipe img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .printflorarecipe .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height:100%;
+        width: 100%;
+        opacity: 0;
+        transition: .3s ease;
+        background-color: rgba( 64,62,70, 0.8);
+    }
+
+    .printflorarecipe:hover .overlay{
+        opacity: 0.8;
+    }
+
+    .printflorarecipe:hover .overlay h2,
+    .printflorarecipe:hover .overlay svg,
+    .printflorarecipe:hover .overlay h3{
+        display:block;
+    }
+
+    .florarecipetext{
+        color: white;
+        top: 35%;
+        left: 35%;
+        position: absolute;
+        transform: translate( -50%, -50%);
+        text-align: left;
+        display: block;
+    }
+
+    /**/
+    /*overlay print nyahbakso for desktop*/
+    .printnyahbakso-desktop {
+        display: block;
+    }
+    
+    .printnyahbakso{
+        position: relative; 
+    }   
+
+    .printnyahbakso img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .printnyahbakso .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height:100%;
+        width: 100%;
+        opacity: 0;
+        transition: .3s ease;
+        background-color: rgba( 64,62,70, 0.8);
+    }
+
+    .printnyahbakso:hover .overlay{
+        opacity: 0.8;
+    }
+
+    .printnyahbakso:hover .overlay h2,
+    .printnyahbakso:hover .overlay svg,
+    .printnyahbakso:hover .overlay h3{
+        display:block;
+    }
+
+    .nyahbaksotext{
+        color: white;
+        top: 35%;
+        left: 35%;
+        position: absolute;
+        transform: translate( -50%, -50%);
+        text-align: left;
+        display: block;
+    }
+
+    /**/
+    /*overlay print killerb for desktop*/
+    .printkillerb-desktop {
+        display: block;
+    }
+    
+    .printkillerb{
+        position: relative; 
+    }   
+
+    .printkillerb img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .printkillerb .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height:100%;
+        width: 100%;
+        opacity: 0;
+        transition: .3s ease;
+        background-color: rgba( 64,62,70, 0.8);
+    }
+
+    .printkillerb:hover .overlay{
+        opacity: 0.8;
+    }
+
+    .printkillerb:hover .overlay h2,
+    .printkillerb:hover .overlay svg,
+    .printkillerb:hover .overlay h3{
+        display:block;
+    }
+
+    .killerbtext{
+        color: white;
+        top: 35%;
+        left: 35%;
+        position: absolute;
+        transform: translate( -50%, -50%);
+        text-align: left;
+        display: block;
+    }
+
+    /**/
+    /*overlay web tulis for desktop*/
+    .webtulis-desktop {
+        display: block;
+    }
+    
+    .webtulis{
+        position: relative; 
+    }   
+
+    .webtulis img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .webtulis .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height:100%;
+        width: 100%;
+        opacity: 0;
+        transition: .3s ease;
+        background-color: rgba( 64,62,70, 0.8);
+    }
+
+    .webtulis:hover .overlay{
+        opacity: 0.8;
+    }
+
+    .webtulis:hover .overlay h2,
+    .webtulis:hover .overlay svg,
+    .webtulis:hover .overlay h3{
+        display:block;
+    }
+
+    .tulistext{
+        color: white;
+        top: 35%;
+        left: 35%;
+        position: absolute;
+        transform: translate( -50%, -50%);
+        text-align: left;
+    }
+
+    /**/
+    
+     /*overlay web smoochy for desktop*/
+    .websmoochy-desktop {
+        display: block;
+    }
+    
+    .websmoochy{
+        position: relative; 
+    }   
+
+    .websmoochy img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .websmoochy .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height:100%;
+        width: 100%;
+        opacity: 0;
+        transition: .3s ease;
+        background-color: rgba( 64,62,70, 0.8);
+    }
+
+    .websmoochy:hover .overlay{
+        opacity: 0.8;
+    }
+
+    .websmoochy:hover .overlay h2,
+    .websmoochy:hover .overlay svg,
+    .websmoochy:hover .overlay h3{
+        display:block;
+    }
+
+    .smoochytext{
+        color: white;
+        top: 35%;
+        left: 35%;
+        position: absolute;
+        transform: translate( -50%, -50%);
+        text-align: left;
+
+    }
+
+    /**/
+
+     /*overlay web smoochy for desktop*/
+     .webcustomking-desktop {
+        display: block;
+    }
+    
+    .webcustomking{
+        position: relative; 
+    }   
+
+    .webcustomking img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .webcustomking .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height:100%;
+        width: 100%;
+        opacity: 0;
+        transition: .3s ease;
+        background-color: rgba( 64,62,70, 0.8);
+    }
+
+    .webcustomking :hover .overlay{
+        opacity: 0.8;
+    }
+
+    .webcustomking:hover .overlay h2,
+    .webcustomking:hover .overlay svg,
+    .webcustomking:hover .overlay h3{
+        display:block;
+    }
+
+    .customkingtext{
+        color: white;
+        top: 35%;
+        left: 35%;
+        position: absolute;
+        transform: translate( -50%, -50%);
+        text-align: left;
+    }
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     /*change grid for work page desktop - 12 grid base*/
