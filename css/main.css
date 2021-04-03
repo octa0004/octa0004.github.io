@@ -192,6 +192,7 @@ but not affecting the navigation in the mobile */
 .printkillerb-dekstop,
 .webtulis-desktop,
 .websmoochytablet, 
+.websmoochy-desktop,
 .webcustomking-desktop {
     display: none;
 }
@@ -316,8 +317,7 @@ padding left for spacing each icon*/
     /*hide for tablet*/
     .graphicladies-desktop,
     .graphicportrait,
-    .graphicportraittablet .overlay,
-    .websmoochytablet,
+    .graphicportrait-desktop,
     .smoochytext {
         display: none;
     }
@@ -355,11 +355,12 @@ padding left for spacing each icon*/
         margin:auto;
     }
     
-    .websmoochy{
+    .websmoochymobile,
+    .websmoochy-desktop {
         display: none;
     }
 
-    .websmoochytablet{
+    .websmoochytablet {
         display: grid;
         width: 100%;
         height: auto;
@@ -489,6 +490,8 @@ padding left for spacing each icon*/
         padding-left: 80px;
         padding-right: 80px;
     }
+
+    
 
     /*hide all the h2 and h3 for desktop -- desktop will change to hover*/
     .graphicladies-mobile-tablet,
@@ -624,13 +627,17 @@ padding left for spacing each icon*/
         position: relative; 
     }   
 
+    .graphicportraittablet{
+        position: relative; 
+    }   
+
     .graphicportrait img{
         display: block;
         width: 100%;
         height: auto;
     }
 
-    .graphicportrait .overlay {
+    .graphicportrait-desktop .overlay {
         position: absolute;
         top: 0;
         bottom: 0;
@@ -643,13 +650,13 @@ padding left for spacing each icon*/
         background-color: rgba( 64,62,70, 0.8);
     }
 
-    .graphicportrait:hover .overlay{
+    .graphicportrait-desktop:hover .overlay{
         opacity: 0.8;
     }
 
-    .graphicportrait:hover .overlay h2,
-    .graphicportrait:hover .overlay svg,
-    .graphicportrait:hover .overlay h3{
+    .graphicportrait-desktop:hover .overlay h2,
+    .graphicportrait-desktop:hover .overlay svg,
+    .graphicportrait-desktop:hover .overlay h3{
         display:block;
     }
 
@@ -956,7 +963,7 @@ padding left for spacing each icon*/
 
     /**/
 
-     /*overlay web smoochy for desktop*/
+     /*overlay web customking for desktop*/
      .webcustomking-desktop {
         display: block;
     }
