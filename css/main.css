@@ -172,6 +172,11 @@ p{
     font-size: 14px;
 }
 
+/*adding margin top specifica for this so it will give space to top, 
+but not affecting the navigation in the mobile */
+.graphicladies {
+    margin-top: 20px;
+}
 
 .footerwrapper{
     display: flex;
@@ -181,11 +186,17 @@ p{
     padding-right: 40px;
 }
 
+/*use align item to center and make it same with the copyright,
+margin-left auto to make sure it align with line on the right*/
 .socialmedialogo{
     display: flex;
+    flex-direction: row;
     align-items: center;
-    margin-right: 0px;
+    margin-left: auto;
 }
+
+/*use width to set the soze of the icon
+padding left for spacing each icon*/
 .socialmedialogo img{
     border: 0;
     width: 13px;
