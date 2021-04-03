@@ -525,7 +525,8 @@ padding left for spacing each icon*/
         right: 0;
         height:100%;
         width: 100%;
-        transition: .3s ease;
+        opacity: 0;
+        transition: .5s ease;
         background-color: rgba( 64,62,70, 0.8)
     }
 
@@ -533,11 +534,17 @@ padding left for spacing each icon*/
         opacity: 1;
     }
 
+    .graphicladies:hover .overlay h2,
+    .graphicladies:hover .overlay svg,
+    .graphicladies:hover .overlay h3{
+        display:block;
+    }
+
     .text{
+        color: white;
         top: 50%;
         left: 50%;
         position: absolute;
-        text-align: left;
         transform: translate(-50%, -50%);
         text-align: center;
     }
@@ -545,49 +552,66 @@ padding left for spacing each icon*/
     
 
     /*change grid for work page desktop - 12 grid base*/
-    /*.graphic {
+    .graphic {
         display: grid;
-        grid-gap: 20px;
-        /*grid-column-start: 1;
-        grid-column-end: 13;
+        grid-gap: 2%;
+        grid-template-columns: 38% 20% 38%;
         grid-row-start: 1;
-        grid-row-end: 4;*/
-        /*width: 100%;
+        grid-row-end: 2;
+        grid-auto-flow: column;
+        width: 100%;
         height: auto;
-        margin:auto;
     }
     
     /* use col-5 = 41.6%*/
-    /*.graphicladies{
-        width: 41.66%;
-        height: auto;
-       
-        grid-column: 1 / span 5;
-        
-        grid-row: 1;
-       
+    .graphicladies{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;  
     }  
+
+    .graphicladies > img{
+        object-fit: cover;
+        min-width: 0;
+        min-height: 100%;
+    }
  
     /* use col-2 = 16.6%*/
-    /*.graphicartdate{
-        width: 16.66%;
-        height: auto;
-        
-        grid-column-start: 6;
-        grid-column-end: 8;
+    .graphicartdate{
+        grid-column-start: 2;
+        grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 2;
     }
 
+    .graphicartdate > img{
+        object-fit: cover;
+        min-width: 0;
+        min-height: 100%;
+    }
+
+
     /* use col-5 = 41.6%*/
-    /*.graphicportraittablet{
-        width: 41.66%;
-        height: auto;
-        
-        grid-column-start: 8;
-        grid-column-end: 13;
+    .graphicportraittablet{
+        grid-column-start: 3;
+        grid-column-end: 4;
         grid-row-start: 1;
         grid-row-end: 2;
+    }
+
+    .graphicportraittablet{
+        margin-top: 20px;
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .graphicportraittablet > img{
+        object-fit: cover;
+        min-width: 0;
+        min-height: 100%;
     }
 
     .print {
@@ -599,11 +623,11 @@ padding left for spacing each icon*/
         grid-row-end: 3;
     }
 
-    /*.printorigin,
+    .printorigin,
     .printflorarecipe,
     .printnyahbakso,
     .printkillerb {
-        grid-column;1 / span 3;
+        grid-column:1 / span 3;
         grid-row: 2;
-    }*/
+    }
 }
