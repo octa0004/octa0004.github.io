@@ -24,9 +24,10 @@ html {
 }
 
 .wrapper img{
-    width: 295px;
-    max-width: 100%;
+    width: 100%;
+    height: auto;
 }
+
 
 hr{
     margin-bottom: 0px;
@@ -178,11 +179,6 @@ but not affecting the navigation in the mobile */
     margin-top: 20px;
 }
 
-/*hide for mobile*/
-.graphicportraittablet{
-    display: none;
-}
-
 .footerwrapper{
     display: flex;
     box-sizing: border-box;
@@ -272,33 +268,42 @@ padding left for spacing each icon*/
     }
 
     /* change grid for the image in the work*/
-    .graphic{
+    .graphic {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-gap: 20px;
+        grid-template-columns: repeat( auto-fit, 48%);
+        grid-template-rows: 2;
         width: 100%;
+        height: auto;
         margin:auto;
     }
     
     .graphicladies{
+        width: 100%;
+        height: auto;
         grid-column-start: 1;
-        grid-column-end: 3;
+        grid-column-end: 2;
         grid-row-start: 1;
-        grid-row-end: 3;
+        grid-row-end: 2;
     }    
 
     .graphicartdate{
+        margin-top: 20px;
+        width: 100%;
+        height: 50%;
         grid-column-start: 2;
         grid-column-end: 3;
-        grid-row-start: 2;
-        grid-row-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
     }
     
     .graphicportrait{
         width: 100%;
+        height: auto;
         grid-column-start:1;
         grid-column-end:3;
-        grid-row-start:3;
-        grid-row-end:4;
+        grid-row-start:2;
+        grid-row-end:3;
     }
 
 }
@@ -315,10 +320,44 @@ padding left for spacing each icon*/
         display: none;
     } 
 
+    /*for the work and profile to display on the left use float left*/    
+    .navlink li:nth-child(-n+2){
+        display: flex;
+        font-size: 14px;
+        padding-right: 40px;
+    }
 
+    .navlink li:nth-child(n+2){
+        display: flex;
+        font-size: 14px;
+        padding-left: 40px;
+    }
 
+    .navlink li:nth-child(2){
+        padding-left: 0px;
+    }
 
+    .nav{
+        width: 100%;
+        margin: auto;
+        padding-top: 20px;
+    }
 
+   .navlink{
+       display: flex;
+       align-items: center;
+       justify-content: space-around;
+   }
+
+   /*target specific li child to make menu work and profile align left*/
+   .li:nth-child(2){
+       margin-right: 110px;
+   }
+
+    /*target specific li child to make menu insight and contact align right*/
+   .li:nth-child(4){
+       margin-left: 110px;
+   }
 
     .wrapper{
     box-sizing: border-box;
@@ -359,5 +398,15 @@ padding left for spacing each icon*/
         font-size: 14px;
     }
 
- 
+    .footerwrapper{
+        display: flex;
+        box-sizing: border-box;
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    .site-footer{
+        padding: 0px;
+    }
 }
