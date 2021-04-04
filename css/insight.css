@@ -192,6 +192,12 @@ ol {
     padding-right: 40px;
 }
 
+/*dash line using html entities and style here*/
+.horizontalline{
+    color: var(--red);
+    margin-bottom: 0;
+}
+
 /*use align item to center and make it same with the copyright,
 margin-left auto to make sure it align with line on the right*/
 .socialmedialogo{
@@ -223,7 +229,7 @@ padding left for spacing each icon*/
 }
 
 /*format for the date*/
-.captiontext{
+.captiontext p{
     color: var(--red);
     text-transform: uppercase;
     letter-spacing: 0.2em;
