@@ -141,6 +141,11 @@ h1{
     text-align: center;
 }
 
+/*specific on top paragraph align in the center*/
+h1 p{
+    text-align: center;
+}
+
 h2{
     font-family: 'Playfair Display', serif;
     font-size: 25px;
@@ -176,3 +181,13 @@ p{
 }
 
 /* start custom contact css*/
+.emailme {
+    color: var(--red);
+}
+
+.captiontext{
+    color: var(--red);
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    line-height: 1.5;
+}
