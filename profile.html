@@ -222,44 +222,44 @@
 
     </main>
           
-<!--Repeat Footer-->
-<footer>
-    <div class="footerwrapper">
-        <div class="site-footer">
-            <h5>
-            <!--HTML Entities to add the copyright symbol-->
-            &copy; Tina Octaviani
-            </h5>
+    <!--Repeat Footer-->
+    <footer>
+        <div class="footerwrapper">
+            <div class="site-footer">
+                <h5>
+                <!--HTML Entities to add the copyright symbol-->
+                &copy; Tina Octaviani
+                </h5>
+            </div>
+
+            <div class="socialmedialogo">
+                <a href="http://instagram.com/"> <img alt="instagram" src="images/instagramlogo.png"></a>
+                <a href="https://github.com/octa0004"> <img alt="github" src="images/githublogo.png"></a>
+                <a href="https://www.linkedin.com/in/tina-o-73145012a/"> <img alt="linkedin" src="images/linkedinlogo.png"></a>
+            </div>
         </div>
+    </footer>
 
-        <div class="socialmedialogo">
-            <a href="http://instagram.com/"> <img alt="instagram" src="images/instagramlogo.png"></a>
-            <a href="https://github.com/octa0004"> <img alt="github" src="images/githublogo.png"></a>
-            <a href="https://www.linkedin.com/in/tina-o-73145012a/"> <img alt="linkedin" src="images/linkedinlogo.png"></a>
-        </div>
-    </div>
-</footer>
+    <!--adding script to enable the drop down menu for the nav in the tablet and mobile-->
+    <script>
+        $(document).ready(function(){
+            $('#navbar-button').on('click', function (e) {
+                e.stopPropagation();
+                $('#navDropDown').slideDown("fast");
+            });
 
-<!--adding script to enable the drop down menu for the nav in the tablet and mobile-->
-<script>
-    $(document).ready(function(){
-        $('#navbar-button').on('click', function (e) {
-            e.stopPropagation();
-            $('#navDropDown').slideDown("fast");
+            $('#navDropDown').on('click', function (e) {
+                e.stopPropagation();
+                $('#navDropDown').slideDown("fast");
+            });
+
+            $(document).on('click', function (e) {
+                if (e.target != $('#navDropDown')) {
+                    $('#navDropDown').slideUp("fast");
+                }
+            });
         });
-
-        $('#navDropDown').on('click', function (e) {
-            e.stopPropagation();
-            $('#navDropDown').slideDown("fast");
-        });
-
-        $(document).on('click', function (e) {
-            if (e.target != $('#navDropDown')) {
-                $('#navDropDown').slideUp("fast");
-            }
-        });
-    });
-    
-</script>
+        
+    </script>
 </body>
 </html>
