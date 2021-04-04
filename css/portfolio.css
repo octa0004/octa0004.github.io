@@ -398,7 +398,7 @@ padding left for spacing each icon*/
         grid-row-end: 2;
     }
 
-    .workcategory p.web{
+    .workcategory p.website{
         grid-column-start: 3;
         grid-column-end: 4;
         grid-row-start: 1;
@@ -552,6 +552,7 @@ padding left for spacing each icon*/
         grid-template-columns: 35% 65%;
         grid-row-start: 1;
         grid-row-end: 2;
+        margin-top: 50px;
     }
 
     .titledesktop{
@@ -566,5 +567,36 @@ padding left for spacing each icon*/
     }
 
     /*change the spacing between the workcategory*/
+   
+    .workcategory{
+        display: grid;
+        grid-gap: 2%;
+        grid-template-columns: repeat(5,1fr);
+        grid-row-start: 1;
+        grid-row-end: 2;
+        margin-bottom: 10px;
+        justify-items: center;
+    }
+
+    .workcategory p.graphic{
+        grid-column-start:2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .workcategory p.print{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .workcategory p.website{
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
 
 }
