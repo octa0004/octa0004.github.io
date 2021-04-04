@@ -183,10 +183,6 @@ p{
     line-height: 2;
 }
 
-.horizontalline{
-    color: var(--brown);
-    margin-bottom: 0;
-}
 
 .workcategory p{
     font-family: 'Playfair Display', serif;
@@ -194,6 +190,11 @@ p{
     margin-top: 0px;
     margin-bottom: 2px;
     text-align: center;
+}
+
+.horizontalline{
+    color: var(--brown);
+    margin-bottom: 0;
 }
 
 /*adding margin top specifica for this so it will give space to top, 
@@ -313,16 +314,16 @@ padding left for spacing each icon*/
 
     /**/
     /* change grid for the image in the work page*/
-    .graphic {
+    .graphics {
         display: grid;
         grid-gap: 20px;
         grid-template-columns: repeat( auto-fit, 48%);
         grid-template-rows: 2;
         width: 100%;
         height: auto;
-        margin:auto;
+        margin: auto;
     }
-    
+   
     .graphicladies{
         width: 100%;
         height: auto;
@@ -344,83 +345,50 @@ padding left for spacing each icon*/
     
     /*hide for tablet*/
     .graphicladies-desktop,
-    .graphicportrait,
+    .graphicportraittablet,
     .graphicportrait-desktop,
     .smoochytext {
         display: none;
     }
 
-    /*change the size and look for tablet, change to 1 coloumn*/
-    .graphicportraittablet{
+    /**/
+
+    .wrapper h6{
+        margin-bottom: 10px;
+    }
+    /*change work categoryto grid 3 column for tablet*/
+    .workcategory{
         display: grid;
-        width: 100%;
-        height: auto;
-        grid-column-start:1;
-        grid-column-end:3;
-        grid-row-start:2;
-        grid-row-end:3;
+        grid-gap: 2%;
+        grid-template-columns: 33% 30% 33%;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        margin-bottom: 10px;
     }
 
-    /* change grid for print image in the work page*/
-    .print {
-        display: grid;
-        grid-gap: 20px;
-        grid-template-columns: repeat( auto-fit, 48%);
-        grid-template-rows: 2;
-        width: 100%;
-        height: auto;
-        margin: auto;
-    }
-    
-    /* change grid for the web image in the work page*/
-    .web{
-        display: grid;
-        grid-gap: 20px;
-        grid-template-columns: repeat( auto-fit, 48%);
-        grid-template-rows: 2;
-        width: 100%;
-        height: auto;
-        margin: auto;
-    }
-    
-    .websmoochy{
-        grid-column-start:1;
-        grid-column-end:3;
-        grid-row-start:1;
-        grid-row-end:2;
-    }
-
-    .websmoochymobile,
-    .websmoochy-desktop {
-        display: none;
-    }
-
-    .websmoochytablet {
-        display: grid;
-        width: 100%;
-        height: auto;
-    }
-
-    .webtulis{
-        width: 100%;
-        height: auto;
+    .workcategory p.graphic{
         grid-column-start: 1;
         grid-column-end: 2;
-        grid-row-start: 2;
-        grid-row-end: 3;
-    }    
-
-    .webcustomking{
-        width: 100%;
-        height: auto;
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 2;
-        grid-row-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
     }
 
-}
+    .workcategory p.print{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
 
+    .workcategory p.website{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+
+}
 
 /*-----------------------------------------------------------
     Desktop Style
@@ -751,5 +719,36 @@ padding left for spacing each icon*/
         min-height: 100%;
     }
 
+    /*change the spacing between the workcategory*/
+    .workcategory{
+        display: grid;
+        grid-gap: 2%;
+        grid-template-columns: repeat(5,1fr);
+        grid-row-start: 1;
+        grid-row-end: 2;
+        margin-bottom: 10px;
+        justify-items: center;
+    }
+
+    .workcategory p.graphic{
+        grid-column-start:2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .workcategory p.print{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .workcategory p.website{
+        grid-column-start: 4;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
     
 }

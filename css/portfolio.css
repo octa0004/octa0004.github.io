@@ -567,7 +567,6 @@ padding left for spacing each icon*/
     }
 
     /*change the spacing between the workcategory*/
-   
     .workcategory{
         display: grid;
         grid-gap: 2%;
