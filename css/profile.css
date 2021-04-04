@@ -213,7 +213,7 @@ padding left for spacing each icon*/
     line-height: 1.5;
 }
 
-/*change display */
+/*set h1*/
 .profile h1{
     display: inline-grid;
     grid-gap: 2%;
@@ -244,57 +244,25 @@ padding left for spacing each icon*/
     grid-column-end: 3;
     grid-row-start: 1;
     grid-row-end: 2;
-
 }
 
 /*change text alignment*/
 .profiletext{
     text-align: center;
 }
-
-.profilepicture{
-    display: block;
-    align-items: center;
+ 
+.profiletext{
+    margin-bottom: 40px;
 }
 
-/*4 grid for mobile*/
-.profilesection {
+
+/*make 2 column grid for mobile*/
+.profilesection{
     display: grid;
     grid-gap: 2%;
     grid-template-columns: 48% 48%;
     grid-row-start: 1;
-    grid-row-end: 3;
-    grid-auto-flow: column;
-    width: 100%;
-    height: auto;
-}
-
-.mantra {
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-
-.fashion {
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 1;
-    grid-row-end: 2;
-}
-
-.films{
-    grid-column-start: 1;
-    grid-column-end: 2;
-    grid-row-start: 2;
-    grid-row-end: 3;
-}
-
-.hobby{
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row-end: 2;   
 }
 
 /*-----------------------------------------------------------
@@ -353,21 +321,67 @@ padding left for spacing each icon*/
     }
 
     /**/
-
-    .profile {
-        margin-bottom: 90px;
+    .profile{
+        display:flex;
+        flex-direction:column;
+        align-items: center; 
+        justify-content: center
     }
-    /*change profile picture and description to 2 grid*/
-    /*.profiledesc{
+
+    .profile h1{
+        width: 70%;
+        margin-left: 30px;
+    }
+
+    /*ad margin maintain spacing*/
+    .profiletext {
+        margin-bottom: 50px;
+    }
+
+    /*change grid*/
+    .storyprofilecaption{
         display: grid;
         grid-gap: 2%;
-        grid-template-columns: 50% 48%;
+        grid-template-columns: 23% 23% 23% 23%;
+        grid-template-rows: 75% 20%;
+
+    }
+
+    .profilestory{
+        grid-column-start: 1;
+        grid-column-end: 3;
         grid-row-start: 1;
-        grid-row-end: 3;
-        grid-auto-flow: column;
+        grid-row-end: 2; 
+    }
+
+    .profilestory .captiontext{
+        margin-top: 0px;
+    }
+
+    .profilepicture{
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2; 
+    }
+
+    .profilepicture img{
+        display: block;
         width: 100%;
         height: auto;
-    }*/
+    }
+
+    /*make 4 column grid */
+    .profilesection{
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 3; 
+
+        display: grid;
+        grid-gap: 2%;
+        grid-template-columns: 23% 23% 23% 23%;
+    }
 
 
 }
@@ -485,11 +499,11 @@ padding left for spacing each icon*/
         margin-bottom: 10px;
     }
 
-    /*change profile picture and description to 3 grid*/
+    /*change h1*/
     .profile h1{
         display: grid;
         grid-gap: 2%;
-        grid-template-columns: 45% 20% 35%;
+        grid-template-columns: 35% 15% 35%;
         grid-row-start: 1;
         grid-row-end: 4;
         grid-auto-flow: column;
@@ -499,10 +513,57 @@ padding left for spacing each icon*/
         justify-items: center;
     }
 
-    
+    /* change grid */
+    .storyprofilecaption{
+        display: grid;
+        grid-gap: 15%;
+        grid-template-columns: 20% 10% 40%;
+    }
 
+    .profilepicture{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
 
-    /* change grid profilesection to 4 columns*/
-    
+    .profilestory{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2; 
+    }
+
+    .profilesection{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+
+        display: grid;
+        grid-gap: 2%;
+        grid-template-rows: 23% 23% 23% 23%;
+        grid-template-columns: 100%;
+    }
+
+    .profilesection .mantra{
+        grid-row-start:1;
+        grid-row-end: 2;
+    }
+
+    .profilesection .fashion{
+        grid-row-start:2;
+        grid-row-end: 3; 
+    }
+
+    .profilesection .film{
+        grid-row-start:3;
+        grid-row-end: 4;
+    }
+
+    .profilesection .hobby{
+        grid-row-start:4;
+        grid-row-end: 5;
+    }
 
 }
