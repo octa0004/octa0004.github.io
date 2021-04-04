@@ -292,7 +292,13 @@ padding left for spacing each icon*/
     }
 
     /**/
-    
+    /*use same grid with mobile*/
+
+    /*hide image for tablet*/
+    .topicbrand img,
+    .topicessential img{
+        display: none;
+    }
 
 }
 
@@ -397,5 +403,59 @@ padding left for spacing each icon*/
     }
 
     /**/
-   
+   /*change grid*/
+   .topicbrand,
+   .topicessential {
+       display: grid;
+       grid-gap: 2%;
+       grid-template-columns: 48% 48%;
+       grid-row-start: 1;
+       grid-row-end: 3;
+       grid-auto-flow: column;
+       width: 100%;
+       height: auto;
+   }
+
+   /*change the headline to spread accross, 
+   but it does not look the same with the xd, i try with the grid-column-end 2, also does not look similar*/
+   .topicbrand h1,
+   .topicessential h1{
+       grid-column-start: 1;
+       grid-column-end: 3;
+       grid-row-start: 1;
+       grid-row-end: 2;
+   }
+
+   .insightbrand,
+   .insightessential {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    /*display the image, set next o the paragraph text*/
+    .topicbrand img,
+    .topicessential img {
+        display: block;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 2;
+        grid-row-end: 3;
+        margin-bottom: 20px;
+    }
+
+    
+
+
+
+
+   /*.topicessential img,
+   .topicbrand img{
+        display: block;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }*/
 }
