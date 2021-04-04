@@ -138,6 +138,7 @@ h1{
     font-size: 35px;
     color: var(--grey);
     margin-bottom: 5px;
+    text-align: center;
 }
 
 h2{
@@ -171,6 +172,7 @@ h5 {
 p{
     font-family: 'Montserrat', sans-serif;
     font-size: 14px;
+    line-height: 1.5;
 }
 
 /* start custom contact css*/
