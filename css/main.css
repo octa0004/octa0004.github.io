@@ -352,9 +352,16 @@ padding left for spacing each icon*/
         grid-template-rows: 2;
         width: 100%;
         height: auto;
-        margin:auto;
+        margin: auto;
     }
     
+    .websmoochy{
+        grid-column-start:1;
+        grid-column-end:3;
+        grid-row-start:1;
+        grid-row-end:2;
+    }
+
     .websmoochymobile,
     .websmoochy-desktop {
         display: none;
@@ -364,10 +371,6 @@ padding left for spacing each icon*/
         display: grid;
         width: 100%;
         height: auto;
-        grid-column-start:1;
-        grid-column-end:3;
-        grid-row-start:1;
-        grid-row-end:2;
     }
 
     .webtulis{
@@ -1011,81 +1014,6 @@ padding left for spacing each icon*/
     }
     
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     /*change grid for work page desktop - 12 grid base*/
     .graphic {
         display: grid;
@@ -1186,7 +1114,7 @@ padding left for spacing each icon*/
         min-height: 100%;
     }
 
-    .websmoochytablet{
+    .websmoochy{
         grid-column-start: 2;
         grid-column-end: 3;
         grid-row-start: 1;
