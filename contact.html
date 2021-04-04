@@ -8,14 +8,11 @@
     <!-- Inserting Normalize, so all the browser will look the same-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
 
+    
     <!-- Inserting Google Fonts so it will affecting the css below -->
     <!--playfair display-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
-
-    <!--css
-    font-family: 'Playfair Display', serif;
-    -->
 
     <!--montserrat-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -26,7 +23,14 @@
     font-family: 'Playfair Display', serif;
     -->
 
-    <title> Tina Octaviani Portfolio</title>
+    <!--css for the index home page-->
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!--add js for the dropdown menu-->
+    <script src="jquery-3.6.0.min.js"></script>
+
+    <title>Tina Octaviani Portfolio</title>
+
 </head>
 
 <body>
@@ -34,6 +38,16 @@
     <header>
         <section class="wrapper">
             <div class="nav">
+
+                <!-- menu button for mobile and tablet-->
+                <div class="menu">
+                    <svg id="navbar-button" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                        <path id="Menu-2" data-name="Menu" d="M0,14V12H16v2ZM0,8V6H16V8ZM0,2V0H16V2Z" transform="translate(0 1)" fill="#414042"/>
+                        <rect id="Rectangle_1446" data-name="Rectangle 1446" width="12" height="12" transform="translate(0)" fill="none"/>
+                      </svg>
+                      
+                </div>
+
                 <ul class="navlink">
                     <li>
                         <a href="index.html">Work</a>
@@ -58,10 +72,31 @@
                     </li>
                 </ul>
             </div>
+            
+            <hr>
         </section>
-    </header>
 
-    <hr>
+        <!-- move out from section, so the drowndown link width can spread from left to right-->
+        <div id="navDropDown">
+            <ul class="navlink">
+                <li>
+                    <a href="index.html">Work</a>
+                </li>
+
+                <li>
+                    <a href="profile.html">Profile</a>
+                </li>
+
+                <li>
+                    <a href="insight.html">Insight</a>
+                </li>
+
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </header>
 
     <main>
         <!--graphic gallery section-->
@@ -190,18 +225,42 @@
     
     <!--Repeat Footer-->
     <footer>
-        <div class="site-footer">
-            <h5>
-            <!--HTML Entities to add the copyright symbol-->
-            &copy; Tina Octaviani
-            </h5>
-        </div>
+        <div class="footerwrapper">
+            <div class="site-footer">
+                <h5>
+                <!--HTML Entities to add the copyright symbol-->
+                &copy; Tina Octaviani
+                </h5>
+            </div>
 
-        <div class="socialmedialogo">
-            <a href="http://instagram.com/"> <img alt="instagram" src="images/instagramlogo.png"></a>
-            <a href="https://github.com/octa0004"> <img alt="github" src="images/githublogo.png"></a>
-            <a href="https://www.linkedin.com/in/tina-o-73145012a/"> <img alt="linkedin" src="images/linkedinlogo.png"></a>
+            <div class="socialmedialogo">
+                <a href="http://instagram.com/"> <img alt="instagram" src="images/instagramlogo.png"></a>
+                <a href="https://github.com/octa0004"> <img alt="github" src="images/githublogo.png"></a>
+                <a href="https://www.linkedin.com/in/tina-o-73145012a/"> <img alt="linkedin" src="images/linkedinlogo.png"></a>
+            </div>
         </div>
     </footer>
+
+    <!--adding script to enable the drop down menu for the nav in the tablet and mobile-->
+    <script>
+        $(document).ready(function(){
+            $('#navbar-button').on('click', function (e) {
+                e.stopPropagation();
+                $('#navDropDown').slideDown("fast");
+            });
+
+            $('#navDropDown').on('click', function (e) {
+                e.stopPropagation();
+                $('#navDropDown').slideDown("fast");
+            });
+
+            $(document).on('click', function (e) {
+                if (e.target != $('#navDropDown')) {
+                    $('#navDropDown').slideUp("fast");
+                }
+            });
+        });
+        
+    </script>
 </body>
 </html>
