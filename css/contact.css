@@ -178,6 +178,12 @@ p{
     line-height: 1.5;
 }
 
+/*dash line using html entities and style here*/
+.horizontalline{
+    color: var(--red);
+    margin-bottom: 0;
+}
+
 /*footer mobile */
 .footerwrapper{
     display: flex;
