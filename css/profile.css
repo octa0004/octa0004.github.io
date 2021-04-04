@@ -214,8 +214,21 @@ padding left for spacing each icon*/
 }
 
 /*change display */
-.profile{
-    display: block;
+.profile h1{
+    display: inline-grid;
+    grid-gap: 2%;
+    grid-template-columns: 55% 10% 30%;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-auto-flow: column;
+    align-items:flex-end;
+    width: 100%;
+    height: auto;
+}
+
+.profile h1 span{
+    display:inline;
+    margin-right: 20px;
 }
 
 /*hide logo first*/
@@ -225,9 +238,13 @@ padding left for spacing each icon*/
 }
 
 .tomobilelogo{
-    width: 35px;
-    max-width: 100%;
+    width: 100%;
     height: auto;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+
 }
 
 /*change text alignment*/
@@ -337,6 +354,22 @@ padding left for spacing each icon*/
 
     /**/
 
+    .profile {
+        margin-bottom: 90px;
+    }
+    /*change profile picture and description to 2 grid*/
+    /*.profiledesc{
+        display: grid;
+        grid-gap: 2%;
+        grid-template-columns: 50% 48%;
+        grid-row-start: 1;
+        grid-row-end: 3;
+        grid-auto-flow: column;
+        width: 100%;
+        height: auto;
+    }*/
+
+
 }
 
 /*-----------------------------------------------------------
@@ -440,5 +473,36 @@ padding left for spacing each icon*/
     }
 
     /**/
+
+    .profile{
+        box-sizing: border-box;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        margin-bottom: 10px;
+    }
+
+    /*change profile picture and description to 3 grid*/
+    .profile h1{
+        display: grid;
+        grid-gap: 2%;
+        grid-template-columns: 45% 20% 35%;
+        grid-row-start: 1;
+        grid-row-end: 4;
+        grid-auto-flow: column;
+        width: 60%;
+        height: auto;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    
+
+
+    /* change grid profilesection to 4 columns*/
+    
 
 }
