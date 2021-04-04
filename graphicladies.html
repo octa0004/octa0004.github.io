@@ -103,55 +103,90 @@
     </p>-->
 
     <main>
+        <!--hero image, seperate per device so it will help when doing the grid in css-->
         <section class="wrapper">                    
-            <div class="heroimage">
+            <div class="heroimagemobile">
                 <img src="images/graphic-ladies-cover.jpg" alt="ladieshero">
+            </div>
+
+            <div class="heroimagetablet">
+                <img src="images/graphic-ladies-header.jpg" alt="ladieshero">
+            </div>
+        </section>
+
+        <!--do not use wrapper so can spread out max width-->
+        <section>
+            <div class="heroimagedesktop">
+                <img src="images/graphic-ladies-header.jpg" alt="ladieshero">
             </div>
         </section>
         
+        <section class="content">
+            <section class="wrapper">
+                <!--for mobile and tablet-->
+                <div class="titlemobiletablet">
+                    <h2>
+                        Ladies
+                    </h2>
+
+                    <p class="horizontalline">
+                        &HorizontalLine;
+                    </p>
+
+                    <h3>
+                        Graphic. Illustration
+                    </h3>
+
+                    <hr class="hidedesktop">
+                </div>
+
+                <!--for desktop change the grid-->
+                <div class="titledesktop">
+                    <h2>
+                        Ladies
+                    </h2>
+
+                    <p class="horizontalline">
+                        &HorizontalLine;
+                    </p>
+
+                    <h3>
+                        Graphic. Illustration
+                    </h3>
+                </div>
+                
+            </section>
+        
+            <section class="wrapper text">
+                <h2>
+                    A collections of fashion illustration ladies.
+                </h2>
+
+                <h4 class="captiontext">
+                    Description &HorizontalLine;
+                </h4>
+
+                <p>
+                    The purpose of this project is to celebrate international women’s day. The outcome I produced is a collection of illustrations with a different kinds of female professionals, from young to mature. 
+                    The colour that I choose is another way to reflect upon their personality or activity.  
+                    I believe when women support each other without tearing each other down, incredible things happen. I have done this before, and this is my way to showcase how each of us is unique and powerful. 
+                </p>
+            </section>
+        </section>
+
         <section class="wrapper">
-            <h2>
-                Ladies
-            </h2>
+            <div class="imagegrid">
+                <div class="imageone">
+                    <img src="/images/graphic-ladies-image1.jpg" alt="ladiesimageone">
+                </div>
 
-            <p class="horizontalline">
-                &HorizontalLine;
-            </p>
+                <div class="imagetwo">
+                    <img src="/images/graphic-ladies-image2.jpg" alt="ladiesimagetwo">
+                </div>
 
-            <h3>
-                Graphic. Illustration
-            </h3>
-
-            <hr>
-        </section>
-    
-        <section class="wrapper text">
-            <h2>
-                A collections of fashion illustration ladies.
-            </h2>
-
-            <h4 class="captiontext">
-                Description &HorizontalLine;
-            </h4>
-
-            <p>
-                The purpose of this project is to celebrate international women’s day. The outcome I produced is a collection of illustrations with a different kinds of female professionals, from young to mature. 
-                The colour that I choose is another way to reflect upon their personality or activity.  
-                I believe when women support each other without tearing each other down, incredible things happen. I have done this before, and this is my way to showcase how each of us is unique and powerful. 
-            </p>
-        </section>
-
-        <section class=" wrapper">
-            <div class="image">
-                <img src="/images/graphic-ladies-image1.jpg" alt="ladiesimageone">
-            </div>
-
-            <div class="image">
-                <img src="/images/graphic-ladies-image2.jpg" alt="ladiesimagetwo">
-            </div>
-
-            <div class="image">
-                <img src="/images/graphic-ladies-image3.jpg" alt="ladiesimagethree">
+                <div class="imagethree">
+                    <img src="/images/graphic-ladies-image3.jpg" alt="ladiesimagethree">
+                </div>
             </div>
         </section>
 

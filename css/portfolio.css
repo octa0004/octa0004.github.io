@@ -195,15 +195,23 @@ p{
 }
 
 .captiontext{
+    font-size: 12px;
     color: var(--red);
     text-transform: uppercase;
     letter-spacing: 0.2em;
     line-height: 1.5;
+    margin-top: 30px;
+}
+.imagegrid{
+    display: block;
 }
 
-.image {
+.imageone,
+.imagetwo,
+.imagthree {
     margin-bottom: 20px;
 }
+
 .workcategory p{
     font-family: 'Playfair Display', serif;
     font-size: 25px;
@@ -217,8 +225,14 @@ p{
     margin-bottom: 0;
 }
 
-.heroimage img{
+.heroimagemobile img{
     margin-top: 20px;
+}
+
+.titledesktop,
+.heroimagedesktop img,
+.heroimagetablet img {
+    display: none;
 }
 
 .footerwrapper{
@@ -269,7 +283,7 @@ padding left for spacing each icon*/
 
     h2{
         font-family: 'Playfair Display', serif;
-        font-size: 35px;
+        font-size: 49px;
         color: var(--grey);
         margin-top: 20px;
         margin-bottom: 10px;
@@ -287,14 +301,6 @@ padding left for spacing each icon*/
         font-size: 16px;
     }
 
-    h4{
-        font-family: 'Montserrat', sans-serif;
-        font-size: 12px;
-        color: var(--red);
-        text-transform: uppercase;
-        letter-spacing: 0.25em;
-    }
-    
     /*footer*/
     h5 {
         font-size: 14px;
@@ -309,11 +315,105 @@ padding left for spacing each icon*/
     }
 
     /**/
+    .titledesktop,
+    .heroimagedesktop,
+    .heroimagemobile img{
+        display: none;
+    }
+
+    .heroimagetablet img{
+        display: block;
+        margin-top: 20px;
+    }
+
+    .captiontext{
+        margin-top: 40px;
+    }
+    .wrappertext{
+        font-size: 40px;
+    }
+
+    /*change image display grid*/
+    .imagegrid{
+        display: grid;
+        grid-gap: 2%;
+        grid-template-columns: 32% 32% 32%;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .imagegrid .imageone{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .imagegrid .imagetwo{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .imagegrid .imagethree{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    /*change the spacing */
+    .imageone,
+    .imagetwo,
+    .imagthree {
+        margin-bottom: 20px;
+    }
+
+    .wrapper h6{
+        margin-bottom: 10px;
+    }
+
+    /*change work categoryto grid 3 column for tablet*/
+    .workcategory{
+        display: grid;
+        grid-gap: 2%;
+        grid-template-columns: 33% 30% 33%;
+        grid-row-start: 1;
+        grid-row-end: 2;
+        margin-bottom: 10px;
+    }
+
+    .workcategory p.graphic{
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .workcategory p.print{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .workcategory p.web{
+        grid-column-start: 3;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    h4{
+        font-family: 'Montserrat', sans-serif;
+        font-size: 12px;
+        color: var(--red);
+        text-transform: uppercase;
+        letter-spacing: 0.25em;
+    }
     
-
-
 }
-
 
 /*-----------------------------------------------------------
     Desktop Style
@@ -383,15 +483,15 @@ padding left for spacing each icon*/
 
     h2{
         font-family: 'Playfair Display', serif;
-        font-size: 35px;
-        color: white;
+        font-size: 49px;
+        color: var(--grey);
         margin-top: 20px;
         margin-bottom: 10px;
     }
 
     h3{
         font-family: 'Playfair Display', serif;
-        font-size: 25px;
+        font-size: 35px;
         color: var(--brown);
         margin-top: 5px;
         margin-bottom: 0px;
@@ -417,8 +517,54 @@ padding left for spacing each icon*/
 
     /**/
 
+    /*hide for the desktop*/
 
- 
-  
-    
+    .titlemobiletablet,
+    .heroimagemobile img,
+    .heroimagetablet img{
+        display: none;
+    }
+
+    /*change to desktop, 
+    without wrapper so image spread from left to right*/
+    .heroimagedesktop,
+    .heroimagedesktop img {
+        display: block;
+    }
+
+    .heroimagedesktop img{
+        width: 1280px;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .captiontext{
+        margin-top: 40px;
+    }
+    .wrappertext{
+        font-size: 40px;
+    }
+
+    /*change the title to two column*/
+    .content{
+        display: grid;
+        grid-gap: 2%;
+        grid-template-columns: 35% 65%;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    .titledesktop{
+        display:block;
+    }
+
+    .wrapper .text{
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+
+    /*change the spacing between the workcategory*/
+
 }
