@@ -236,10 +236,8 @@ padding left for spacing each icon*/
 }
 
 .profilepicture{
-    display: inline-block;
-    width: 295px;
-    height: 295px;
-    max-width: 100%;
+    display: block;
+    align-items: center;
 }
 
 /*4 grid for mobile*/
