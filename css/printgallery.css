@@ -201,9 +201,8 @@ p{
     margin-bottom: 0;
 }
 
-/*adding margin top specifica for this so it will give space to top, 
-but not affecting the navigation in the mobile */
-.graphicladies {
+/*adding margin top specific for this so it will give space to top*/
+.printorigin {
     margin-top: 20px;
 }
 
