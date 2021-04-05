@@ -629,9 +629,9 @@ padding left for spacing each icon*/
         text-align: left;
     }
 
-
+    /*********/
     /*overlay paul lola*/
-    .graphictgl-desktop {
+    .print-desktop {
         display: block;
     }
     
@@ -676,23 +676,24 @@ padding left for spacing each icon*/
         transform: translate( -20%, -30%);
         text-align: left;
     }
+    /******/
 
-    /*overlay graphictgl for desktop*/
-    .graphiczodiac-desktop {
+    /*overlay print nyah bakso*/
+    .printnyahbakso-desktop {
         display: block;
     }
     
-    .graphiczodiac{
+    .printnyahbakso{
         position: relative; 
     }   
 
-    .graphiczodiac img{
+    .printnyahbakso img{
         display: block;
         width: 100%;
         height: auto;
     }
 
-    .graphiczodiac .overlay {
+    .printnyahbakso .overlay {
         position: absolute;
         top: 0;
         bottom: 0;
@@ -705,17 +706,17 @@ padding left for spacing each icon*/
         background-color: rgba( 64,62,70, 0.8);
     }
 
-    .graphiczodiac:hover .overlay{
+    .printnyahbakso:hover .overlay{
         opacity: 0.8;
     }
 
-    .graphiczodiac:hover .overlay h2,
-    .graphiczodiac:hover .overlay p,
-    .graphiczodiac:hover .overlay h3{
+    .printnyahbakso:hover .overlay h2,
+    .printnyahbakso:hover .overlay p,
+    .printnyahbakso:hover .overlay h3{
         display:block;
     }
 
-    .zodiactext{
+    .nyahbaksotext{
         color: white;
         top: 25%;
         left: 25%;
