@@ -410,19 +410,17 @@ padding left for spacing each icon*/
         display: none;
     } 
 
-    /*for the work and profile to display on the left use float left*/    
+    /*using flex to make nav, specific using nth child*/    
     .navlink li:nth-child(-n+2){
         display: flex;
         font-size: 14px;
         padding-right: 40px;
-        /*justify-content: flex-start;*/
     }
 
     .navlink li:nth-child(n+2){
         display: flex;
         font-size: 14px;
-        padding-left: 40px;
-        /*justify-content: flex-end;*/   
+        padding-left: 40px;  
     }
 
     .navlink li:nth-child(2){
@@ -499,7 +497,6 @@ padding left for spacing each icon*/
         padding-right: 80px;
     }
 
-    
 
     /*hide all the h2 and h3 for desktop -- desktop will change to hover*/
     .graphicladies-mobile-tablet,
@@ -535,12 +532,15 @@ padding left for spacing each icon*/
     .printkillerb-all .horizontalline,
     .webtulis-all .horizontalline,
     .websmoochy-all .horizontalline,
-    .webcustomking .horizontalline   {
+    .webcustomking .horizontalline{
         display:none;
     }
 
     /* make a fade in overlay for desktop*/
-    /*graphicladies*/
+
+    /*graphic section*/
+
+    /*overlay graphicladies*/
     .graphicladies-desktop {
         display: block;
     }
@@ -573,7 +573,7 @@ padding left for spacing each icon*/
     }
 
     .graphicladies:hover .overlay h2,
-    .graphicladies:hover .overlay svg,
+    .graphicladies:hover .overlay p,
     .graphicladies:hover .overlay h3{
         display:block;
     }
@@ -587,7 +587,7 @@ padding left for spacing each icon*/
         text-align: left;
     }
 
-    /*overlay graphiartdate for desktop*/
+    /*overlay graphiartdate*/
     .graphicartdate-desktop {
         display: block;
     }
@@ -686,6 +686,8 @@ padding left for spacing each icon*/
         text-align: left;
     }
 
+    /*print section*/
+
     /*overlay print origin for desktop*/
     .printorigin-desktop {
         display: block;
@@ -733,7 +735,6 @@ padding left for spacing each icon*/
         text-align: left;
     }
 
-    /**/
     /*overlay print florarecipe for desktop*/
     .printflorarecipe-desktop {
         display: block;
@@ -782,7 +783,6 @@ padding left for spacing each icon*/
         display: block;
     }
 
-    /**/
     /*overlay print nyahbakso for desktop*/
     .printnyahbakso-desktop {
         display: block;
@@ -831,7 +831,6 @@ padding left for spacing each icon*/
         display: block;
     }
 
-    /**/
     /*overlay print killerb for desktop*/
     .printkillerb-desktop {
         display: block;
@@ -880,7 +879,6 @@ padding left for spacing each icon*/
         display: block;
     }
 
-    /**/
     /*overlay web tulis for desktop*/
     .webtulis-desktop {
         display: block;
@@ -928,8 +926,7 @@ padding left for spacing each icon*/
         text-align: left;
     }
 
-    /**/
-    
+    /*web section*/
      /*overlay web smoochy for desktop*/
     .websmoochy-desktop {
         display: block;
@@ -978,10 +975,8 @@ padding left for spacing each icon*/
 
     }
 
-    /**/
-
-     /*overlay web customking for desktop*/
-     .webcustomking-desktop {
+    /*overlay web customking for desktop*/
+    .webcustomking-desktop {
         display: block;
     }
     
