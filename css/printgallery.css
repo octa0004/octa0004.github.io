@@ -629,23 +629,24 @@ padding left for spacing each icon*/
         text-align: left;
     }
 
-    /*********/
+
     /*overlay paul lola*/
-    .print-desktop {
+    .printpaullola-desktop {
         display: block;
     }
     
-    .graphictgl{
+    .printpaullola{
         position: relative; 
+        margin-top: 20px;
     }   
 
-    .graphictgl img{
+    .printpaullola img{
         display: block;
         width: 100%;
         height: auto;
     }
 
-    .graphictgl .overlay {
+    .printpaullola .overlay {
         position: absolute;
         top: 0;
         bottom: 0;
@@ -658,17 +659,17 @@ padding left for spacing each icon*/
         background-color: rgba( 64,62,70, 0.8);
     }
 
-    .graphictgl:hover .overlay{
+    .printpaullola:hover .overlay{
         opacity: 0.8;
     }
 
-    .graphictgl:hover .overlay h2,
-    .graphictgl:hover .overlay p,
-    .graphictgl:hover .overlay h3{
+    .printpaullola:hover .overlay h2,
+    .printpaullola:hover .overlay p,
+    .printpaullola:hover .overlay h3{
         display:block;
     }
 
-    .tgltext{
+    .paullolatext{
         color: white;
         top: 25%;
         left: 25%;
@@ -676,7 +677,6 @@ padding left for spacing each icon*/
         transform: translate( -20%, -30%);
         text-align: left;
     }
-    /******/
 
     /*overlay print nyah bakso*/
     .printnyahbakso-desktop {
@@ -693,7 +693,7 @@ padding left for spacing each icon*/
         height: auto;
     }
 
-    .printnyahbakso .overlay {
+    .printnyahbakso .overlay{
         position: absolute;
         top: 0;
         bottom: 0;
@@ -706,7 +706,7 @@ padding left for spacing each icon*/
         background-color: rgba( 64,62,70, 0.8);
     }
 
-    .printnyahbakso:hover .overlay{
+    .printnyahbakso:hover .overlay {
         opacity: 0.8;
     }
 
@@ -717,31 +717,31 @@ padding left for spacing each icon*/
     }
 
     .nyahbaksotext{
+
         color: white;
         top: 25%;
         left: 25%;
         position: absolute;
-        transform: translate( -40%, -40%);
+        transform: translate( -20%, -40%);
         text-align: left;
     }
 
-    /**/
-    /*overlay graphictgl for desktop*/
-    .graphicsimplyglow-desktop {
+    /*overlay print wayang*/
+    .printwayang-desktop {
         display: block;
     }
     
-    .graphicsimplyglow{
+    .printwayang{
         position: relative; 
     }   
 
-    .graphicsimplyglow img{
+    .printwayang img{
         display: block;
         width: 100%;
         height: auto;
     }
 
-    .graphicsimplyglow .overlay {
+    .printwayang .overlay {
         position: absolute;
         top: 0;
         bottom: 0;
@@ -754,25 +754,71 @@ padding left for spacing each icon*/
         background-color: rgba( 64,62,70, 0.8);
     }
 
-    .graphicsimplyglow:hover .overlay{
+    .printwayang:hover .overlay{
         opacity: 0.8;
     }
 
-    .graphicsimplyglow:hover .overlay h2,
-    .graphicsimplyglow:hover .overlay p,
-    .graphicsimplyglow:hover .overlay h3{
+    .printwayang:hover .overlay h2,
+    .printwayang:hover .overlay p,
+    .printwayang:hover .overlay h3{
         display:block;
     }
 
-    .simplyglowtext{
+    .wayangtext{
         color: white;
         top: 25%;
         left: 25%;
         position: absolute;
-        transform: translate( -20%, -40%);
+        transform: translate( -30%, -40%);
         text-align: left;
     }
     
+    /*overlay print killerb*/
+    .printkillerb-desktop {
+        display: block;
+    }
+    
+    .printkillerb{
+        position: relative; 
+    }   
+
+    .printkillerb img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .printkillerb .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height:100%;
+        width: 100%;
+        opacity: 0;
+        transition: .3s ease;
+        background-color: rgba( 64,62,70, 0.8);
+    }
+
+    .printkillerb:hover .overlay{
+        opacity: 0.8;
+    }
+
+    .printkillerb:hover .overlay h2,
+    .printkillerb:hover .overlay p,
+    .printkillerb:hover .overlay h3{
+        display: block;
+    }
+
+    .killerbtext{
+        color: white;
+        top: 25%;
+        left: 25%;
+        position: absolute;
+        transform: translate( -30%, -40%);
+        text-align: left;
+    }
     /**/
 
     .graphic a,
