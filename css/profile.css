@@ -213,8 +213,27 @@ padding left for spacing each icon*/
     line-height: 1.5;
 }
 
-/*set h1*/
 .profile h1{
+    display: inline-grid;
+    grid-gap: 2%;
+    grid-template-columns: 55% 10% 10%;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-auto-flow: column;
+    align-items:flex-end;
+    width: 100%;
+    height: auto;
+}
+
+/*add span class for the text so it will not break*/
+.from{
+    min-width: 145px;
+    height: auto;
+}
+
+/**/
+/*set h1*/
+/*.profile h1{
     display: inline-grid;
     grid-gap: 2%;
     grid-template-columns: 55% 10% 30%;
@@ -224,12 +243,14 @@ padding left for spacing each icon*/
     align-items:flex-end;
     width: 100%;
     height: auto;
-}
+}*/
 
+/*
 .profile h1 span{
     display:inline;
     margin-right: 20px;
-}
+}*/
+/**/
 
 /*hide logo first*/
 .totabletlogo,
