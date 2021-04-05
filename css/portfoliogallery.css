@@ -557,6 +557,7 @@ padding left for spacing each icon*/
     .graphicportrait{
         margin-top: 20px;
     }
+    
     /* start OVERLAY section*/
 
     /*graphicladies*/
@@ -592,7 +593,7 @@ padding left for spacing each icon*/
     }
 
     .graphicladies:hover .overlay h2,
-    .graphicladies:hover .overlay svg,
+    .graphicladies:hover .overlay p,
     .graphicladies:hover .overlay h3{
         display:block;
     }
@@ -639,7 +640,7 @@ padding left for spacing each icon*/
     }
 
     .graphicartdate:hover .overlay h2,
-    .graphicartdate:hover .overlay svg,
+    .graphicartdate:hover .overlay p,
     .graphicartdate:hover .overlay h3{
         display:block;
     }
@@ -673,7 +674,7 @@ padding left for spacing each icon*/
     }
 
     /*add trasition 0.3 for fade in overlay*/
-    .graphicportrait-desktop .overlay {
+    .graphicportrait .overlay {
         position: absolute;
         top: 0;
         bottom: 0;
@@ -686,13 +687,13 @@ padding left for spacing each icon*/
         background-color: rgba( 64,62,70, 0.8);
     }
 
-    .graphicportrait-desktop:hover .overlay{
+    .graphicportrait:hover .overlay{
         opacity: 0.8;
     }
 
-    .graphicportrait-desktop:hover .overlay h2,
-    .graphicportrait-desktop:hover .overlay svg,
-    .graphicportrait-desktop:hover .overlay h3{
+    .graphicportrait:hover .overlay h2,
+    .graphicportrait:hover .overlay p,
+    .graphicportrait:hover .overlay h3{
         display:block;
     }
 
@@ -704,6 +705,176 @@ padding left for spacing each icon*/
         transform: translate( -50%, -50%);
         text-align: left;
     }
+
+    /*overlay graphictgl for desktop*/
+    .graphictgl-desktop {
+        display: block;
+    }
+    
+    .graphictgl{
+        position: relative; 
+    }   
+
+    .graphictgl img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .graphictgl .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height:100%;
+        width: 100%;
+        opacity: 0;
+        transition: .3s ease;
+        background-color: rgba( 64,62,70, 0.8);
+    }
+
+    .graphictgl:hover .overlay{
+        opacity: 0.8;
+    }
+
+    .graphictgl:hover .overlay h2,
+    .graphictgl:hover .overlay p,
+    .graphictgl:hover .overlay h3{
+        display:block;
+    }
+
+    .tgltext{
+        color: white;
+        top: 25%;
+        left: 25%;
+        position: absolute;
+        transform: translate( -20%, -50%);
+        text-align: left;
+    }
+
+    /*overlay graphictgl for desktop*/
+    .graphiczodiac-desktop {
+        display: block;
+    }
+    
+    .graphiczodiac{
+        position: relative; 
+    }   
+
+    .graphiczodiac img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .graphiczodiac .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height:100%;
+        width: 100%;
+        opacity: 0;
+        transition: .3s ease;
+        background-color: rgba( 64,62,70, 0.8);
+    }
+
+    .graphiczodiac:hover .overlay{
+        opacity: 0.8;
+    }
+
+    .graphiczodiac:hover .overlay h2,
+    .graphiczodiac:hover .overlay p,
+    .graphiczodiac:hover .overlay h3{
+        display:block;
+    }
+
+    .zodiactext{
+        color: white;
+        top: 25%;
+        left: 25%;
+        position: absolute;
+        transform: translate( -20%, -50%);
+        text-align: left;
+    }
+
+    /**/
+    /*overlay graphictgl for desktop*/
+    .graphicsimplyglow-desktop {
+        display: block;
+    }
+    
+    .graphicsimplyglow{
+        position: relative; 
+    }   
+
+    .graphicsimplyglow img{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+
+    .graphicsimplyglow .overlay {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height:100%;
+        width: 100%;
+        opacity: 0;
+        transition: .3s ease;
+        background-color: rgba( 64,62,70, 0.8);
+    }
+
+    .graphicsimplyglow:hover .overlay{
+        opacity: 0.8;
+    }
+
+    .graphicsimplyglow:hover .overlay h2,
+    .graphicsimplyglow:hover .overlay p,
+    .graphicsimplyglow:hover .overlay h3{
+        display:block;
+    }
+
+    .simplyglowtext{
+        color: white;
+        top: 25%;
+        left: 25%;
+        position: absolute;
+        transform: translate( -20%, -50%);
+        text-align: left;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /**/
 
     .graphic a,
     .print a,
