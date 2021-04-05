@@ -207,24 +207,12 @@ p{
 }
 
 /*hide for mobile */
-.graphicladies-desktop,
-.graphicartdate-desktop,
-.graphicportraittablet,
-.graphicportrait-desktop,
-.graphictgl-desktop,
-.graphiczodiac-desktop,
-.graphicsimplyglow-desktop,
-
 .printorigin-desktop,
-.florarecipetext,
-.printnyahbakso-dekstop,
-.nyahbaksotext,
-.killerbtext,
-.printkillerb-dekstop,
-.webtulis-desktop,
-.websmoochytablet, 
-.websmoochy-desktop,
-.webcustomking-desktop {
+.printflorarecipe-desktop,
+.printpaullola-desktop,
+.printnyahbakso-dektop,
+.printwayang-desktop,
+.printkillerb-dekstop{
     display: none;
 }
 
@@ -323,7 +311,7 @@ padding left for spacing each icon*/
     }
 
     /* change grid for the image in the work page*/
-    .graphics {
+    .prints {
         display: grid;
         grid-gap: 20px;
         grid-template-columns: repeat( auto-fit, 48%);
@@ -333,7 +321,7 @@ padding left for spacing each icon*/
         margin: auto;
     }
    
-    .graphicladies{
+    .printorigin{
         width: 100%;
         height: auto;
         grid-column-start: 1;
@@ -342,7 +330,7 @@ padding left for spacing each icon*/
         grid-row-end: 2;
     }    
 
-    .graphicartdate {
+    .printflorarecipe {
         margin-top: 20px;
         width: 100%;
         height: auto;
@@ -351,16 +339,6 @@ padding left for spacing each icon*/
         grid-row-start: 1;
         grid-row-end: 2;
     }
-    
-    /*hide for tablet*/
-    .graphicladies-desktop,
-    .graphicportraittablet,
-    .graphicportrait-desktop,
-    .smoochytext {
-        display: none;
-    }
-
-    /**/
 
     .wrapper h6{
         margin-bottom: 10px;
@@ -513,35 +491,37 @@ padding left for spacing each icon*/
         text-align: center;
     }
 
-    /*hide all the h2 and h3 for desktop -- desktop will change to hover*/
-    .graphicladies-mobile-tablet,
-    .graphicladies h2,
-    .graphicartdate h2,
-    .graphicportrait h2,
-    .graphicportraittablet h2,
+    /*hide all the h2,h3, and horizontal line for desktop -- desktop will change to hover*/
+    .printorigin-all h2,
+    .printorigin-all h3,
+    .printorigin-all .horizontalline,
 
-    .graphicladies h3,
-    .graphicartdate h3,
-    .graphicportrait h3,
-    .graphicportraittablet h3 {
+    .printflorarecipe-all h2,
+    .printflorarecipe-all h3,
+    .printflorarecipe-all .horizontalline,
+
+    .printpaullola-all h2,
+    .printpaullola-all h3,
+    .printpaullola-all .horizontalline,
+
+    .printnyahbakso-all h2,
+    .printnyahbakso-all h3,
+    .printnyahbakso-all .horizontalline,
+
+    .printwayang-all h2,
+    .printwayang-all h3,
+    .printwayang-all .horizontalline,
+
+    .printkillerb-all h2,
+    .printkillerb-all h3,
+    .printkillerb-all .horizontalline{
         display:none;
     }
 
-    /*hide the horizontal line class that i made for mobile and tablet
-    hide the text from mobile and tablet display*/
-    .graphicartdate .horizontalline,
-    .graphicportrait .horizontalline,
-    .graphicportraittablet .horizontalline,
-    .graphictgl .horizontalline,
-    .graphictglmobile-tablet,
-    .graphiczodiacmobile-tablet,
-    .graphicsimplyglowmobile-tablet {
-        display: none;
-    }
-
+  
     /* start styling and chnage
     tablet using 2 col, now desktop change to 3 col*/
-    .graphics {
+    .prints {
         display: grid;
         grid-gap: 2%;
         grid-template-columns: repeat(3, 1fr);
@@ -649,75 +629,6 @@ padding left for spacing each icon*/
         text-align: left;
     }
 
-     
-    .graphicportrait {
-        display: none;
-    }
-
-    .graphicportraittablet{
-        display: block;
-        margin-top: 20px; 
-        object-fit: cover;
-        width: 100%;
-    }   
-
-    /*overlay graphic portrait use position for desktop*/
-    .graphicportrait-desktop {
-        display: block;
-    }
-    
-    .graphicportrait{
-        position: relative; 
-    }   
-
-    .graphicportraittablet{
-        position: relative; 
-    }   
-
-    .graphicportraittablet a{
-        width: 100%;
-        height: 100%;
-    }   
-
-    .graphicportraittablet img{
-        display: block;
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-    }
-
-    /*add trasition 0.3 for fade in overlay*/
-    .graphicportraittablet .overlay {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height:100%;
-        width: 100%;
-        opacity: 0;
-        transition: .3s ease;
-        background-color: rgba( 64,62,70, 0.8);
-    }
-
-    .graphicportraittablet:hover .overlay{
-        opacity: 0.8;
-    }
-
-    .graphicportraittablet:hover .overlay h2,
-    .graphicportraittablet:hover .overlay p,
-    .graphicportraittablet:hover .overlay h3{
-        display:block;
-    }
-
-    .portraittext{
-        color: white;
-        top: 25%;
-        left: 25%;
-        position: absolute;
-        transform: translate( -35%, -37.5%);
-        text-align: left;
-    }
 
     /*overlay graphictgl for desktop*/
     .graphictgl-desktop {
