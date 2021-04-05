@@ -861,6 +861,8 @@ padding left for spacing each icon*/
         transform: translate( -20%, -40%);
         text-align: left;
     }
+    
+    /**/
 
     .graphic a,
     .print a,
