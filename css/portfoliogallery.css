@@ -532,6 +532,7 @@ padding left for spacing each icon*/
     hide the text from mobile and tablet display*/
     .graphicartdate .horizontalline,
     .graphicportrait .horizontalline,
+    .graphicportraittablet .horizontalline,
     .graphictgl .horizontalline,
     .graphictglmobile-tablet,
     .graphiczodiacmobile-tablet,
@@ -552,11 +553,6 @@ padding left for spacing each icon*/
         margin-bottom: 40px;
     }
 
-    /* in mobile and tablet the graphic ladies and graphic art date got margin top 20px,
-    in desktop i need to add 20 px margin top so it all in the same height  and display */
-    .graphicportrait{
-        margin-top: 20px;
-    }
     
     /* start OVERLAY section*/
 
@@ -654,6 +650,19 @@ padding left for spacing each icon*/
         text-align: left;
     }
 
+     
+    .graphicportrait {
+        display: none;
+    }
+
+    .graphicportraittablet{
+        display: block;
+        margin-top: 20px; 
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }   
+
     /*overlay graphic portrait use position for desktop*/
     .graphicportrait-desktop {
         display: block;
@@ -667,14 +676,15 @@ padding left for spacing each icon*/
         position: relative; 
     }   
 
-    .graphicportrait img{
+    .graphicportraittablet img{
         display: block;
+        object-fit: cover;
         width: 100%;
         height: auto;
     }
 
     /*add trasition 0.3 for fade in overlay*/
-    .graphicportrait .overlay {
+    .graphicportraittablet .overlay {
         position: absolute;
         top: 0;
         bottom: 0;
@@ -687,13 +697,13 @@ padding left for spacing each icon*/
         background-color: rgba( 64,62,70, 0.8);
     }
 
-    .graphicportrait:hover .overlay{
+    .graphicportraittablet:hover .overlay{
         opacity: 0.8;
     }
 
-    .graphicportrait:hover .overlay h2,
-    .graphicportrait:hover .overlay p,
-    .graphicportrait:hover .overlay h3{
+    .graphicportraittablet:hover .overlay h2,
+    .graphicportraittablet:hover .overlay p,
+    .graphicportraittablet:hover .overlay h3{
         display:block;
     }
 
