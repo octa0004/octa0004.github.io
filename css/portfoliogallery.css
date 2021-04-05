@@ -183,6 +183,10 @@ p{
     line-height: 2;
 }
 
+/*hide the title for mobile */
+.portfoliotitle-desktop {
+    display: none;
+}
 
 .workcategory p{
     font-family: 'Playfair Display', serif;
@@ -313,6 +317,12 @@ padding left for spacing each icon*/
     }
 
     /**/
+
+    /*hide the title for tablet */
+    .portfoliotitle-desktop {
+        display: none;
+    }
+
     /* change grid for the image in the work page*/
     .graphics {
         display: grid;
@@ -491,6 +501,19 @@ padding left for spacing each icon*/
     }
 
     /**/
+
+    /* it turn out if i want to do many style change, this will happen, 
+    putting display none list is long, and how important is the naming.
+    Designing and coding is so diffrent.*/
+
+    /* make title appear for desktop*/
+    .portfoliotitle-desktop {
+        display: block;
+        margin-top: 50px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
     /*hide all the h2 and h3 for desktop -- desktop will change to hover*/
     .graphicladies-mobile-tablet,
     .graphicladies h2,
@@ -505,7 +528,37 @@ padding left for spacing each icon*/
         display:none;
     }
 
-    /* make a fade in overlay for desktop*/
+    /*hide the horizontal line class that i made for mobile and tablet
+    hide the text from mobile and tablet display*/
+    .graphicartdate .horizontalline,
+    .graphicportrait .horizontalline,
+    .graphictgl .horizontalline,
+    .graphictglmobile-tablet,
+    .graphiczodiacmobile-tablet,
+    .graphicsimplyglowmobile-tablet {
+        display: none;
+    }
+
+    /* start styling and chnage
+    tablet using 2 col, now desktop change to 3 col*/
+    .graphics {
+        display: grid;
+        grid-gap: 2%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-row-start: 1;
+        grid-row-end: 2;
+        width: 100%;
+        height: auto;
+        margin-bottom: 40px;
+    }
+
+    /* in mobile and tablet the graphic ladies and graphic art date got margin top 20px,
+    in desktop i need to add 20 px margin top so it all in the same height  and display */
+    .graphicportrait{
+        margin-top: 20px;
+    }
+    /* start OVERLAY section*/
+
     /*graphicladies*/
     .graphicladies-desktop {
         display: block;
@@ -652,71 +705,11 @@ padding left for spacing each icon*/
         text-align: left;
     }
 
-
-    /*change grid for work page desktop - 12 grid base*/
-    .graphic {
-        display: grid;
-        grid-gap: 2%;
-        grid-template-columns: 38% 20% 38%;
-        grid-row-start: 1;
-        grid-row-end: 2;
-        grid-auto-flow: column;
-        width: 100%;
-        height: auto;
-    }
-    
     .graphic a,
     .print a,
     .web a {
         width: 100%;
         height: 100%;
-    }
-
-    .graphicladies {
-        grid-column-start: 1;
-        grid-column-end: 2;
-        grid-row-start: 1;
-        grid-row-end: 2;  
-    }  
-
-    .graphicladies img{
-        object-fit: cover;
-        min-width: 0;
-        min-height: 100%;
-    }
- 
-    .graphicartdate{
-        grid-column-start: 2;
-        grid-column-end: 3;
-        grid-row-start: 1;
-        grid-row-end: 2;
-    }
-
-    .graphicartdate img{
-        object-fit: cover;
-        min-width: 0;
-        min-height: 100%;
-    }
-
-    .graphicportraittablet{
-        grid-column-start: 3;
-        grid-column-end: 4;
-        grid-row-start: 1;
-        grid-row-end: 2;
-    }
-
-    .graphicportraittablet{
-        margin-top: 20px;
-        grid-column-start: 3;
-        grid-column-end: 4;
-        grid-row-start: 1;
-        grid-row-end: 2;
-    }
-
-    .graphicportraittablet img{
-        object-fit: cover;
-        min-width: 0;
-        min-height: 100%;
     }
 
     /*change the spacing between the workcategory*/
