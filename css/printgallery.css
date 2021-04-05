@@ -535,22 +535,22 @@ padding left for spacing each icon*/
     
     /* start OVERLAY section*/
 
-    /*graphicladies*/
-    .graphicladies-desktop {
+    /*overlay print origin*/
+    .printorigin-desktop {
         display: block;
     }
     
-    .graphicladies{
+    .printorigin{
         position: relative; 
     }   
 
-    .graphicladies img{
+    .printorigin img{
         display: block;
         width: 100%;
         height: auto;
     }
 
-    .graphicladies .overlay {
+    .printorigin .overlay {
         position: absolute;
         top: 0;
         bottom: 0;
@@ -563,17 +563,17 @@ padding left for spacing each icon*/
         background-color: rgba( 64,62,70, 0.8);
     }
 
-    .graphicladies:hover .overlay{
+    .printorigin:hover .overlay{
         opacity: 0.8;
     }
 
-    .graphicladies:hover .overlay h2,
-    .graphicladies:hover .overlay p,
-    .graphicladies:hover .overlay h3{
+    .printorigin:hover .overlay h2,
+    .printorigin:hover .overlay p,
+    .printorigin:hover .overlay h3{
         display:block;
     }
 
-    .text{
+    .origintext{
         color: white;
         top: 25%;
         left: 25%;
@@ -582,22 +582,22 @@ padding left for spacing each icon*/
         text-align: left;
     }
 
-    /*overlay graphiartdate for desktop*/
-    .graphicartdate-desktop {
+    /*overlay print flora recipe*/
+    .printflorarecipe-desktop {
         display: block;
     }
     
-    .graphicartdate{
+    .printflorarecipe{
         position: relative; 
     }   
 
-    .graphicartdate img{
+    .printflorarecipe img{
         display: block;
         width: 100%;
         height: auto;
     }
 
-    .graphicartdate .overlay {
+    .printflorarecipe .overlay {
         position: absolute;
         top: 0;
         bottom: 0;
@@ -610,17 +610,17 @@ padding left for spacing each icon*/
         background-color: rgba( 64,62,70, 0.8);
     }
 
-    .graphicartdate:hover .overlay{
+    .printflorarecipe:hover .overlay{
         opacity: 0.8;
     }
 
-    .graphicartdate:hover .overlay h2,
-    .graphicartdate:hover .overlay p,
-    .graphicartdate:hover .overlay h3{
+    .printflorarecipe:hover .overlay h2,
+    .printflorarecipe:hover .overlay p,
+    .printflorarecipe:hover .overlay h3{
         display:block;
     }
 
-    .artdatetext{
+    .florarecipetext{
         color: white;
         top: 25%;
         left: 25%;
@@ -630,7 +630,7 @@ padding left for spacing each icon*/
     }
 
 
-    /*overlay graphictgl for desktop*/
+    /*overlay paul lola*/
     .graphictgl-desktop {
         display: block;
     }
