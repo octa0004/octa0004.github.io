@@ -630,7 +630,7 @@ padding left for spacing each icon*/
         top: 25%;
         left: 25%;
         position: absolute;
-        transform: translate( -20%, -50%);
+        transform: translate( -20%, -47%);
         text-align: left;
     }
 
@@ -728,10 +728,10 @@ padding left for spacing each icon*/
 
     .origintext{
         color: white;
-        top: 35%;
-        left: 35%;
+        top: 25%;
+        left: 25%;
         position: absolute;
-        transform: translate( -50%, -50%);
+        transform: translate( -30%, -35%);
         text-align: left;
     }
 
@@ -775,10 +775,10 @@ padding left for spacing each icon*/
 
     .florarecipetext{
         color: white;
-        top: 35%;
-        left: 35%;
+        top: 25%;
+        left: 25%;
         position: absolute;
-        transform: translate( -50%, -50%);
+        transform: translate( -20%, -30%);
         text-align: left;
         display: block;
     }
@@ -823,10 +823,10 @@ padding left for spacing each icon*/
 
     .nyahbaksotext{
         color: white;
-        top: 35%;
-        left: 35%;
+        top: 25%;
+        left: 25%;
         position: absolute;
-        transform: translate( -35%, -48%);
+        transform: translate( -20%, -30%);
         text-align: left;
         display: block;
     }
@@ -871,10 +871,10 @@ padding left for spacing each icon*/
 
     .killerbtext{
         color: white;
-        top: 35%;
-        left: 35%;
+        top: 25%;
+        left: 25%;
         position: absolute;
-        transform: translate( -50%, -50%);
+        transform: translate( -27%, -35%);
         text-align: left;
         display: block;
     }
@@ -919,10 +919,10 @@ padding left for spacing each icon*/
 
     .tulistext{
         color: white;
-        top: 45%;
-        left: 45%;
+        top: 25%;
+        left: 25%;
         position: absolute;
-        transform: translate( -50%, -50%);
+        transform: translate( -20%, -32%);
         text-align: left;
     }
 
@@ -967,10 +967,10 @@ padding left for spacing each icon*/
 
     .smoochytext{
         color: white;
-        top: 55%;
-        left: 55%;
+        top: 25%;
+        left: 25%;
         position: absolute;
-        transform: translate( -50%, -50%);
+        transform: translate(20%, 20%);
         text-align: left;
 
     }
@@ -1018,7 +1018,7 @@ padding left for spacing each icon*/
         top: 25%;
         left: 25%;
         position: absolute;
-        transform: translate( -50%, -50%);
+        transform: translate(-10%, -50%);
         text-align: left;
     }
     
