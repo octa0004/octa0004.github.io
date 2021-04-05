@@ -763,7 +763,7 @@ padding left for spacing each icon*/
         top: 25%;
         left: 25%;
         position: absolute;
-        transform: translate( -20%, -50%);
+        transform: translate( -20%, -30%);
         text-align: left;
     }
 
@@ -810,7 +810,7 @@ padding left for spacing each icon*/
         top: 25%;
         left: 25%;
         position: absolute;
-        transform: translate( -20%, -50%);
+        transform: translate( -40%, -40%);
         text-align: left;
     }
 
@@ -858,7 +858,7 @@ padding left for spacing each icon*/
         top: 25%;
         left: 25%;
         position: absolute;
-        transform: translate( -20%, -50%);
+        transform: translate( -20%, -40%);
         text-align: left;
     }
 
