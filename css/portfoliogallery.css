@@ -514,27 +514,25 @@ padding left for spacing each icon*/
         text-align: center;
     }
 
-    /*hide all the h2 and h3 for desktop -- desktop will change to hover*/
+    /*hide all the h2,h3, and horizontal line for desktop -- desktop will change to hover*/
     .graphicladies-mobile-tablet,
     .graphicladies h2,
+    .graphicladies h3,
+
     .graphicartdate h2,
+    .graphicartdate h3,
+    .graphicartdate .horizontalline,
+
     .graphicportrait h2,
     .graphicportraittablet h2,
-
-    .graphicladies h3,
-    .graphicartdate h3,
-    .graphicportrait h3,
-    .graphicportraittablet h3 {
-        display:none;
-    }
-
-    /*hide the horizontal line class that i made for mobile and tablet
-    hide the text from mobile and tablet display*/
-    .graphicartdate .horizontalline,
     .graphicportrait .horizontalline,
     .graphicportraittablet .horizontalline,
+    .graphicportrait h3,
+    .graphicportraittablet h3,
+    
     .graphictgl .horizontalline,
     .graphictglmobile-tablet,
+
     .graphiczodiacmobile-tablet,
     .graphicsimplyglowmobile-tablet {
         display: none;
