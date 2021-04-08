@@ -28,7 +28,6 @@ html {
     height: auto;
 }
 
-
 hr{
     margin-bottom: 0px;
 }
@@ -85,7 +84,6 @@ hr{
     padding-top: 20px;
     padding-bottom: 20px;
 }
-
 
 /*make the hamburger menu in the middle of the logo*/
 .nav{
@@ -196,7 +194,7 @@ margin-left auto to make sure it align with line on the right*/
     margin-left: auto;
 }
 
-/*use width to set the soze of the icon
+/*use width to set the size of the icon
 padding left for spacing each icon*/
 .socialmedialogo img{
     border: 0;
@@ -213,6 +211,9 @@ padding left for spacing each icon*/
     line-height: 1.5;
 }
 
+/*this is the challenging spot where the space between "to" always weird,
+before i used span class to specified and margin, but it doesn't work when its moving to the other break point
+so, instead using the width, specified with px in grid template column and apply justify content center*/
 .profile h1{
     display: inline-grid;
     grid-gap: 2%;
@@ -225,26 +226,6 @@ padding left for spacing each icon*/
     width: 100%;
     height: auto;
 }
-
-/**/
-/*set h1 if using <nobr> */
-/*.profile h1{
-    display: inline-grid;
-    grid-gap: 2%;
-    grid-template-columns: 55% 10% 30%;
-    grid-row-start: 1;
-    grid-row-end: 3;
-    grid-auto-flow: column;
-    align-items:flex-end;
-    width: 100%;
-    height: auto;
-}
-
-.profile h1 span{
-    display:inline;
-    margin-right: 20px;
-}*/
-
 
 /*hide logo first*/
 .totabletlogo,
@@ -328,6 +309,7 @@ padding left for spacing each icon*/
         text-transform: uppercase;
         letter-spacing: 0.25em;
     } 
+
     /*footer tablet and desktop*/
      .footerwrapper{
         display: flex;
@@ -337,7 +319,8 @@ padding left for spacing each icon*/
         padding-right: 80px;
     }
 
-    /**/
+    /*start styling for tablet*/
+
     .profile{
         display:flex;
         flex-direction:column;
@@ -345,14 +328,14 @@ padding left for spacing each icon*/
         justify-content: center
     }
 
-  
+    /*this is the challenging spot where the space between "to" always weird,
+    before i used width 70% and margin left and it doesn't work when its moving to the other break point
+    so, instead using the width, specified with px in grid template column*/
     .profile h1{
-        /*width: 70%;
-        margin-left: 30px;*/
         grid-template-columns: 205px auto 90px;
     }
 
-    /*ad margin maintain spacing*/
+    /*add margin maintain spacing*/
     .profiletext {
         margin-bottom: 50px;
     }
@@ -363,7 +346,6 @@ padding left for spacing each icon*/
         grid-gap: 2%;
         grid-template-columns: 23% 23% 23% 23%;
         grid-template-rows: 75% 20%;
-
     }
 
     .profilestory{
@@ -396,12 +378,10 @@ padding left for spacing each icon*/
         grid-column-end: 5;
         grid-row-start: 2;
         grid-row-end: 3; 
-
         display: grid;
         grid-gap: 2%;
         grid-template-columns: 23% 23% 23% 23%;
     }
-
 
 }
 
@@ -416,19 +396,17 @@ padding left for spacing each icon*/
         display: none;
     } 
 
-    /*for the work and profile to display on the left use float left*/    
+    /*for the work and profile to display on the side use flex*/    
     .navlink li:nth-child(-n+2){
         display: flex;
         font-size: 14px;
         padding-right: 40px;
-        /*justify-content: flex-start;*/
     }
 
     .navlink li:nth-child(n+2){
         display: flex;
         font-size: 14px;
-        padding-left: 40px;
-        /*justify-content: flex-end;*/   
+        padding-left: 40px;  
     }
 
     .navlink li:nth-child(2){
@@ -505,7 +483,7 @@ padding left for spacing each icon*/
         padding-right: 80px;
     }
 
-    /**/
+    /*start styling for desktop*/
 
     .profile{
         box-sizing: border-box;
@@ -514,11 +492,12 @@ padding left for spacing each icon*/
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
         margin-bottom: 10px;
     }
 
     /*change h1*/
+    /* this isvery challenging as i try many times to make it responsive 
+    without giving weird spaces between the "to", it works specified with the px for the template columns*/
     .profile h1{
         display: grid;
         grid-gap: 2%;
@@ -558,7 +537,6 @@ padding left for spacing each icon*/
         grid-column-end: 3;
         grid-row-start: 1;
         grid-row-end: 2;
-
         display: grid;
         grid-gap: 2%;
         grid-template-rows: 23% 23% 23% 23%;
