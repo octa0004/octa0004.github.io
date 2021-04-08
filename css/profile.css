@@ -216,7 +216,8 @@ padding left for spacing each icon*/
 .profile h1{
     display: inline-grid;
     grid-gap: 2%;
-    grid-template-columns: 55% 10% 10%;
+    grid-template-columns: 145px auto 68px;
+    justify-content: center;
     grid-row-start: 1;
     grid-row-end: 3;
     grid-auto-flow: column;
@@ -225,14 +226,8 @@ padding left for spacing each icon*/
     height: auto;
 }
 
-/*add span class for the text so it will not break*/
-.from{
-    min-width: 145px;
-    height: auto;
-}
-
 /**/
-/*set h1*/
+/*set h1 if using <nobr> */
 /*.profile h1{
     display: inline-grid;
     grid-gap: 2%;
@@ -243,14 +238,13 @@ padding left for spacing each icon*/
     align-items:flex-end;
     width: 100%;
     height: auto;
-}*/
+}
 
-/*
 .profile h1 span{
     display:inline;
     margin-right: 20px;
 }*/
-/**/
+
 
 /*hide logo first*/
 .totabletlogo,
@@ -258,8 +252,11 @@ padding left for spacing each icon*/
     display: none;
 }
 
+/*use min and max width for the container*/
 .tomobilelogo{
     width: 100%;
+    min-width: 30px;
+    max-width: 121px;
     height: auto;
     grid-column-start: 2;
     grid-column-end: 3;
@@ -275,7 +272,6 @@ padding left for spacing each icon*/
 .profiletext{
     margin-bottom: 40px;
 }
-
 
 /*make 2 column grid for mobile*/
 .profilesection{
@@ -349,9 +345,11 @@ padding left for spacing each icon*/
         justify-content: center
     }
 
+  
     .profile h1{
-        width: 70%;
-        margin-left: 30px;
+        /*width: 70%;
+        margin-left: 30px;*/
+        grid-template-columns: 205px auto 90px;
     }
 
     /*ad margin maintain spacing*/
@@ -524,7 +522,7 @@ padding left for spacing each icon*/
     .profile h1{
         display: grid;
         grid-gap: 2%;
-        grid-template-columns: 35% 15% 35%;
+        grid-template-columns: 205px auto 90px;
         grid-row-start: 1;
         grid-row-end: 4;
         grid-auto-flow: column;
