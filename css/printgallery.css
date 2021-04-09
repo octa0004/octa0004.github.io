@@ -374,7 +374,6 @@ padding left for spacing each icon*/
         grid-row-end: 2;
     }
 
-
 }
 
 /*-----------------------------------------------------------
@@ -388,19 +387,17 @@ padding left for spacing each icon*/
         display: none;
     } 
 
-    /*for the work and profile to display on the left use float left*/    
+    /*for the work and profile to display on the side use flex*/    
     .navlink li:nth-child(-n+2){
         display: flex;
         font-size: 14px;
         padding-right: 40px;
-        /*justify-content: flex-start;*/
     }
 
     .navlink li:nth-child(n+2){
         display: flex;
         font-size: 14px;
-        padding-left: 40px;
-        /*justify-content: flex-end;*/   
+        padding-left: 40px; 
     }
 
     .navlink li:nth-child(2){
@@ -629,7 +626,6 @@ padding left for spacing each icon*/
         text-align: left;
     }
 
-
     /*overlay paul lola*/
     .printpaullola-desktop {
         display: block;
@@ -819,8 +815,7 @@ padding left for spacing each icon*/
         transform: translate( -30%, -40%);
         text-align: left;
     }
-    /**/
-
+   
     .graphic a,
     .print a,
     .web a {

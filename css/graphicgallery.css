@@ -213,19 +213,7 @@ p{
 .graphicportrait-desktop,
 .graphictgl-desktop,
 .graphiczodiac-desktop,
-.graphicsimplyglow-desktop,
-
-.printorigin-desktop,
-.printnyahbakso-dekstop,
-
-.florarecipetext,
-.nyahbaksotext,
-.killerbtext,
-.printkillerb-dekstop,
-.webtulis-desktop,
-.websmoochytablet, 
-.websmoochy-desktop,
-.webcustomking-desktop {
+.graphicsimplyglow-desktop {
     display: none;
 }
 
@@ -356,8 +344,7 @@ padding left for spacing each icon*/
     /*hide for tablet*/
     .graphicladies-desktop,
     .graphicportraittablet,
-    .graphicportrait-desktop,
-    .smoochytext {
+    .graphicportrait-desktop {
         display: none;
     }
 
@@ -397,7 +384,6 @@ padding left for spacing each icon*/
         grid-row-end: 2;
     }
 
-
 }
 
 /*-----------------------------------------------------------
@@ -411,19 +397,17 @@ padding left for spacing each icon*/
         display: none;
     } 
 
-    /*for the work and profile to display on the left use float left*/    
+    /*for the work and profile to display on the side using flex*/    
     .navlink li:nth-child(-n+2){
         display: flex;
         font-size: 14px;
         padding-right: 40px;
-        /*justify-content: flex-start;*/
     }
 
     .navlink li:nth-child(n+2){
         display: flex;
         font-size: 14px;
         padding-left: 40px;
-        /*justify-content: flex-end;*/   
     }
 
     .navlink li:nth-child(2){
@@ -648,7 +632,6 @@ padding left for spacing each icon*/
         text-align: left;
     }
 
-     
     .graphicportrait {
         display: none;
     }
