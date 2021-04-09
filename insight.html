@@ -163,14 +163,10 @@
                             allows you to identify your target audience.
                         </li>
 
-                        </br>
-
                         <li>
                             Brand Direction. Know the visual direction you want.
                             Start with an inspiration board, populate images, plan and craft ideas
                         </li>
-
-                        </br>
 
                         <li>
                             Brand Visual. Start with logo, colour, fonts, visual elements.
@@ -178,13 +174,9 @@
                             element choices.
                         </li>   
 
-                        </br>
-
                         <li>
                             Brand Collaterals. Print, digital, and marketing materials.
                         </li> 
-
-                        </br>
 
                         <li>
                             Style Guide. Guide for every single project.
@@ -195,48 +187,49 @@
                 <img src="images/blog-image-01.png" alt="topicimage">
             </div>
                 
-        <hr>
+            <hr>
 
         </section>
+    </main>
     
    <!--Repeat Footer-->
    <footer>
-    <div class="footerwrapper">
-        <div class="site-footer">
-            <h5>
-            <!--HTML Entities to add the copyright symbol-->
-            &copy; Tina Octaviani
-            </h5>
+        <div class="footerwrapper">
+            <div class="site-footer">
+                <h5>
+                <!--HTML Entities to add the copyright symbol-->
+                &copy; Tina Octaviani
+                </h5>
+            </div>
+
+            <div class="socialmedialogo">
+                <a href="http://instagram.com/"> <img alt="instagram" src="images/instagramlogo.png"></a>
+                <a href="https://github.com/octa0004"> <img alt="github" src="images/githublogo.png"></a>
+                <a href="https://www.linkedin.com/in/tina-o-73145012a/"> <img alt="linkedin" src="images/linkedinlogo.png"></a>
+            </div>
         </div>
+    </footer>
 
-        <div class="socialmedialogo">
-            <a href="http://instagram.com/"> <img alt="instagram" src="images/instagramlogo.png"></a>
-            <a href="https://github.com/octa0004"> <img alt="github" src="images/githublogo.png"></a>
-            <a href="https://www.linkedin.com/in/tina-o-73145012a/"> <img alt="linkedin" src="images/linkedinlogo.png"></a>
-        </div>
-    </div>
-</footer>
+    <!--adding script to enable the drop down menu for the nav in the tablet and mobile-->
+    <script>
+        $(document).ready(function(){
+            $('#navbar-button').on('click', function (e) {
+                e.stopPropagation();
+                $('#navDropDown').slideDown("fast");
+            });
 
-<!--adding script to enable the drop down menu for the nav in the tablet and mobile-->
-<script>
-    $(document).ready(function(){
-        $('#navbar-button').on('click', function (e) {
-            e.stopPropagation();
-            $('#navDropDown').slideDown("fast");
+            $('#navDropDown').on('click', function (e) {
+                e.stopPropagation();
+                $('#navDropDown').slideDown("fast");
+            });
+
+            $(document).on('click', function (e) {
+                if (e.target != $('#navDropDown')) {
+                    $('#navDropDown').slideUp("fast");
+                }
+            });
         });
-
-        $('#navDropDown').on('click', function (e) {
-            e.stopPropagation();
-            $('#navDropDown').slideDown("fast");
-        });
-
-        $(document).on('click', function (e) {
-            if (e.target != $('#navDropDown')) {
-                $('#navDropDown').slideUp("fast");
-            }
-        });
-    });
-    
-</script>
+        
+    </script>
 </body>
 </html>
