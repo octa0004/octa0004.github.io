@@ -201,31 +201,20 @@ p{
     margin-bottom: 0;
 }
 
-/*adding margin top specifica for this so it will give space to top, 
+/*adding margin top specific for this so it will give space to top, 
 but not affecting the navigation in the mobile */
-.graphicladies {
+.webdash {
     margin-top: 20px;
 }
 
 /*hide for mobile */
-.graphicladies-desktop,
-.graphicartdate-desktop,
-.graphicportraittablet,
-.graphicportrait-desktop,
-.graphictgl-desktop,
-.graphiczodiac-desktop,
-.graphicsimplyglow-desktop,
-
-.printorigin-desktop,
-.florarecipetext,
-.printnyahbakso-dekstop,
-.nyahbaksotext,
-.killerbtext,
-.printkillerb-dekstop,
+.webdash-desktop,
+.webarc-desktop,
+.webooso-desktop,
 .webtulis-desktop,
 .websmoochytablet, 
 .websmoochy-desktop,
-.webcustomking-desktop {
+.webcustomking-desktop{
     display: none;
 }
 
@@ -324,7 +313,7 @@ padding left for spacing each icon*/
     }
 
     /* change grid for the image in the work page*/
-    .graphics {
+    .web {
         display: grid;
         grid-gap: 20px;
         grid-template-columns: repeat( auto-fit, 48%);
@@ -334,7 +323,7 @@ padding left for spacing each icon*/
         margin: auto;
     }
    
-    .graphicladies{
+    .webdash{
         width: 100%;
         height: auto;
         grid-column-start: 1;
@@ -343,7 +332,7 @@ padding left for spacing each icon*/
         grid-row-end: 2;
     }    
 
-    .graphicartdate {
+    .webarc {
         margin-top: 20px;
         width: 100%;
         height: auto;
@@ -353,14 +342,6 @@ padding left for spacing each icon*/
         grid-row-end: 2;
     }
     
-    /*hide for tablet*/
-    .graphicladies-desktop,
-    .graphicportraittablet,
-    .graphicportrait-desktop,
-    .smoochytext {
-        display: none;
-    }
-
     /**/
 
     .wrapper h6{
@@ -397,7 +378,6 @@ padding left for spacing each icon*/
         grid-row-end: 2;
     }
 
-
 }
 
 /*-----------------------------------------------------------
@@ -411,19 +391,17 @@ padding left for spacing each icon*/
         display: none;
     } 
 
-    /*for the work and profile to display on the left use float left*/    
+    /*for the work and profile to display on the side use flex*/    
     .navlink li:nth-child(-n+2){
         display: flex;
         font-size: 14px;
         padding-right: 40px;
-        /*justify-content: flex-start;*/
     }
 
     .navlink li:nth-child(n+2){
         display: flex;
         font-size: 14px;
         padding-left: 40px;
-        /*justify-content: flex-end;*/   
     }
 
     .navlink li:nth-child(2){
@@ -515,34 +493,40 @@ padding left for spacing each icon*/
     }
 
     /*hide all the h2 and h3 for desktop -- desktop will change to hover*/
-    .graphicladies-mobile-tablet,
-    .graphicladies h2,
-    .graphicartdate h2,
-    .graphicportrait h2,
-    .graphicportraittablet h2,
+    .webdash-mobile-tablet h2,
+    .webdash-mobile-tablet h3,
 
-    .graphicladies h3,
-    .graphicartdate h3,
-    .graphicportrait h3,
-    .graphicportraittablet h3 {
+    .webarc-all h2,
+    .webarc-all h3,
+
+    .webooso-all h2,
+    .webooso-all h3,
+
+    .websmoochy-all h2,
+    .websmoochy-all h3,
+    
+    .webtulis-all h2,
+    .webtulis-all h3,
+
+    .webcustomking-all h2,
+    .webcustomking-all h3 {
         display:none;
     }
 
     /*hide the horizontal line class that i made for mobile and tablet
     hide the text from mobile and tablet display*/
-    .graphicartdate .horizontalline,
-    .graphicportrait .horizontalline,
-    .graphicportraittablet .horizontalline,
-    .graphictgl .horizontalline,
-    .graphictglmobile-tablet,
-    .graphiczodiacmobile-tablet,
-    .graphicsimplyglowmobile-tablet {
+    .webdash-mobile-tablet .horizontalline,
+    .webarc-all .horizontalline,
+    .webooso-all .horizontalline,
+    .websmoochy-all .horizontalline,
+    .webtulis-all .horizontalline,
+    .webcustomking-all .horizontalline {
         display: none;
     }
 
     /* start styling and chnage
     tablet using 2 col, now desktop change to 3 col*/
-    .graphics {
+    .web {
         display: grid;
         grid-gap: 2%;
         grid-template-columns: repeat(3, 1fr);
@@ -553,25 +537,24 @@ padding left for spacing each icon*/
         margin-bottom: 40px;
     }
 
-    
     /* start OVERLAY section*/
 
-    /*graphicladies*/
-    .graphicladies-desktop {
+    /*webdash*/
+    .webdash-desktop {
         display: block;
     }
     
-    .graphicladies{
+    .webdash{
         position: relative; 
     }   
 
-    .graphicladies img{
+    .webdash img{
         display: block;
         width: 100%;
         height: auto;
     }
 
-    .graphicladies .overlay {
+    .webdash .overlay {
         position: absolute;
         top: 0;
         bottom: 0;
@@ -584,13 +567,13 @@ padding left for spacing each icon*/
         background-color: rgba( 64,62,70, 0.8);
     }
 
-    .graphicladies:hover .overlay{
+    .webdash:hover .overlay{
         opacity: 0.8;
     }
 
-    .graphicladies:hover .overlay h2,
-    .graphicladies:hover .overlay p,
-    .graphicladies:hover .overlay h3{
+    .webdash:hover .overlay h2,
+    .webdash:hover .overlay p,
+    .webdash:hover .overlay h3{
         display:block;
     }
 
@@ -603,22 +586,22 @@ padding left for spacing each icon*/
         text-align: left;
     }
 
-    /*overlay graphiartdate for desktop*/
-    .graphicartdate-desktop {
+    /*overlay webarc for desktop*/
+    .webarc-desktop {
         display: block;
     }
     
-    .graphicartdate{
+    .webarc{
         position: relative; 
     }   
 
-    .graphicartdate img{
+    .webarc img{
         display: block;
         width: 100%;
         height: auto;
     }
 
-    .graphicartdate .overlay {
+    .webarc .overlay {
         position: absolute;
         top: 0;
         bottom: 0;
@@ -631,17 +614,17 @@ padding left for spacing each icon*/
         background-color: rgba( 64,62,70, 0.8);
     }
 
-    .graphicartdate:hover .overlay{
+    .webarc:hover .overlay{
         opacity: 0.8;
     }
 
-    .graphicartdate:hover .overlay h2,
-    .graphicartdate:hover .overlay p,
-    .graphicartdate:hover .overlay h3{
+    .webarc:hover .overlay h2,
+    .webarc:hover .overlay p,
+    .webarc:hover .overlay h3{
         display:block;
     }
 
-    .artdatetext{
+    .arctext{
         color: white;
         top: 25%;
         left: 25%;
@@ -650,45 +633,23 @@ padding left for spacing each icon*/
         text-align: left;
     }
 
-     
-    .graphicportrait {
-        display: none;
-    }
-
-    .graphicportraittablet{
-        display: block;
-        margin-top: 20px; 
-        object-fit: cover;
-        width: 100%;
-    }   
-
-    /*overlay graphic portrait use position for desktop*/
-    .graphicportrait-desktop {
+    /*overlay webooso for desktop*/
+    .webooso-desktop {
         display: block;
     }
     
-    .graphicportrait{
+    .webooso{
         position: relative; 
+        margin-top: 20px;
     }   
 
-    .graphicportraittablet{
-        position: relative; 
-    }   
-
-    .graphicportraittablet a{
-        width: 100%;
-        height: 100%;
-    }   
-
-    .graphicportraittablet img{
+    .webooso img{
         display: block;
-        object-fit: cover;
         width: 100%;
-        height: 100%;
+        height: auto;
     }
 
-    /*add trasition 0.3 for fade in overlay*/
-    .graphicportraittablet .overlay {
+    .webooso .overlay {
         position: absolute;
         top: 0;
         bottom: 0;
@@ -701,17 +662,17 @@ padding left for spacing each icon*/
         background-color: rgba( 64,62,70, 0.8);
     }
 
-    .graphicportraittablet:hover .overlay{
+    .webooso:hover .overlay{
         opacity: 0.8;
     }
 
-    .graphicportraittablet:hover .overlay h2,
-    .graphicportraittablet:hover .overlay p,
-    .graphicportraittablet:hover .overlay h3{
+    .webooso:hover .overlay h2,
+    .webooso:hover .overlay p,
+    .webooso:hover .overlay h3{
         display:block;
     }
 
-    .portraittext{
+    .oosotext{
         color: white;
         top: 25%;
         left: 25%;
@@ -720,22 +681,22 @@ padding left for spacing each icon*/
         text-align: left;
     }
 
-    /*overlay graphictgl for desktop*/
-    .graphictgl-desktop {
+    /*overlay wesmoochy for desktop*/
+    .websmoochy-desktop {
         display: block;
     }
     
-    .graphictgl{
+    .websmoochy{
         position: relative; 
     }   
 
-    .graphictgl img{
+    .websmoochy img{
         display: block;
         width: 100%;
         height: auto;
     }
 
-    .graphictgl .overlay {
+    .websmoochy .overlay {
         position: absolute;
         top: 0;
         bottom: 0;
@@ -748,17 +709,17 @@ padding left for spacing each icon*/
         background-color: rgba( 64,62,70, 0.8);
     }
 
-    .graphictgl:hover .overlay{
+    .websmoochy:hover .overlay{
         opacity: 0.8;
     }
 
-    .graphictgl:hover .overlay h2,
-    .graphictgl:hover .overlay p,
-    .graphictgl:hover .overlay h3{
+    .websmoochy:hover .overlay h2,
+    .websmoochy:hover .overlay p,
+    .websmoochy:hover .overlay h3{
         display:block;
     }
 
-    .tgltext{
+    .smoochytext{
         color: white;
         top: 25%;
         left: 25%;
@@ -767,22 +728,22 @@ padding left for spacing each icon*/
         text-align: left;
     }
 
-    /*overlay graphictgl for desktop*/
-    .graphiczodiac-desktop {
+    /*overlay webtulis for desktop*/
+    .webtulis-desktop {
         display: block;
     }
     
-    .graphiczodiac{
+    .webtulis{
         position: relative; 
     }   
 
-    .graphiczodiac img{
+    .webtulisimg{
         display: block;
         width: 100%;
         height: auto;
     }
 
-    .graphiczodiac .overlay {
+    .webtulis .overlay {
         position: absolute;
         top: 0;
         bottom: 0;
@@ -795,42 +756,41 @@ padding left for spacing each icon*/
         background-color: rgba( 64,62,70, 0.8);
     }
 
-    .graphiczodiac:hover .overlay{
+    .webtulis:hover .overlay{
         opacity: 0.8;
     }
 
-    .graphiczodiac:hover .overlay h2,
-    .graphiczodiac:hover .overlay p,
-    .graphiczodiac:hover .overlay h3{
+    .webtulis:hover .overlay h2,
+    .webtulis:hover .overlay p,
+    .webtulis:hover .overlay h3{
         display:block;
     }
 
-    .zodiactext{
+    .tulistext{
         color: white;
         top: 25%;
         left: 25%;
         position: absolute;
-        transform: translate( -40%, -40%);
+        transform: translate( -25%, -40%);
         text-align: left;
     }
 
-    /**/
-    /*overlay graphictgl for desktop*/
-    .graphicsimplyglow-desktop {
+    /*overlay webcustomking for desktop*/
+    .webcustomking-desktop {
         display: block;
     }
     
-    .graphicsimplyglow{
+    .webcustomking{
         position: relative; 
     }   
 
-    .graphicsimplyglow img{
+    .webcustomking img{
         display: block;
         width: 100%;
         height: auto;
     }
 
-    .graphicsimplyglow .overlay {
+    .webcustomking .overlay {
         position: absolute;
         top: 0;
         bottom: 0;
@@ -843,17 +803,17 @@ padding left for spacing each icon*/
         background-color: rgba( 64,62,70, 0.8);
     }
 
-    .graphicsimplyglow:hover .overlay{
+    .webcustomking:hover .overlay{
         opacity: 0.8;
     }
 
-    .graphicsimplyglow:hover .overlay h2,
-    .graphicsimplyglow:hover .overlay p,
-    .graphicsimplyglow:hover .overlay h3{
+    .webcustomking:hover .overlay h2,
+    .webcustomking:hover .overlay p,
+    .webcustomking:hover .overlay h3{
         display:block;
     }
 
-    .simplyglowtext{
+    .customkingtext{
         color: white;
         top: 25%;
         left: 25%;
