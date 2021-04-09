@@ -28,7 +28,6 @@ html {
     height: auto;
 }
 
-
 hr{
     margin-bottom: 0px;
 }
@@ -85,7 +84,6 @@ hr{
     padding-top: 20px;
     padding-bottom: 20px;
 }
-
 
 /*make the hamburger menu in the middle of the logo*/
 .nav{
@@ -319,19 +317,17 @@ padding left for spacing each icon*/
         display: none;
     } 
 
-    /*for the work and profile to display on the left use float left*/    
+    /*for the work and profile to display on the side use flex*/    
     .navlink li:nth-child(-n+2){
         display: flex;
         font-size: 14px;
         padding-right: 40px;
-        /*justify-content: flex-start;*/
     }
 
     .navlink li:nth-child(n+2){
         display: flex;
         font-size: 14px;
         padding-left: 40px;
-        /*justify-content: flex-end;*/   
     }
 
     .navlink li:nth-child(2){
@@ -361,10 +357,10 @@ padding left for spacing each icon*/
    }
 
     .wrapper{
-    box-sizing: border-box;
-    width: 100%;
-    padding-left: 80px;
-    padding-right: 80px;
+        box-sizing: border-box;
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 80px;
     }
 
     h1{
