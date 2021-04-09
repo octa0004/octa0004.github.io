@@ -365,19 +365,17 @@ so i can make it close and in different line for the cta drop email */
         display: none;
     } 
 
-    /*for the work and profile to display on the left use float left*/    
+    /*for the work and profile to display on the side use flex*/    
     .navlink li:nth-child(-n+2){
         display: flex;
         font-size: 14px;
         padding-right: 40px;
-        /*justify-content: flex-start;*/
     }
 
     .navlink li:nth-child(n+2){
         display: flex;
         font-size: 14px;
-        padding-left: 40px;
-        /*justify-content: flex-end;*/   
+        padding-left: 40px;  
     }
 
     .navlink li:nth-child(2){
