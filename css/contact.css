@@ -28,7 +28,6 @@ html {
     height: auto;
 }
 
-
 hr{
     margin-bottom: 0px;
 }
@@ -85,7 +84,6 @@ hr{
     padding-top: 20px;
     padding-bottom: 20px;
 }
-
 
 /*make the hamburger menu in the middle of the logo*/
 .nav{
@@ -255,7 +253,6 @@ so i can make it close and in different line for the cta drop email */
     line-height: 1.5;
 }
 
-
 /*-----------------------------------------------------------
     Tablet Style
 -----------------------------------*/
@@ -405,11 +402,11 @@ so i can make it close and in different line for the cta drop email */
    }
 
     .wrapper{
-    box-sizing: border-box;
-    width: 100%;
-    padding-left: 80px;
-    padding-right: 80px;
-    }
+        box-sizing: border-box;
+        width: 100%;
+        padding-left: 80px;
+        padding-right: 80px;
+        }
 
     h1{
         font-family: 'Playfair Display', serif;
