@@ -398,7 +398,6 @@ padding left for spacing each icon*/
 
 }
 
-
 /*-----------------------------------------------------------
     Desktop Style
 -----------------------------------*/
@@ -437,17 +436,17 @@ padding left for spacing each icon*/
        display: flex;
        align-items: center;
        justify-content: space-around;
-   }
+    }
 
    /*target specific li child to make menu work and profile align left*/
    .li:nth-child(2){
        margin-right: 150px;
-   }
+    }
 
     /*target specific li child to make menu insight and contact align right*/
    .li:nth-child(4){
        margin-left: 150px;
-   }
+    }
 
     .wrapper{
         box-sizing: border-box;
@@ -496,7 +495,6 @@ padding left for spacing each icon*/
         padding-left: 80px;
         padding-right: 80px;
     }
-
 
     /*hide all the h2 and h3 for desktop -- desktop will change to hover*/
     .graphicladies-mobile-tablet,
