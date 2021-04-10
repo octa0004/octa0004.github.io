@@ -227,8 +227,9 @@ padding left for spacing each icon*/
 }
 
 /*format for the date*/
-.captiontext p{
+.captiontext{
     color: var(--red);
+    font-size: 12px;
     text-transform: uppercase;
     letter-spacing: 0.2em;
     line-height: 1.5;
@@ -421,7 +422,7 @@ padding left for spacing each icon*/
    /*change the headline to spread accross, 
    but it does not look the same with the xd, i try with the grid-column-end 2, also does not look similar*/
    .topicbrand h1,
-   .topicessential h1{
+   .topicessential h1 {
        grid-column-start: 1;
        grid-column-end: 3;
        grid-row-start: 1;
