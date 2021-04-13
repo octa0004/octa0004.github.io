@@ -531,7 +531,7 @@ padding left for spacing each icon*/
     }
 
     .heroimagedesktop img{
-        width: 1280px;
+        min-width: 1280px;
         max-width: 100%;
         height: auto;
         margin-top: 20px;
